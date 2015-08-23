@@ -1,0 +1,23 @@
+Last-Modified: Tue, 24 Feb 2015 20:55:35 GMT
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=31536000
+x-apple-translated-wo-url: /WebObjects/MZStore.woa/wa/viewArtist?id=487143&cc=us&urlDesc=/pink-floyd
+x-apple-orig-url: https://itunes.apple.com/us/artist/pink-floyd/id487143
+x-apple-application-site: ST11
+apple-timing-app: 597 ms
+x-apple-aka-ttl: Generated Tue Feb 24 12:55:35 PST 2015, Expires Tue Feb 24 12:56:35 PST 2015, TTL 60s
+x-apple-application-instance: 2125911
+Content-Type: text/html; charset=UTF-8
+x-webobjects-loadaverage: 0
+x-apple-jingle-correlation-key: X3LXGN6A4AWYRHXYKFZKLFQHMY
+Server: ATS/4.1.0
+X-Apple-ATS-Cache-Key: /17.173.38.163/80/us/artist/pink-floyd/id487143/iDevice/https
+Vary: Accept-Encoding
+Cache-Control: no-transform, max-age=57
+Date: Tue, 24 Feb 2015 20:55:35 GMT
+Transfer-Encoding: chunked
+Connection: close
+Connection: Transfer-Encoding
+X-Apple-Partner: origin.0
+
+

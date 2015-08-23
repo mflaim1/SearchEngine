@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>The Little Prince || Audio</title>
+  <link rel="stylesheet" type="text/css" href="thelittleprince.css" />
+</head>
+
+<body>
+  <div id="center">	
+       <header>
+      <h1></h1>
+    </header>
+    <table class ="nav"> <tr>
+      <td><a href="../index.html" class="navbtn">Home</a></td>
+  <td><a href="../books.html" class="navbtn">Books</a></td>
+    <td><a href="index.html" class="navbtn2">Audio</a></td>
+  <td><a href="../author.html" class="navbtn">Author</a></td>
+  <td><a href="../downloads.html" class="navbtn">Downloads</a></td>
+      
+</tr></table>
+
+	<div class="content">
+		<p><img style="margin-right: 20px;" src="images/9780547970486.jpg" width="200" class="book" align="left"></p>
+		<p>For those who have purchased the 70th Anniversary Edition of <i>The Little Prince</i>, use the special code inside your book to download the exclusive audio read by Viggo Mortensen. </p>
+<div class="downloadnow"><a onClick="hideshow();" href="#">Download Now!</a><br /><span style="font-size:8pt"><i>Please note that you cannot download mp3 files directly to an iPad or iPhone. Please use your personal computer and then sync your device to iTunes.</i></span></div>
+<p style="text-align: center">Listen to a short clip of Viggo Mortensen's <br />narration of <i>The Little Prince</i>.<br /><br />
+<embed type="application/x-shockwave-flash" flashvars="audioUrl=http://hmhbooks.com/thelittleprince/audio/mp3s/littleprinceclip2.mp3" src="http://www.google.com/reader/ui/3523697345-audio-player.swf" width="300" height="27" quality="best"></embed></p>
+<p style="margin-bottom: 20px; margin-top: 25px"><img src="images/ViggoMortensen.jpg.jpeg" width="200" class="book" align="right" style="margin-left: 20px"><b>Viggo Mortensen</b> has appeared in acclaimed movies such as the <b>Lord of the Rings</b> trilogy, <b>The Road</b>, <b>Eastern Promises</b>, and <b>A History of Violence</b>. He has recorded Jack Kerouac's <b>On The Road journals</b> for the New Yorker Out Loud series, as well as poetry and music from his own Perceval Press label. The author of several books of poetry and photography, his photographs and paintings have been exhibited in galleries and museums around the world. (photo credit: Getty Images)</p>
+	</div>
+
+
+</div> <!--end center div id-->
+<DIV class ="footer">
+	<a href="http://twitter.com/hmhkids" target="_blank"><img src="images/twitter-bird-white-on-blue.png" width="35"></a>&nbsp;<a href="http://www.facebook.com/hmhteen" target="blank"><img src="images/f_logo.png" width="35"></a><br />
+	<img src="images/HMH_hrz_logo.png" width="300"><br />
+<A href="/">Home</A> | <A href="/faq/">FAQ</A> | <a href="/site_map/">Site Map</A> <BR>
+    <A href="http://www.hmco.com/privacy_policy.html">Privacy Policy</A> | <A href="/trademark/">Trademark Information</A> | <A 
+href="http://www.hmco.com/terms_and_conditions.html">Terms and Conditions of 
+    Use</A> <BR>
+    Copyright &copy;
+    <SCRIPT type=text/javascript>
+var today = new Date()
+var month = today.getMonth() + 1
+var day = today.getDate()
+var year = today.getFullYear() 
+var s = "/"
+
+document.write(year)
+//-->
+</SCRIPT>
+    Houghton Mifflin Harcourt Publishing Company. All rights reserved. <br/>
+</DIV>
+
+<div id="overlay" style="display: none;">
+<iframe src="audiofiles.html" height="500" width="500" style="background-color: #FFF;">
+  <p>Your browser does not support iframes.</p>
+</iframe></div><!-- end of OVERLAY -->
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Access Code',' ');
+while (testV < 3) {
+if (!pass1)
+history.go(0);
+if (pass1 == "T8U4Q7") {
+//alert('You Got it Right!');
+document.getElementById("overlay").style.display = "block";
+break;
+}
+testV+=1;
+var pass1 =
+prompt('Code is Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3)
+history.go(0);
+return " ";
+}
+
+</SCRIPT>
+
+<script>
+function hideshow() {
+		window.onload = passWord();
+	}
+function hide() {
+		document.getElementById("overlay").style.display = "none";
+	}
+document.getElementById("overlay").onclick = function() { 
+		document.getElementById("overlay").style.display = "none";
+}
+
+</script>
+</body>
+<script>var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17568913-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</script>
+</html>
+

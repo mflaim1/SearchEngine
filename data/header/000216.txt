@@ -1,0 +1,15 @@
+Cache-Control: max-age=0, private, must-revalidate
+Content-Type: text/html; charset=utf-8
+Date: Tue, 24 Feb 2015 20:52:19 GMT
+ETag: "d5d889b30303764cf2ebbeb2da53047e"
+Server: nginx
+Set-Cookie: _ebert_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTRjOGZhZDg5YjllZTMzNjkxNWY1MWE5OWMwN2NjYTMyBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMXVTam5zdWlSTG10a0s4akZYUEpQdnY3NmVhU01TM2J3cHVENmtsQUd4Tzg9BjsARg%3D%3D--48bbdfd33123b17b13fcd14161311772d91281f3; path=/; HttpOnly
+Status: 200 OK
+X-Rack-Cache: miss
+X-Request-Id: d30c70d4e32d6ad931a88e0890ecdbd5
+X-Runtime: 0.071091
+X-UA-Compatible: IE=Edge,chrome=1
+Content-Length: 79664
+Connection: Close
+
+

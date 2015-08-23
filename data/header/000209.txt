@@ -1,0 +1,13 @@
+Date: Sat, 01 Feb 2014 19:25:28 GMT
+Server: Apache/2
+X-Powered-By: PHP/5.3.28
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: PHPSESSID=fig1uphmtcnnsf15md6b8322p0; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+

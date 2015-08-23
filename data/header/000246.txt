@@ -1,0 +1,13 @@
+Server: Apache/2.2.3 (Red Hat)
+Set-Cookie: MOBILEFORMAT=false; expires=Fri, 19-Feb-2016 20:53:05 GMT; path=/; domain=.scientificamerican.com
+X-XRDS-Location: http://blogs.scientificamerican.com/guilty-planet/?xrds
+X-Yadis-Location: http://blogs.scientificamerican.com/guilty-planet/?xrds
+X-Pingback: http://blogs.scientificamerican.com/guilty-planet/xmlrpc.php
+Link: <http://blogs.scientificamerican.com/guilty-planet/?p=205>; rel=shortlink
+Vary: Accept-Encoding
+Content-Type: text/html; charset=UTF-8
+Content-Length: 93097
+Date: Tue, 24 Feb 2015 20:53:07 GMT
+Connection: close
+
+

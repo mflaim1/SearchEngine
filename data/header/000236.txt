@@ -1,0 +1,25 @@
+Server: nginx
+Date: Tue, 24 Feb 2015 20:52:46 GMT
+Content-Type: text/html; charset=utf-8
+Connection: close
+Vary: Accept-Encoding
+X-Drupal-Cache: MISS
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Tue, 24 Feb 2015 20:40:19 GMT
+Cache-Control: no-cache, must-revalidate, post-check=0, pre-check=0
+Content-Language: en
+Link: <http://www.denofgeek.com/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3>; rel="canonical"
+X-Generator: Drupal 7 (http://drupal.org)
+Vary: Accept-Encoding
+WebHost: 16315.blue.web.aws.didyn.co.uk
+X-Varnish-Content-Type: dyn
+TTL: 3600.000
+X-Cacheable: YES
+Content-Length: 82515
+Accept-Ranges: bytes
+X-Varnish: 849536565 849530776
+Age: 746
+Via: 1.1 varnish
+X-Varnish-Cache: HIT dyn 11 varnish1.aws.didyn.co.uk
+
+

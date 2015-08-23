@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!-- $Id: page.tpl.php 11 2008-02-21 13:24:51Z bill $ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Anne of Green Gables | Tattered Cover Book Store</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="&quot;She&#039;ll have to go back.&quot;Matthew and Marilla Cuthbert had decided to adopt an orphan." />
+<link rel="shortcut icon" href="/files/tatteredcover/tapestry_favicon_0.jpg" type="image/x-icon" />
+<style type='text/css'>#cart-block-contents { display: none; }</style>
+  <link type="text/css" rel="stylesheet" media="all" href="/files/tatteredcover/css/css_bacb9d2fa97413556152c018818a1197.css" />
+  <script type="text/javascript" src="/misc/jquery.js?P"></script>
+<script type="text/javascript" src="/misc/drupal.js?P"></script>
+<script type="text/javascript" src="/sites/all/modules/custom/indiebound/js/indie-block.js?P"></script>
+<script type="text/javascript" src="/sites/all/modules/fivestar/js/fivestar.js?P"></script>
+<script type="text/javascript" src="/sites/all/modules/google_analytics/googleanalytics.js?P"></script>
+<script type="text/javascript" src="/sites/all/modules/thickbox/thickbox.js?P"></script>
+<script type="text/javascript" src="/sites/all/modules/event/eventblock.js?P"></script>
+<script type="text/javascript" src="/misc/progress.js?P"></script>
+<script type="text/javascript" src="/misc/tableheader.js?P"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "fivestar": { "titleUser": "Your rating: ", "titleAverage": "Average: ", "feedbackSavingVote": "Saving your vote...", "feedbackVoteSaved": "Your vote has been saved.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." }, "googleanalytics": { "trackOutbound": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "thickbox": { "close": "Close", "next": "Next \x3e", "prev": "\x3c Prev", "esc_key": "or Esc Key", "next_close": "Next / Close on last", "image_count": "Image !current of !total" } });
+//--><!]]>
+</script>
+  <style type="text/css" media="print">@import "/sites/tatteredcover.com/themes/tapestry/print.css";</style>
+  <script type="text/javascript"> </script>
+	<style type="text/css">
+		#banner, #container, #headercontainer, #header-region-container, #footer-region-container, #suckerfish-container { 
+			width: 1050px;
+		}
+		#page-right, #round-right {
+			width: 1074px;
+		}
+        #sidebar-left {
+			width: 200px;
+		}
+
+        #sidebar-right {
+			width: 232px;
+		}
+        #sidebar-outside {
+			width: 0px;
+		}
+		#inside-content {
+			width: 1050px;
+		}
+		#mainContent { 
+			width: 598px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		#round-container { 
+			width: 1012px;
+		}
+	</style>
+	<style type="text/css">
+		#suckerfishmenu {
+			float: left;
+		}
+	</style>
+
+	<style type="text/css">
+		body {
+			font-family : Georgia, "Times New Roman", Times, serif;
+		}
+	</style>
+
+
+<!--[if lte IE 6]>
+<style type="text/css" media="all">@import "/sites/tatteredcover.com/themes/tapestry/css/ie6.css";</style>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<script type="text/javascript" src="/sites/tatteredcover.com/themes/tapestry/js/suckerfish.js"></script>
+<![endif]-->
+
+
+
+<script type="text/javascript" src="/sites/tatteredcover.com/themes/tapestry/js/pickstyle.js"></script>
+<script type="text/javascript" src="/sites/tatteredcover.com/themes/tapestry/js/pickicons.js"></script>
+
+</head>
+
+<body>
+  <div id="leaderboard">
+    </div>
+
+  <div id="header">
+   <div id="headercontainer" class="clear-block">
+              
+        				<div class="clear-block" style="line-height:0;"></div>
+	<div id="header-region-container" class="clear-block">
+    <div id="header-region" class="clear-block">
+				<div id="header-left" class="width99"><div id="block-block-79" class="block block-block unstyled-block">
+
+
+  <div class="content"><a href="/"><div style="text-align: center"><img src="/files/tatteredcover/final_final_tc_banner.jpg" width="1020" height="92" /></div></a></div>
+</div>
+<div id="block-search-0" class="block block-search unstyled-block">
+
+  <h2>Search for Books</h2>
+
+  <div class="content"><form action="/book/9780553153279"  accept-charset="UTF-8" method="post" id="search-block-form">
+<div><div class="container-inline">
+  <div class="form-item" id="edit-search-block-form-1-wrapper">
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="title, author, keyword or ISBN" onfocus="if (this.value==&#039;title, author, keyword or ISBN&#039;) this.value=&#039;&#039;" onblur="if (this.value==&#039;&#039;) this.value=&#039;title, author, keyword or ISBN&#039;" class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit-1" value="Search"  class="form-submit" />
+<br/><a href="/search/advanced_search">Advanced Search</a><input type="hidden" name="form_build_id" id="form-ObC3D1KVQETBnxyVkqQd99UVRnUxQ-hELYjnlnBWw38" value="form-ObC3D1KVQETBnxyVkqQd99UVRnUxQ-hELYjnlnBWw38"  />
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form"  />
+</div>
+
+</div></form>
+</div>
+</div>
+</div>
+							</div>
+    <!-- /header-region -->
+	</div>
+	<!-- /header-region-container -->
+	
+
+    <div class="clear-block" style="line-height:0;"></div>
+  <div id="suckerfish-container"><div id="suckerfishmenu"><div id="block-menu-menu-suckerfish-menu" class="block block-menu unstyled-block">
+
+  <h2>Suckerfish Menu</h2>
+
+  <div class="content"><ul class="menu"><li class="leaf first item-about_us"><a href="/about-us" title="About Us">About Us</a></li>
+<li class="expanded item-explore_the_shelves"><a href="/" title="">Explore the Shelves</a><ul class="menu"><li class="leaf first item-indie_bestsellers_nationwide"><a href="/indie-bestsellers" title="">Indie Bestsellers Nationwide</a></li>
+<li class="leaf item-indienext_list"><a href="/indie-next-list" title="IndieNext List">IndieNext List</a></li>
+<li class="leaf item-tc_staff_picks"><a href="/tc-staff-picks" title="Staff Picks">TC Staff Picks</a></li>
+<li class="leaf item-tc-vib_picks_(very_impressive_books)"><a href="/staff-tc-vib-very-impressive-book-picks" title="VIB Picks">TC-VIB Picks (Very Impressive Books)</a></li>
+<li class="expanded item-latest_book_awards"><a href="/books-about-current-events" title="Read All About It!">Latest Book Awards</a><ul class="menu"><li class="leaf first item-colorado_book_award_2014_finalists_&amp;_winners"><a href="/colorado-book-award-2014-finalists-winners" title="Colorado Book Award 2014 Finalists &amp; Winners">Colorado Book Award 2014 Finalists &amp; Winners</a></li>
+<li class="leaf item-2014_reading_the_west_awards"><a href="/2014-reading-west-awards" title="2014 Reading the West Awards">2014 Reading the West Awards</a></li>
+<li class="leaf last item-ezra_jack_keats_award"><a href="/ezra-jack-keats-awards" title="Ezra Jack Keats Awards">Ezra Jack Keats Award</a></li>
+</ul></li>
+<li class="leaf item-tc_book_club_picks"><a href="/regionalcatalog/215909" title="">TC Book Club Picks</a></li>
+<li class="leaf item-dom_&amp;_jane&#039;s_book_club,_mix_100_fm"><a href="/newsletter/257656" title="Dom &amp; Jane&#039;s Book Club, MIX 100 FM">Dom &amp; Jane&#039;s Book Club, MIX 100 FM</a></li>
+<li class="leaf item-7newsnow_book_club"><a href="/7news-book-club" title="7News Book Club">7NewsNow Book Club</a></li>
+<li class="leaf item-autographed_book-collectors_club"><a href="/storeinfo/156401" title="Collector&#039;s Autographed Book Club">Autographed Book-Collectors Club</a></li>
+<li class="leaf item-tattered_cover_gear"><a href="/other-tattered-cover-gear" title="Tattered Cover Gear">Tattered Cover Gear</a></li>
+<li class="leaf item-2014_banned_books_readout"><a href="/2014-banned-books-readout" title="2014 Banned Books Readout">2014 Banned Books Readout</a></li>
+<li class="leaf last item-books_available_for_preorder_now"><a href="/books-available-preorder-now" title="Books Available for Preorder Now">Books Available for Preorder Now</a></li>
+</ul></li>
+<li class="expanded item-services"><a href="/" title="Services">Services</a><ul class="menu"><li class="leaf first item-business_&amp;_education"><a href="/storeinfo/233613" title="Business &amp; Education">Business &amp; Education</a></li>
+<li class="leaf item-gift_services"><a href="/gift-services" title="Special Services">Gift Services</a></li>
+<li class="leaf item-book_club_outreach"><a href="/book-club-outreach" title="Book Club Outreach">Book Club Outreach</a></li>
+<li class="leaf item-book_catering_to_conferences,_lectures,_bookfairs"><a href="http://www.tatteredcover.com/book-catering-conferences-lectures-etc" title="
+The Tattered Cover can provide books for conferences and lectures in the Denver area. For more information, contact our Conference Coordinator at 303-322-1965 ext. 1615 or email us at books@tatteredcover.com  ">Book Catering to Conferences, Lectures, Bookfairs</a></li>
+<li class="leaf item-rocky_mountain_authors_program"><a href="/local-authors">Rocky Mountain Authors Program</a></li>
+<li class="leaf last item-autographed_books_by_request"><a href="/storeinfo/216853" title="">Autographed Books by Request</a></li>
+</ul></li>
+<li class="collapsed item-tattered_cover_press"><a href="/packages-and-prices" title="Tattered Cover Press">Tattered Cover Press</a></li>
+<li class="expanded item-books_on_demand"><a href="/books-demand" title="Books on Demand">Books on Demand</a><ul class="menu"><li class="leaf first last item-search_ebm_titles"><a href="/espresso/search" title="Search EBM Titles">Search EBM Titles</a></li>
+</ul></li>
+<li class="expanded item-young_readers"><a href="/" title="Young Readers">Young Readers</a><ul class="menu"><li class="leaf first item-tc-vib_picks_for_kids_(very_impressive_books)"><a href="/childrens-vib-very-impressive-book-pick" title="Kids&#039; V.I.B. (Very Impressive Book) Pick">TC-VIB Picks for Kids (Very Impressive Books)</a></li>
+<li class="leaf item-contests"><a href="/contests-0" title="Contests">Contests</a></li>
+<li class="leaf item-diversity_challenge"><a href="/great-greene-heist-diversity-challenge" title="The Great Greene Heist Diversity Challenge">Diversity Challenge</a></li>
+<li class="leaf item-storytimes"><a href="/storytimes" title="Storytimes">Storytimes</a></li>
+<li class="leaf last item-family_friday_nights"><a href="/family-friday-nights" title="Family Friday Nights">Family Friday Nights</a></li>
+</ul></li>
+<li class="expanded last item-community_support"><a href="/" title="">Community Support</a><ul class="menu"><li class="leaf first item-shop_for_a_good_cause"><a href="/shop-good-cause" title="&quot;Shop for a Good Cause&quot; In-Store Fundraisers">Shop for a Good Cause</a></li>
+<li class="leaf item-children&#039;s_holiday_book_drive"><a href="/newsletter/287068">Children&#039;s Holiday Book Drive</a></li>
+<li class="leaf last item-reach_out_and_read_colorado"><a href="/storebargains/274268" title="Reach Out and Read Colorado">Reach Out and Read Colorado</a></li>
+</ul></li>
+</ul></div>
+</div>
+</div></div>
+     </div>
+  </div>
+  <div id="header-bottom" class="clear-block"></div>
+  
+  
+<div id="outer-container">
+<div id="page-right">
+<div id="page-left">
+
+         
+  <div id="container">
+
+                            <div id="breadcrumb">
+                     </div>
+               
+    <div class="clear-block"></div>
+
+<div id="inside-content">
+
+              <div class="clear-block">
+	<div id="sidebar-left"><div id="block-user-0" class="block block-user unstyled-block">
+
+  <h2>Tattered Cover Login</h2>
+
+  <div class="content"><form action="/book/9780553153279?destination=node%2F13405"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">Username: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" />
+<div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-iDKueC5vFU03QTaMbmGQXNaTYjaeCpwH62ad-nMSlN4" value="form-iDKueC5vFU03QTaMbmGQXNaTYjaeCpwH62ad-nMSlN4"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+</div>
+</div>
+<div id="block-user-1" class="block block-user unstyled-block">
+
+  <h2>Navigation</h2>
+
+  <div class="content"><ul class="menu"><li class="collapsed first item-browse"><a href="/browse" title="">Browse</a></li>
+<li class="collapsed last item-wish_list"><a href="/wishlist" title="View or modify the contents of your wish list.">Wish list</a></li>
+</ul></div>
+</div>
+<div id="block-uc_cart-0" class="block block-uc_cart unstyled-block">
+
+  <h2><a href="/cart"><span class="cart-block-icon-empty" title="View your shopping cart."></span></a><span class="cart-block-title-bar">Shopping cart</span></h2>
+
+  <div class="content"><a href="/cart">View</a> your shopping cart.</div>
+</div>
+<div id="block-block-84" class="block block-block unstyled-block">
+
+
+  <div class="content"><!-- BEGIN: Constant Contact Square Email List Button -->
+<div align="center">
+<table border="0" cellspacing="0" cellpadding="0" width="100">
+<tbody>
+<tr>
+<td width="6" background="https://imgssl.constantcontact.com/ui/images/visitor/bevel_bg_left_gray.gif">Â </td>
+<td align="center" style="padding: 10px" bgcolor="#cccccc"><a style="text-decoration: none; font-weight: bold; font-family: Lucida; font-size: 20px; color: #000000" href="http://visitor.r20.constantcontact.com/d.jsp?llr=k8h4ynbab&amp;p=oi&amp;m=1101047766890&amp;sit=depjbbwab" target="_blank">Tattered Cover Mailing List</a></td>
+<td width="6" background="https://imgssl.constantcontact.com/ui/images/visitor/bevel_bg_right_gray.gif">Â </td>
+</tr>
+<tr>
+<td background="https://imgssl.constantcontact.com/ui/images/visitor/bevel_bg_left_black.gif">Â </td>
+<td align="right" bgcolor="#000000"><div style="margin-top: 2px"><a style="text-decoration: none; font-weight: bold; font-family: Lucida; font-size: 15px; color: #ffffff" href="http://visitor.r20.constantcontact.com/d.jsp?llr=k8h4ynbab&amp;p=oi&amp;m=1101047766890&amp;sit=depjbbwab" target="_blank">Â» JOIN NOW</a></div></td>
+<td background="https://imgssl.constantcontact.com/ui/images/visitor/bevel_bg_right_black.gif">Â </td>
+</tr>
+
+</tbody></table>
+</div>
+<!-- END: Constant Contact Square Email List Button -->
+<!-- BEGIN: SafeSubscribe -->
+<div align="center" style="padding-top: 5px">
+<img src="https://imgssl.constantcontact.com/ui/images1/safe_subscribe_logo.gif" width="168" height="14" />
+</div>
+<!-- END: SafeSubscribe -->
+</div>
+</div>
+</div><div id="sidebar-right"><div id="block-block-97" class="block block-block unstyled-block">
+
+
+  <div class="content"><table border="0">	
+<tbody>		
+<tr>			
+<td><font size="4" color="#634a40"><a href="http://www.tatteredcover.com/new-event-calendar"><strong>Click here for our<br />New Event Calendar</strong></a></font>
+<p>
+<span style="font-size: small">Our old calendar (below) will remain active until March 1st.</span></p>
+</td>		</tr>	</tbody></table></div>
+</div>
+<div id="block-event-0" class="block block-event unstyled-block">
+
+
+  <div class="content"><div class="event-calendar"><div class="month-view"><table class="event-block  february sticky-enabled">
+<caption><span class="prev"><a href="/event/2015/01/24/month/all/all/1" class="updateblock">Â«</a></span> <a href="/event/2015/02/24/month"> February 2015</a> <span class="next"><a href="/event/2015/03/24/month/all/all/1" class="updateblock">Â»</a></span></caption>
+ <thead><tr><th class="sun">Sun</th><th class="mon">Mon</th><th class="tue">Tue</th><th class="wed">Wed</th><th class="thu">Thu</th><th class="fri">Fri</th><th class="sat">Sat</th> </tr></thead>
+<tbody>
+ <tr class="odd"><td class="sun day-01"><a href="/event/2015/02/01/day">1</a></td><td class="mon day-02"><a href="/event/2015/02/02/day">2</a></td><td class="tue day-03"><a href="/event/2015/02/03/day">3</a></td><td class="wed day-04"><a href="/event/2015/02/04/day">4</a></td><td class="thu day-05"><a href="/event/2015/02/05/day">5</a></td><td class="fri day-06"><a href="/event/2015/02/06/day">6</a></td><td class="sat day-07"><a href="/event/2015/02/07/day">7</a></td> </tr>
+ <tr class="even"><td class="sun day-08">8</td><td class="mon day-09"><a href="/event/2015/02/09/day">9</a></td><td class="tue day-10"><a href="/event/2015/02/10/day">10</a></td><td class="wed day-11">11</td><td class="thu day-12"><a href="/event/2015/02/12/day">12</a></td><td class="fri day-13"><a href="/event/2015/02/13/day">13</a></td><td class="sat day-14">14</td> </tr>
+ <tr class="odd"><td class="sun day-15">15</td><td class="mon day-16"><a href="/event/2015/02/16/day">16</a></td><td class="tue day-17"><a href="/event/2015/02/17/day">17</a></td><td class="wed day-18"><a href="/event/2015/02/18/day">18</a></td><td class="thu day-19"><a href="/event/2015/02/19/day">19</a></td><td class="fri day-20">20</td><td class="sat day-21"><a href="/event/2015/02/21/day">21</a></td> </tr>
+ <tr class="even"><td class="sun day-22">22</td><td class="mon day-23"><a href="/event/2015/02/23/day">23</a></td><td class="tue day-24 today selected"><a href="/event/2015/02/24/day">24</a></td><td class="wed day-25"><a href="/event/2015/02/25/day">25</a></td><td class="thu day-26"><a href="/event/2015/02/26/day">26</a></td><td class="fri day-27"><a href="/event/2015/02/27/day">27</a></td><td class="sat day-28">28</td> </tr>
+</tbody>
+</table>
+</div></div>
+</div>
+</div>
+<div id="block-block-40" class="block block-block unstyled-block">
+
+
+  <div class="content"><div align="center"><span style="font-size: small"><em><strong>PLEASE NOTE: Our event schedule is updated regularly. </strong></em></span></div><strong><div align="center"><span style="font-size: small"><em>Check the calendar for changes and additions.</em></span></div>
+
+<div align="center"><span style="font-size: small"><a href="http://www.tatteredcover.com/files/tatteredcover/february%20calendar.pdf"><strong><em>PDF of February Events</em></strong></a></span></div></strong></div>
+</div>
+<div id="block-block-66" class="block block-block unstyled-block">
+
+
+  <div class="content"><p><a href="http://www.tatteredcover.com/rocky-mountain-land-series"><font color="#800000"><em><span style="font-size: small"><strong><font class="Apple-style-span">Rocky Mountain Land Series</font></strong></span></em></font></a> </p><p><a href="http://www.tatteredcover.com/files/tatteredcover/cinema%20flyer_0.pdf"><em><font color="#800000"><span style="font-size: small"><strong><font class="Apple-style-span">Tattered Cover Film Series</font></strong></span></font></em></a></p><p><a href="http://www.tatteredcover.com/files/tatteredcover/Active%20Minds%20Jan-Apr%202015-2.pdf"><em><font color="#800000"><span style="font-size: small"><strong><font class="Apple-style-span">Active Minds Lecture Series</font></strong></span></font></em></a></p><p><a href="http://www.tatteredcover.com/page-stage" target="_blank"><strong><em><font size="2" color="#800000">From Page to Stage</font></em></strong></a></p></div>
+</div>
+</div>  <div id="mainContent">
+      
+
+  	<div id="content-top" class="clear-block">
+		<div id="content-top-right" class="width99"><div id="block-fivestar-0" class="block block-fivestar unstyled-block">
+
+  <h2>Rate This</h2>
+
+  <div class="content"><form action="/book/9780553153279"  accept-charset="UTF-8" method="post" id="fivestar-form-node-13405-1" class="fivestar-widget">
+<div><div class="fivestar-form-vote-13405 clear-block"><input type="hidden" name="content_type" id="edit-content-type-1" value="node"  />
+<input type="hidden" name="content_id" id="edit-content-id-1" value="13405"  />
+<div class="fivestar-form-item  fivestar-combo-text fivestar-average-stars fivestar-labels-hover"><div class="form-item" id="edit-vote-2-wrapper">
+ <label for="edit-vote-2">Average: </label>
+ <input type="hidden" name="vote_count" id="edit-vote-count-1" value="0"  />
+<input type="hidden" name="vote_average" id="edit-vote-average-1" value="0"  />
+<input type="hidden" name="auto_submit_path" id="edit-auto-submit-path-1" value="/fivestar/vote/node/13405/vote"  class="fivestar-path" />
+<select name="vote" class="form-select" id="edit-vote-3" ><option value="-">Select rating</option><option value="20">Poor</option><option value="40">Okay</option><option value="60">Good</option><option value="80">Great</option><option value="100">Awesome</option></select><input type="hidden" name="auto_submit_token" id="edit-auto-submit-token-1" value="6831cdcbe86705fc8b35094e19259589"  class="fivestar-token" />
+
+ <div class="description"><div class="fivestar-summary fivestar-summary-combo fivestar-feedback-enabled"><span class="empty">No votes yet</span></div></div>
+</div>
+</div><input type="hidden" name="destination" id="edit-destination-1" value="node/13405"  />
+<input type="submit" name="op" id="edit-fivestar-submit-1" value="Rate"  class="form-submit fivestar-submit" />
+<input type="hidden" name="form_build_id" id="form-h2e2DpPmW1cEvR6qUGzXYdQe1C_ZAavr-MbwCDlSl3Y" value="form-h2e2DpPmW1cEvR6qUGzXYdQe1C_ZAavr-MbwCDlSl3Y"  />
+<input type="hidden" name="form_id" id="edit-fivestar-form-node-13405-1" value="fivestar_form_node_13405"  />
+</div>
+</div></form>
+</div>
+</div>
+</div>	</div>
+
+                  <div class="tabs"></div>
+                        <div id="node-13405" class="node">
+
+  <div class="abaproduct-content">
+    <div class="abaproduct-image">
+      <a href="http://images.indiebound.com/279/153/9780553153279.jpg" title="Anne of Green Gables" class="thickbox" rel="field_image_cache_0"><img src="http://images.booksense.com/images/books/279/153/FC9780553153279.JPG" title="" onerror="this.src = '/sites/all/modules/custom/aba_product/book_not_found.jpg';" /></a>
+          <div id="google-book-preview">
+        <script type="text/javascript" src="http://books.google.com/books/previewlib.js"></script>
+        <script type="text/javascript">
+        GBS_insertPreviewButtonPopup('ISBN:9780553153279');
+        GBS_setViewerOptions({'showLinkChrome': false});
+        </script>
+      </div>
+        </div>
+        <div class="abaproduct-page">
+      <div class="abaproduct-title"><h2>
+      Anne of Green Gables              (Paperback)
+            </h2></div>
+            <div class="abaproduct-authors">
+      By <a href="/search/apachesolr_search/?author_filter=Montgomery%2C+L.M.">L.M. Montgomery</a></div>
+      <div class="abaproduct-page-details">
+                    <div class="abaproduct-price">$6.99</div>
+                  </div>
+      <div class="abaproduct-cart">
+      <div class="add-to-cart"><form action="/book/9780553153279"  accept-charset="UTF-8" method="post" id="uc-product-add-to-cart-form-13405-1">
+<div><input type="hidden" name="qty" id="edit-qty-1" value="1"  />
+<input type="submit" name="op" id="edit-submit-13405" value="Add to cart"  class="form-submit node-add-to-cart" />
+<input type="hidden" name="form_build_id" id="form-79-PH81rZ_UHnsLMA2024p1dhuBV6j9JydeeIsbEmnY" value="form-79-PH81rZ_UHnsLMA2024p1dhuBV6j9JydeeIsbEmnY"  />
+<input type="hidden" name="form_id" id="edit-uc-product-add-to-cart-form-13405-1" value="uc_product_add_to_cart_form_13405"  />
+<input type="submit" name="op" id="edit-wishlist-1" value="Add to wish list"  class="form-submit" />
+
+</div></form>
+</div>          <!-- <div class="abaproduct-special"> for LSI/ebook downloads/others </div>-->
+              <div class="abaproduct-status">Shipped to Tattered Cover in 3 to 7 days</div>
+            
+      
+          </div>
+      
+    <div class="abaproduct-related-editions">
+    <table><tr><td>
+    
+            </td></tr></table>
+    </div>
+
+
+      
+    </div>
+        </div>
+
+  <!--  if reviews are available for this title.. add them here.-->
+    <!--  end reviews-->
+  <!--  INL blurbs -->
+    <!--  end INL blurbs -->
+    <div class="abaproduct-body">
+    <h3>Description</h3><hr/>
+        <div class="product-body"><p>&quot;She'll have to go back.&quot;</p>
+<p>Matthew and Marilla Cuthbert had decided to adopt an orphan. They wanted a nice sturdy boy to help Matthew with the farm chores.&#160;&#160;The orphanage sent a girl instead - a mischievous, talkative redhead who the Cuthberts thought would be no use at all.&#160;&#160;But as soon as Anne arrived at the snug, white farmhouse called Green Gables, she knew she wanted to stay forever.&#160;&#160;And the longer Anne stayed, the harder it was for anyone to imagine Green Gables without her.</p>
+<p><i>The Anne Books</i> </p>
+<p>Delightful, unpredictable Anne Shirley has been charming readers of all ages, in every part of the world, for over three-quarters of a century. Bestsellers from the moment they were published, the <i>Anne Of Green Gables</i> novels have allowed generations of children to grow up right along with Anne.</p>
+</div>    </div>
+  
+    <div class="abaproduct-body">
+    <h3>Praise for Anne of Green Gables&hellip;</h3><hr/>
+    <p>&quot;Aficionados of the auburn-tressed waif will find <i>Anne of Green Gables</i> lavishly illustrated.&quot;<br />&#8211;<i>Smithsonian Magazine</i></p>  </div>
+  
+  <div class="clear-block clear"><fieldset style="clear: both;"><legend>Product Details</legend>
+      <strong>ISBN-10:</strong> 0553153277<br/>
+      <strong>ISBN-13:</strong> 9780553153279 <br/>
+      <strong>Published:</strong> Yearling, 09/01/1984    <br/>
+      <strong>Pages:</strong> 320    <br/>
+      <strong>Language:</strong> English    <br/>
+    </fieldset></div>
+
+    <fieldset class="collapsible"><legend>Recommended Reading Level</legend>
+        <strong>Minimum Age:</strong> 10<br/>
+            <strong>Maximum Age:</strong> 14<br/>
+            <strong>Minimum Grade Level:</strong> 5th Grade<br/>
+            <strong>Maximum Grade Level:</strong> 9th Grade<br/>
+      </fieldset>
+  
+
+    
+  <div class="clear-block clear">
+    <div class="meta">
+        </div>
+
+        <div class="links"><ul class="links inline"><li class="comment_forbidden first"><span><a href="/user/login?destination=node%2F13405%23comment-form">Login</a> or <a href="/user/register?destination=node%2F13405%23comment-form">register</a> to post comments</span></li>
+<li class="product_browser_term_3325"><a href="/browse/book/3325/juvenile-fiction/people-places-canada" rel="tag" title="">People &amp; Places - Canada</a></li>
+<li class="product_browser_term_846 last"><a href="/browse/book/846/juvenile-fiction/classics" rel="tag" title="">Classics</a></li>
+</ul></div>
+      </div>
+
+</div>
+
+
+	<!-- end #mainContent --></div>
+</div>
+
+
+
+</div> <!-- /inside-content -->
+<div class="clear-block" style="clear: both;"></div>
+<div class="page-bottom clear-block"></div>
+
+
+  <div id="trailerboard">
+  <div id="footer">
+           <div id="footer-message">Copyright &copy; Tattered Cover Book Store</div>  <!-- end #footer --></div>
+<script type="text/javascript">
+<!-- Hide Script
+	function move_in(img_name,img_src) {
+	document[img_name].src=img_src;
+	}
+
+	function move_out(img_name,img_src) {
+	document[img_name].src=img_src;
+	}
+//End Hide Script-->
+</script>
+<a href="http://www.roopletheme.com" onmouseover="move_in('rtlogo','/sites/tatteredcover.com/themes/tapestry/images/haarlemmod/roopletheme-rollover.png')" onmouseout="move_out('rtlogo','/sites/tatteredcover.com/themes/tapestry/images/haarlemmod/roopletheme.png')" title="RoopleTheme!" target="_blank"><img class="rtlogo" src="/sites/tatteredcover.com/themes/tapestry/images/haarlemmod/roopletheme.png" name="rtlogo" alt="RoopleTheme"/></a>
+  </div>
+
+<!-- end #container --></div>
+</div></div>
+
+<div id="round-right">
+<div id="round-left">
+<div id="round-container">
+</div></div></div>
+
+</div>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-25191292-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://webstats.indiebound.com/" : "http://webstats.indiebound.com/");_paq.push(["setSiteId", "8"]);_paq.push(["setTrackerUrl", u+"piwik.php"]);_paq.push(["trackPageView"]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src="/files/tatteredcover/piwik/piwik.js?P";s.parentNode.insertBefore(g,s);})();
+//--><!]]>
+</script>
+</body>
+</html>

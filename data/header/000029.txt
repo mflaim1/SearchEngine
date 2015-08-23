@@ -1,0 +1,12 @@
+Date: Tue, 24 Feb 2015 20:47:30 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: __cfduid=dc7ef8804a5d085ef5709c3b1b85cad8c1424810847; expires=Wed, 24-Feb-16 20:47:27 GMT; path=/; domain=.wallgraf.com; HttpOnly
+X-Powered-By: PHP/5.4.32
+X-Pingback: http://www.wallgraf.com/xmlrpc.php
+Link: <http://www.wallgraf.com/?p=12675>; rel=shortlink
+Server: cloudflare-nginx
+CF-RAY: 1bde84b6cc1f188e-EWR
+
+

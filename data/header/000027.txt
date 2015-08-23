@@ -1,0 +1,22 @@
+Server: nginx
+Date: Tue, 24 Feb 2015 20:47:23 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+Status: 200 OK
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-UA-Compatible: chrome=1
+Cache-Control: max-age=0,must-revalidate
+X-Request-Id: a536e2c5-7aa2-4ee3-acae-268df0903c09
+X-Runtime: 0.341248
+P3P: CP="CAO DSP COR CURa ADMa DEVa PSAa PSDa CONi OUR IND PHY ONL UNI COM NAV INT CNT STA"
+X-Varnish: 732370425
+Age: 0
+Via: 1.1 varnish-v4
+Accept-Ranges: bytes
+
+

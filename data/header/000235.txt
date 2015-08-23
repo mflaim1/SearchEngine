@@ -1,0 +1,20 @@
+Server: Apache
+X-Content-Type-Options: nosniff
+X-Analytics: page_id=10334368;ns=0
+Content-language: en
+X-UA-Compatible: IE=Edge
+Vary: Accept-Encoding,Cookie
+X-Powered-By: HHVM/3.3.1
+Last-Modified: Mon, 16 Feb 2015 14:13:00 GMT
+Content-Type: text/html; charset=UTF-8
+X-Varnish: 480068425 462181626, 2769113895
+Via: 1.1 varnish, 1.1 varnish
+Transfer-Encoding: chunked
+Date: Tue, 24 Feb 2015 20:52:45 GMT
+Age: 11897
+Connection: close
+X-Cache: cp1067 hit (4), cp1068 frontend miss (0)
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate
+Set-Cookie: GeoIP=US:Ithaca:42.4072:-76.5159:v4; Path=/; Domain=.wikipedia.org
+
+

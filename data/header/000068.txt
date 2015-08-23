@@ -1,0 +1,15 @@
+X-UA-Compatible: IE=Edge
+Content-Type: text/html;charset=UTF-8
+Content-Language: de-DE
+Vary: Accept-Encoding
+Cache-Control: max-age=292
+Expires: Tue, 24 Feb 2015 20:53:14 GMT
+Date: Tue, 24 Feb 2015 20:48:22 GMT
+Transfer-Encoding: chunked
+Connection: close
+Connection: Transfer-Encoding
+Set-Cookie: ABCGuestID=69.31.20.15.12609142481090217; expires=Tue, 24-Feb-2015 21:18:22 GMT; path=/; domain=.abc.net.au
+Set-Cookie: ABC_LD=int; path=/; domain=.abc.net.au
+Set-Cookie: ABC_FF=desktop; expires=Tue, 24-Feb-2015 22:48:22 GMT; path=/
+
+

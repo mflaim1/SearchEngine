@@ -1,0 +1,22 @@
+Date: Tue, 24 Feb 2015 20:47:32 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: __cfduid=db94d97e241b17449aece0e884cccf1e71424810850; expires=Wed, 24-Feb-16 20:47:30 GMT; path=/; domain=.thegospelcoalition.org; HttpOnly
+X-Powered-By: PHP/5.5.9-1ubuntu4.5
+Set-Cookie: PHPSESSID=dh36qudu2g0auf3bsrmc3c0kn5; path=/
+Set-Cookie: exp_last_visit=1109450846; expires=Wed, 24-Feb-2016 20:47:26 GMT; Max-Age=31535999; path=/; httponly
+Set-Cookie: exp_last_activity=1424810846; expires=Wed, 24-Feb-2016 20:47:26 GMT; Max-Age=31535999; path=/; httponly
+Set-Cookie: exp_tracker=a%3A1%3A%7Bi%3A0%3Bs%3A48%3A%22article%2Freading-for-worldviews-lord-of-the-rings%22%3B%7D; path=/; httponly
+Set-Cookie: exp_csrf_token=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/; httponly
+Set-Cookie: exp_csrf_token=eb5dc4aa76b2c7044a8aa35f31bc04db37f95c05; expires=Tue, 24-Feb-2015 22:47:26 GMT; Max-Age=7199; path=/; httponly
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Last-Modified: Tue, 24 Feb 2015 20:47:28 GMT
+Vary: Accept-Encoding
+Cf-Railgun: b9f3a356f1 0010 normal 5360
+Server: cloudflare-nginx
+CF-RAY: 1bde84c9ed901834-EWR
+
+

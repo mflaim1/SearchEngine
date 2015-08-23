@@ -1,0 +1,15 @@
+Server: nginx
+Date: Tue, 24 Feb 2015 20:48:23 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+X-Powered-By: PHP/5.3.28
+X-Pingback: https://www.movieguide.org/xmlrpc.php
+Link: <https://www.movieguide.org/?p=126298>; rel=shortlink
+Set-Cookie: wfvt_1044030841=54ece3970ac18; expires=Tue, 24-Feb-2015 21:18:23 GMT; path=/; httponly
+Cache-Control: max-age=172800
+Expires: Thu, 26 Feb 2015 20:48:22 GMT
+X-Powered-By: PleskLin
+MS-Author-Via: DAV
+
+

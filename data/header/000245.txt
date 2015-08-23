@@ -1,0 +1,22 @@
+Server: Cowboy
+Status: 200 OK
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Ua-Compatible: chrome=1
+Content-Type: text/html; charset=utf-8
+Vary: Accept-Encoding
+X-Request-Id: f4de7b61-ffa1-4600-a15c-4368d5220e42
+X-Runtime: 0.430054
+X-Content-Digest: 8fc1a940ca58d6ae10df435f567a5bfae7a2695d
+Age: 1
+X-Rack-Cache: miss, ignore, store
+Via: 1.1 vegur
+Date: Tue, 24 Feb 2015 20:53:04 GMT
+Expires: Tue, 24 Feb 2015 20:53:04 GMT
+Cache-Control: max-age=0, no-cache
+X-Page-Speed: 127_2_vo
+Alternate-Protocol: 80:quic,p=0.08
+Accept-Ranges: none
+Connection: close
+
+

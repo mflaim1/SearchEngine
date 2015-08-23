@@ -1,0 +1,12 @@
+Server: nginx/1.6.2
+Date: Tue, 24 Feb 2015 20:46:50 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Vary: Accept-Encoding
+X-Powered-By: PHP/5.2.17
+Set-Cookie: _icl_current_language=en; expires=Wed, 25-Feb-2015 20:46:49 GMT; path=/
+X-Pingback: http://englishconnect-spb.com/xmlrpc.php
+Link: <http://wp.me/p3C1ST-Pc>; rel=shortlink
+
+

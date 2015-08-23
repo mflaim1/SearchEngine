@@ -1,0 +1,16 @@
+Date: Tue, 24 Feb 2015 20:49:20 GMT
+Server: Apache
+X-Powered-By: PHP/5.3.26
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: meme_uploaded_image=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT
+Set-Cookie: wordpress_test_cookie=WP+Cookie+check; path=/
+Set-Cookie: PHPSESSID=fdf4857b46c84737b0e1c1c9b192188b; path=/
+X-Pingback: http://www.ourhenhouse.org/xmlrpc.php
+Link: <http://www.ourhenhouse.org/?p=2672>; rel=shortlink
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+

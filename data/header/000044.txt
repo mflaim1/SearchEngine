@@ -1,0 +1,10 @@
+Server: nginx
+Date: Tue, 24 Feb 2015 20:47:50 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: close
+Vary: Accept-Encoding
+X-Pingback: http://blogs.slj.com/afuse8production/xmlrpc.php
+Link: <http://blogs.slj.com/afuse8production/?p=14005>; rel=shortlink
+
+

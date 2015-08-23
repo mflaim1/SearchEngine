@@ -1,0 +1,14 @@
+Connection: close
+Date: Tue, 24 Feb 2015 20:54:16 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+X-AspNet-Version: 2.0.50727
+Set-Cookie: tracker=product|=780; path=/; HttpOnly
+Set-Cookie: cuser=currency=GBP&remembered=False&lastculture=&lastsite=&userid={cbeae982-6052-487e-ab86-d2dd02a972fc}&usertype=0; expires=Thu, 26-Mar-2015 20:54:16 GMT; path=/; HttpOnly
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Set-Cookie: NSC_qt_nvtjdsppn.dpn=ffffffffaf181e4845525d5f4f58455e445a4a423660;path=/;httponly
+ETag: "1754b0-17e80c9da8ae"
+Transfer-Encoding: Chunked
+
+

@@ -1,0 +1,23 @@
+Server: Apache
+X-Content-Type-Options: nosniff
+Content-language: en
+X-Backend-Response-Time: 0.193
+ETag: "20120215074336-1424784752"
+Last-Modified: Wed, 15 Feb 2012 07:43:36 GMT
+Content-Type: text/html; charset=utf-8
+X-Cacheable: YES
+Content-Length: 60419
+Accept-Ranges: bytes
+Date: Tue, 24 Feb 2015 20:52:14 GMT
+Age: 19648
+Connection: close
+X-Served-By: ap-s13, cache-wk-sjc3160-WKSJC, cache-jfk1023-JFK
+X-Cache: ORIGIN, MISS, HIT
+X-Cache-Hits: ORIGIN, 0, 1
+X-Timer: S1424811134.915547,VS0,VE2
+Vary: Accept-Encoding,Cookie
+Set-Cookie: wikia_beacon_id=KdlH3S7LBG; domain=.wikia.com; path=/; expires=Sun, 23 Aug 2015 20:52:14 GMT;
+Set-Cookie: Geo={%22city%22:%22FIXME%22%2C%22country%22:%22US%22%2C%22continent%22:%22NA%22}; path=/
+Cache-Control: private, s-maxage=0, max-age=0, must-revalidate
+
+

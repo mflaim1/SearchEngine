@@ -1,0 +1,18 @@
+Server: nginx
+Vary: Accept-Encoding,Cookie
+X-Cacheable: SHORT
+Cache-Control: max-age=600, must-revalidate
+X-Cache: MISS
+Content-Type: text/html; charset=UTF-8
+X-Cache-Group: normal
+Date: Tue, 24 Feb 2015 20:49:24 GMT
+X-Pingback: http://listverse.com/xmlrpc.php
+Keep-Alive: timeout=20
+Link: <http://wp.me/p4yVmS-b1k>; rel=shortlink
+X-Type: default
+Transfer-Encoding: chunked
+Connection: close
+X-Pass-Why: 
+Set-Cookie: X-Mapping-fjhppofk=3942F84E45AF2C63B7B1E9521193F75F; path=/
+
+

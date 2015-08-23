@@ -1,0 +1,14 @@
+Date: Tue, 24 Feb 2015 20:48:46 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+X-Pingback: http://www.theredheadedtraveler.com/xmlrpc.php
+Link: <http://www.theredheadedtraveler.com/?p=7085>; rel=shortlink
+Set-Cookie: PHPSESSID=bgulk599cpqce3mhqkkuve8dt3; path=/
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+

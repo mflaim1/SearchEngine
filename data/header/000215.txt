@@ -1,0 +1,9 @@
+Date: Tue, 24 Feb 2015 20:52:18 GMT
+Server: Apache
+Set-Cookie: tmic=fde9cfb1fe936ea708f7f7248e92a2c2f50eb966%3A0; expires=Thu, 26-Mar-2015 20:52:18 GMT; path=/; domain=www.movieinsider.com
+Cache-Control: max-age=0, private
+Content-Type: text/html; charset=windows-1252
+Connection: close
+Transfer-Encoding: chunked
+
+

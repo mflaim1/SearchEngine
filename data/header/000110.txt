@@ -1,0 +1,13 @@
+Server: nginx/1.4.4
+Date: Tue, 24 Feb 2015 20:49:11 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+X-Powered-By: PHP/5.3.8
+Set-Cookie: fh_phpbb_fh_supidity_data=a%3A2%3A%7Bs%3A11%3A%22autologinid%22%3Bs%3A0%3A%22%22%3Bs%3A6%3A%22userid%22%3Bi%3A-1%3B%7D; expires=Wed, 24-Feb-2016 20:49:11 GMT; path=/; domain=supidity.informe.com
+Set-Cookie: fh_phpbb_fh_supidity_sid=cb398eb436ed24c757b42fb0f5f2ddff; path=/; domain=supidity.informe.com
+Cache-Control: private, pre-check=0, post-check=0, max-age=0
+Expires: 0
+Pragma: no-cache
+
+

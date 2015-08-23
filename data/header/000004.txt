@@ -1,0 +1,10 @@
+Date: Tue, 24 Feb 2015 20:46:47 GMT
+Server: Apache/2.2.29 (Unix) mod_ssl/2.2.29 OpenSSL/1.0.1e-fips mod_bwlimited/1.4 mod_fcgid/2.3.9
+X-Powered-By: PHP/5.4.34
+X-Pingback: http://www.freebooks.com/xmlrpc.php
+Link: <http://www.freebooks.com/?p=676>; rel=shortlink
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+

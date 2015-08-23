@@ -1,0 +1,18 @@
+Date: Tue, 24 Feb 2015 20:49:10 GMT
+Server: Apache
+X-Powered-By: PHP/5.4.37
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+Pragma: no-cache
+Cache-Control: private
+Expires: Mon, 26 Jul 1997 05:00:00 GMT
+Vary: Accept-Encoding
+Set-Cookie: PHPSESSID=d150d54fae0fc71bb497769399ab36cb; path=/
+Set-Cookie: bb2_screener_=1424810950+76.78.3.155; path=http://www.intelligentanswers.co.uk
+Last-Modified: Tue, 24 Feb 2015 20:49:10 GMT
+Content-Length: 44532
+Connection: close
+Content-Type: text/html; charset=ISO-8859-1
+
+

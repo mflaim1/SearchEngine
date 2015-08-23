@@ -1,0 +1,12 @@
+X-Powered-By: PHP/5.5.11
+Content-Type: text/html; charset=utf-8
+Set-Cookie: PHPSESSID=8atsnhjh8km6t1c615jh8ifo33; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Connection: close
+Transfer-Encoding: chunked
+Date: Tue, 24 Feb 2015 20:52:21 GMT
+Server: lighttpd/1.4.35
+
+

@@ -1,0 +1,10 @@
+Date: Tue, 24 Feb 2015 20:52:20 GMT
+Server: Apache
+X-Pingback: http://earnthis.net/xmlrpc.php
+Link: <http://earnthis.net/?p=4654>; rel=shortlink
+Vary: Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+

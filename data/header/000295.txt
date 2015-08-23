@@ -1,0 +1,15 @@
+Server: Apache-Coyote/1.1
+X-UA-Compatible: IE=Edge
+x-Instance-Name: i14latisrapp04
+Content-Type: text/html;charset=UTF-8
+Httpd-Identifier: la-web01
+Vary: Accept-Encoding
+Cache-Control: public, max-age=284
+Date: Tue, 24 Feb 2015 20:54:05 GMT
+Transfer-Encoding: chunked
+Connection: close
+Connection: Transfer-Encoding
+Set-Cookie: BIGipServerturb-app-prodla-8094=rd11o00000000000000000000ffff0a221013o8094; path=/
+Set-Cookie: BIGipServerturb-ngux-prodla-80=rd2o00000000000000000000ffff0a211072o80; path=/
+
+

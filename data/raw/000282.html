@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQMPWV9aGwcCVlNSDgc="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),u=c.length,f=i(a,o,r),d=0;u>d;d++)c[d].apply(f,n);return f}function a(t,e){u[t]=s(t).concat(e)}function s(t){return u[t]||[]}function c(){return n(e)}var u={};return{on:a,emit:e,create:c,listeners:s,_events:u}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(u){try{r("ierr",[u,(new Date).getTime(),!0])}catch(f){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(4),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(u){"stack"in u&&(t(5),t(3),"addEventListener"in window&&t(1),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(2),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:4,2:7,3:5,4:18,5:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:18,2:19,ee:"QJf3ax",gos:"7eSDFh"}],5:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:19,2:18,ee:"QJf3ax"}],6:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:19,2:18,ee:"QJf3ax"}],7:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),u=s(a),f=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new f(t);try{i.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=f.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:4,2:19,ee:"QJf3ax"}],8:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,u="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,f=e(u);if(f&&(r.rxSize=f),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,u=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var u=e(o);u&&(r.txSize=u)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var f=0;c>f;f++)n.addEventListener(s[f],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+u(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:9,3:7,4:4,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],9:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){p.proto="https"===d.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=p.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=window,c=s.document,u="addEventListener",f="attachEvent",d=(""+location).split("?")[0],p=e.exports={offset:i(),origin:d,features:{}};c[u]?(c[u]("DOMContentLoaded",o,!1),s[u]("load",n,!1)):(c[f]("onreadystatechange",r),s[f]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}],18:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],19:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,u;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){f([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return u=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,u],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,u(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,u="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,u?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){f([o,e,n,r])}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){f([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function f(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:18,ee:"QJf3ax"}]},{},["G9z0Bl",3,8]);</script>
+<script src="//cdn.optimizely.com/js/2143330601.js"></script>
+<link rel="dns-prefetch" href="//queerty-prodweb.s3.amazonaws.com">
+<link rel="dns-prefetch" href="//stats.wordpress.com">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=728">
+	<title>From &#8220;Madonna&#8221; to &#8220;MDNA&#8221;: All 12 Of Madonna&#8217;s Albums Ranked By Greatness  /  Queerty</title>
+		<meta name="robots" content="index,follow,noarchive"/>
+		<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="queerty">
+	<meta name="twitter:title" content="  From &#8220;Madonna&#8221; to &#8220;MDNA&#8221;: All 12 Of Madonna&#8217;s Albums Ranked By Greatness">
+	<meta name="twitter:creator" content="queerty">
+	<meta name="sailthru.url" content="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422"/>
+	<meta name="sailthru.date" content="2014-04-22 15:21 UTC">
+	<meta name='sailthru.description' content='HEY MR. DJ'>
+	<meta name="date" content="2014-04-22 15:21 UTC">	
+        <meta name='sailthru.tags' content='madonna'>
+
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/queerty2"/>
+<link rel="icon" href="http://queerty-assets.s3.amazonaws.com/assets/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://queerty-assets.s3.amazonaws.com/assets/favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="http://queerty-assets.s3.amazonaws.com/assets/icons/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="http://queerty-assets.s3.amazonaws.com/assets/icons/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="http://queerty-assets.s3.amazonaws.com/assets/icons/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="http://queerty-assets.s3.amazonaws.com/assets/icons/apple-touch-icon-144x144.png"/>
+<link rel="stylesheet" href="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/themes/queerty_August2012_audit/style.css?v49" type="text/css" media="screen, print"/>
+
+<meta name="sailthru.image.thumb" content="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-album-covers-MDNA-580x435.jpg"/>
+<meta name="twitter:image:src" content="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-album-covers-MDNA-580x435.jpg">
+<link rel="dns-prefetch" href="//connect.facebook.net"/>
+<link rel="alternate" type="application/rss+xml" title="Queerty &raquo; From &#8220;Madonna&#8221; to &#8220;MDNA&#8221;: All 12 Of Madonna&#8217;s Albums Ranked By Greatness Comments Feed" href="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422/feed"/>
+<link rel='stylesheet' id='pdrp_styles-css' href='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/photo-dropper/interface/css/public.css?ver=4.0.1' type='text/css' media='all'/>
+<link rel='stylesheet' id='jfb-css' href='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/wp-fb-autoconnect/style.css?ver=4.0.5' type='text/css' media='all'/>
+<link rel='stylesheet' id='jetpack_css-css' href='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/jetpack/css/jetpack.css?ver=3.2' type='text/css' media='all'/>
+<script type='text/javascript' src='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel='prev' title='Billy Graham&#8217;s Kid Finds Creative New Insult for Gay People' href='http://www.queerty.com/billy-grahams-kid-finds-creative-new-insult-for-gay-people-20140422'/>
+<link rel='next' title='This Former Disney Actor Was Definitely Not Raped By Bryan Singer' href='http://www.queerty.com/this-former-disney-actor-was-definitely-not-raped-by-bryan-singer-20140422'/>
+<link rel='shortlink' href='http://www.queerty.com/?p=315863'/>
+<script type="text/javascript">//<![CDATA[
+(function(){var aE=function(o,t,f){if(o.addEventListener)
+o.addEventListener(t,f,false);else if(o.attachEvent)
+o.attachEvent('on'+t,f);}
+var confirmSubmit=function(){if(confirm('Are you sure that you want to flag this comment?')){return true;}
+else
+return false;}
+var init=function(){var links=document.getElementsByTagName('a');var nonce='efa9c5532b';var nonce_key='ec310d5313';var re=new RegExp(nonce_key,'gi');for(var i=0;i<links.length;i++){var href=links[i].getAttribute('href');if(re.exec(href)){links[i].setAttribute('href',href.replace(re,nonce));links[i].onclick=confirmSubmit;}}}
+aE(window,'load',init);}).call(this);
+//]]></script><link media="screen" type="text/css" href="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/css/at-reply.css" rel="stylesheet"><style type='text/css'>img#wpstats{display:none}</style><link rel='canonical' href='http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422'/>
+<meta property="og:site_name" content="Queerty"/>
+<meta property="og:type" content="article"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="fb:app_id" content="153299894806318"/>
+<meta property="og:url" content="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422"/>
+<meta property="og:title" content="From &#8220;Madonna&#8221; to &#8220;MDNA&#8221;: All 12 Of Madonna&#8217;s Albums Ranked By Greatness"/>
+<meta property="og:description" content="The internet went crazy yesterday withÂ news that Madonna had completed work on her 13th studio album. In the wee hours of Monday morning,Â Fashion photographersÂ Mert and Marcus posted a picture of the QueenÂ onÂ Instagram, along with the caption:Â âIn my room listening to the NEW ALBUM!!!!! Im DYING!!!!!! LET ME LOVE YOU FROM INSIDE OUT ???????? @madonnaâ There&#039;s&hellip;"/>
+<meta property="og:image" content="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-album-covers-MDNA-580x435.jpg"/>
+<meta property="og:image:width" content="580"/>
+<meta property="og:image:height" content="435"/>
+<meta property="og:image" content="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/v2.jpg"/>
+<meta property="og:image:width" content="500"/>
+<meta property="og:image:height" content="500"/>
+<meta property="og:image" content="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/madonna-american-life.jpg"/>
+<meta property="og:image:width" content="400"/>
+<meta property="og:image:height" content="400"/>
+<meta property="article:published_time" content="2014-04-22T19:21:38+00:00"/>
+<meta property="article:modified_time" content="2014-04-22T19:23:45+00:00"/>
+<meta property="article:author" content="http://www.queerty.com/author/graham-gremore"/>
+<meta property="article:publisher" content="https://www.facebook.com/Queerty"/>
+<meta property="article:section" content="Feature"/>
+<meta property="article:tag" content="Queerty"/>
+<meta property="article:tag" content="TopStory_Secondary"/>
+<meta property="article:tag" content="Madonna"/>
+<script type='text/javascript'>var googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');gads.async=true;gads.type='text/javascript';var useSSL='https:'==document.location.protocol;gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();</script>
+<script type='text/javascript'>googletag.cmd.push(function(){googletag.defineSlot('/4564944/Queerty_Passback_Leaderboard',[728,90],'div-gpt-ad-1416440119064-16').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Passback_Leaderboard2',[728,90],'div-gpt-ad-1416440119064-17').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Passback_MREC',[300,250],'div-gpt-ad-1416440119064-18').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Passback_SKY',[160,600],'div-gpt-ad-1416440119064-19').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Extra_MREC',[300,250],'div-gpt-ad-1416440119064-2').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_LB_1',[728,90],'div-gpt-ad-1416440119064-13').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_LB_2',[728,90],'div-gpt-ad-1416440119064-14').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_MREC',[300,250],'div-gpt-ad-1416440119064-15').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Skin',[1,1],'div-gpt-ad-1416440119064-21').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Sky',[160,600],'div-gpt-ad-1416440119064-22').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Post_Sponsor',[677,120],'div-gpt-ad-1416440119064-20').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Sponsored_Article_Byline',[200,50],'div-gpt-ad-1419320000976-0').addService(googletag.pubads())
+googletag.defineSlot('/4564944/Queerty_text_sponsorship',[677,150],'div-gpt-ad-1416440119064-24').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Article_Sidebar_Fixed',[300,300],'div-gpt-ad-1416440119064-0').addService(googletag.pubads());googletag.defineSlot('/4564944/Queerty_Eyebrow',[970,66],'div-gpt-ad-1416440119064-3').addService(googletag.pubads());googletag.pubads().setTargeting("SignedIn","no");googletag.pubads().setTargeting("Year","2014");googletag.pubads().setTargeting("Tag","madonna");googletag.pubads().setTargeting("Category","feature");googletag.pubads().setTargeting("Category","queerty");googletag.pubads().setTargeting("Category","topstory_secondary");googletag.pubads().enableSingleRequest();googletag.enableServices();});</script>
+
+
+<script type="text/javascript" src="//partner.googleadservices.com/gampad/google_service.js"></script>
+<script type="text/javascript">window.google_analytics_uacct="UA-1203094-3";GS_googleAddAdSenseService("ca-pub-7540897501752280");GS_googleEnableAllServices();</script>
+<script language="JavaScript">GA_googleAddAttr("SignedIn","no");GA_googleAddAttr("Year","2014");GA_googleAddAttr("Tag","madonna");GA_googleAddAttr("Category","feature");GA_googleAddAttr("Category","queerty");GA_googleAddAttr("Category","topstory_secondary");</script>
+
+<script type="text/javascript">GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Passback_Leaderboard");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Passback_Leaderboard2");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Passback_MREC");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Passback_SKY");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Extra_MREC");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_MREC");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_LB_1");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_LB_2");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Sky");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Skin");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Post_Sponsor");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Sponsored_Article_Byline");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_text_sponsorship");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Article_Sidebar_Fixed");GA_googleAddSlot("ca-pub-7540897501752280","Queerty_Eyebrow");</script>
+<script type="text/javascript">GA_googleFetchAds();</script>
+ <!-- Quantcast Tag, part 1 --> 
+<script type="text/javascript">var _qevents=_qevents||[];(function(){var elem=document.createElement('script');elem.src=(document.location.protocol=="https:"?"https://secure":"http://edge")+".quantserve.com/quant.js";elem.async=true;elem.type="text/javascript";var scpt=document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem,scpt);})();</script>
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-1203094-3','auto');ga('require','linkid','linkid.js');ga('require','displayfeatures');ga('set','dimension1','not logged in');ga('set','dimension2','20140422');ga('send','pageview');</script>
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "http://www.queerty.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "http://www.queerty.com/?s={query}",
+      "query-input": "required name={query}"
+    }
+}
+</script>
+</head>
+<body>
+<script type='text/javascript'>GA_googleFillSlot("Queerty_Skin");</script>
+<a name="top"></a>
+<!-- LB AD Open -->
+<div class="adv_PageTop"><center>
+
+         <script type="text/javascript">GA_googleFillSlot("Queerty_LB_1");</script>
+   </center></div>
+<!-- LB AD Close -->
+<div id="pageframe">
+<div id="pageframe2">
+
+<div id="topbar">
+<div id="topbar_left">
+<a href="http://www.queerty.com/" onClick="ga('send', 'event', 'Header', 'Logo', 'Logo');">
+<script pagespeed_no_defer="">//<![CDATA[
+(function(){var g=encodeURIComponent,h=window,k=document,l="width",m="documentElement",n="height",p="length",q=this,r=function(b,d){var a=b.split("."),c=q;a[0]in c||!c.execScript||c.execScript("var "+a[0]);for(var e;a[p]&&(e=a.shift());)a[p]||void 0===d?c[e]?c=c[e]:c=c[e]={}:c[e]=d};var t=function(b){var d=b[p];if(0<d){for(var a=Array(d),c=0;c<d;c++)a[c]=b[c];return a}return[]};var u=function(b){var d=h;if(d.addEventListener)d.addEventListener("load",b,!1);else if(d.attachEvent)d.attachEvent("onload",b);else{var a=d.onload;d.onload=function(){b.call(this);a&&a.call(this)}}};var v,w=function(b,d,a,c,e){this.f=b;this.h=d;this.i=a;this.c=e;this.e={height:h.innerHeight||k[m].clientHeight||k.body.clientHeight,width:h.innerWidth||k[m].clientWidth||k.body.clientWidth};this.g=c;this.b={};this.a=[];this.d={}},x=function(b,d){var a,c,e=d.getAttribute("pagespeed_url_hash");if(a=e)if(a=!(e in b.d))if(0>=d.offsetWidth&&0>=d.offsetHeight)a=!1;else{c=d.getBoundingClientRect();var f=k.body;a=c.top+("pageYOffset"in h?h.pageYOffset:(k[m]||f.parentNode||f).scrollTop);c=c.left+("pageXOffset"in
+h?h.pageXOffset:(k[m]||f.parentNode||f).scrollLeft);f=a.toString()+","+c;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.e[n]&&c<=b.e[l])}a&&(b.a.push(e),b.d[e]=!0)};w.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&x(this,b)};r("pagespeed.CriticalImages.checkImageForCriticality",function(b){v.checkImageForCriticality(b)});r("pagespeed.CriticalImages.checkCriticalImages",function(){y(v)});var y=function(b){b.b={};for(var d=["IMG","INPUT"],a=[],c=0;c<d[p];++c)a=a.concat(t(k.getElementsByTagName(d[c])));if(0!=a[p]&&a[0].getBoundingClientRect){for(c=0;d=a[c];++c)x(b,d);a="oh="+b.i;b.c&&(a+="&n="+b.c);if(d=0!=b.a[p])for(a+="&ci="+g(b.a[0]),c=1;c<b.a[p];++c){var e=","+g(b.a[c]);131072>=a[p]+e[p]&&(a+=e)}b.g&&(e="&rd="+g(JSON.stringify(z())),131072>=a[p]+e[p]&&(a+=e),d=!0);A=a;if(d){c=b.f;b=b.h;var f;if(h.XMLHttpRequest)f=new XMLHttpRequest;else if(h.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(s){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(B){}}f&&(f.open("POST",c+(-1==c.indexOf("?")?"?":"&")+"url="+g(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}},z=function(){var b={},d=k.getElementsByTagName("IMG");if(0==d[p])return{};var a=d[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var c=0;a=d[c];++c){var e=a.getAttribute("pagespeed_url_hash");e&&(!(e in b)&&0<a[l]&&0<a[n]&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a[l]>=b[a.src].k&&a[n]>=b[a.src].j)&&(b[e]={rw:a[l],rh:a[n],ow:a.naturalWidth,oh:a.naturalHeight})}return b},A="";r("pagespeed.CriticalImages.getBeaconData",function(){return A});r("pagespeed.CriticalImages.Run",function(b,d,a,c,e,f){var s=new w(b,d,a,e,f);v=s;c&&u(function(){h.setTimeout(function(){y(s)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422','iruQp7rrl-',true,false,'zpKG0XeBvPs');
+//]]></script><img src="//queerty-assets.s3.amazonaws.com/assets/queerty-logo-450.png" alt="Queerty" width="415" height="70" id="queerty_logo" pagespeed_url_hash="2226531560" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	
+</a>
+<!-- div 'topbar_left' close --></div>
+<div id="topbar_right">
+        <div class="column_left">
+        <form method="get" id="searchform" action="http://www.queerty.com/">
+			<input type="text" id="search-input" value="" name="s" id="s" placeholder="Search Queerty"/>
+			<input type="submit" id="go" class="button" value="Search"/>
+		</form>
+        </div>
+        <div class="column_right">
+         
+<p class="member_prompt">Queerty is better as a member</p>
+<a href="https://www.queerty.com/wp/wp-login.php?redirect_to=http%3A%2F%2Fwww.queerty.com%2Ffrom-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422" onClick="ga('send', 'event', 'Header', 'login', 'Log In');">Log in</a> | <a href="https://www.queerty.com/wp/wp-login.php?action=register" onClick="ga('send', 'event', 'Header', 'register', 'Register');">Register</a>
+
+        </div>
+<!-- div 'topbar_right' close --></div>
+
+<!-- div 'topbar' close --></div>
+<div id="navbar">
+	<div id="leftnav">
+	<b class="al"><small>FOLLOW US:</small>&nbsp;</b> <a class="al" href="http://feeds.feedburner.com/queerty2" onClick="ga('send', 'event', 'Header', 'RSS', 'RSS');"><img src="http://queerty-assets.s3.amazonaws.com/assets/rss2.png" alt="RSS" width="20" height="20" align="top" pagespeed_url_hash="1772275749" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>&nbsp;</a> <div style="width:120px;" class="al"><a href="https://twitter.com/queerty" class="twitter-follow-button al" data-show-count="false" data-show-screen-name="true" data-width="120px" onClick="ga('send', 'event', 'Header', 'Twitter', 'Follow @Queerty');">Follow @queerty</a>&nbsp;</div> <div style="width:90px;" class="al"><div class="fb-like" data-href="http://facebook.com/queerty" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-ref="qty_page_like_top" onClick="ga('send', 'event', 'Header', 'FBLike', 'Like Queerty');"></div>&nbsp;&nbsp;&nbsp;</div>  
+	</div>
+<div id='rightnav'> 
+	<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#111;&#108;&#108;&#097;&#064;&#113;&#117;&#101;&#101;&#114;&#116;&#121;&#046;&#099;&#111;&#109;">Tip to share? Tell us!</a> 
+</div>
+</div>
+<!-- Queerty_Eyebrow -->
+<script type='text/javascript'>GA_googleFillSlot("Queerty_Eyebrow");</script>
+<div id="blogItems">
+<ul class="blockFeature">
+<li class="itemFeature" id="block_item1">
+
+	        <span class="slugText"><a href="http://www.queerty.com/michael-sam-hilariously-punks-nosy-tmz-reporter-with-game-of-thrones-references-20150224">WESTEROS BOUND</a></span>
+    
+
+	<a href="http://www.queerty.com/michael-sam-hilariously-punks-nosy-tmz-reporter-with-game-of-thrones-references-20150224" title="Michael Sam Hilariously Punks Nosy TMZ Reporter With <em>Game Of Thrones</em> References" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Screen-Shot-2015-02-24-at-9.10.43-AM-230x115.png" alt="Michael Sam Hilariously Punks Nosy TMZ Reporter With Game Of Thrones References" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="4086797933" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/michael-sam-hilariously-punks-nosy-tmz-reporter-with-game-of-thrones-references-20150224">
+    Michael Sam Punks TMZ Reporter With <em>Game Of Thrones</em> References    </a>
+    </div>
+</li>
+
+<li class="itemFeature" id="block_item2">
+
+	        <span class="slugText"><a href="http://www.queerty.com/same-sex-couples-may-soon-be-able-to-produce-biological-children-together-scientists-say-20150224">GAYBIES</a></span>
+    
+
+	<a href="http://www.queerty.com/same-sex-couples-may-soon-be-able-to-produce-biological-children-together-scientists-say-20150224" title="Same-Sex Couples May Soon Be Able To Produce Biological Children Together, Scientists Say" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Screen-shot-2015-02-24-at-9.42.42-AM-230x115.png" alt="Same-Sex Couples May Soon Be Able To Produce Biological Children Together, Scientists Say" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="2380869957" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/same-sex-couples-may-soon-be-able-to-produce-biological-children-together-scientists-say-20150224">
+    Same-Sex Couples May Soon Be Able To Produce Biological Children Together, Scientists Say    </a>
+    </div>
+</li>
+
+<li class="itemFeature" id="block_item3">
+
+	        <span class="slugText"><a href="http://www.queerty.com/cher-has-no-f-ing-patience-for-arkansas-homophobic-governor-20150224">SNAP OUT OF IT!</a></span>
+    
+
+	<a href="http://www.queerty.com/cher-has-no-f-ing-patience-for-arkansas-homophobic-governor-20150224" title="Cher Has No F-ing Patience For Arkansas&#8217; Homophobic Governor" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Screen-shot-2015-02-23-at-5.47.01-PM-230x115.png" alt="Cher Has No F-ing Patience For Arkansas&#039; Homophobic Governor" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="1968483051" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/cher-has-no-f-ing-patience-for-arkansas-homophobic-governor-20150224">
+    Cher Has No F-ing Patience For Arkansas&#8217; Homophobic Governor    </a>
+    </div>
+</li>
+
+<li class="itemFeature" id="block_item4">
+
+	        <span class="slugText"><a href="http://www.queerty.com/straight-guy-accidentally-visits-gay-bathhouse-freaks-out-turns-to-the-internet-for-advice-20150223">STEAM QUEEN</a></span>
+    
+
+	<a href="http://www.queerty.com/straight-guy-accidentally-visits-gay-bathhouse-freaks-out-turns-to-the-internet-for-advice-20150223" title="Straight Guy Accidentally Visits Gay Bathhouse, Freaks Out, Turns To The Internet For Advice" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/picTBPgaysaunasEuropemainpic-230x115.jpg" alt="Straight Guy Accidentally Visits Gay Bathhouse, Freaks Out, Turns To The Internet For Advice" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="3289795675" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/straight-guy-accidentally-visits-gay-bathhouse-freaks-out-turns-to-the-internet-for-advice-20150223">
+    Straight Guy Accidentally Visits Gay Bathhouse, Freaks Out, Turns To The Internet For Advice    </a>
+    </div>
+</li>
+
+
+</ul><!-- div 'blockFeature' close --></div>
+<div id="singlePageContentWrap">
+     <div class="item" id="post-355205">
+
+
+   
+      
+   
+   
+       <!-- Queerty_Post_Sponsor -->
+    <script type='text/javascript'>GA_googleFillSlot("Queerty_Post_Sponsor");</script>   
+    
+                    <span class="slugText">HEY MR. DJ</span>
+           <h1 class="hed"><a href="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422">From &#8220;Madonna&#8221; to &#8220;MDNA&#8221;: All 12 Of Madonna&#8217;s Albums Ranked By Greatness</a></h1>
+      <!-- Queerty_Post_Sponsor -->
+    <script type='text/javascript'>GA_googleFillSlot("Queerty_Sponsored_Article_Byline");</script>  
+
+	<div class="post_toolbar">
+	        <ul class="entry-share">      
+	            <li class="twitter">
+	            	<a href="https://twitter.com/intent/tweet?via=queerty&related=gaycities&url=http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422&text=From &#8220;Madonna&#8221; to &#8220;MDNA&#8221;: All 12 Of Madonna&#8217;s Albums Ranked By Greatness" onClick="ga('send', 'event', 'Share', 'Twitter', 'Share on Twitter');"> 
+	            		<span class="logo"> </span> Share on Twitter
+	            	</a>
+	            </li>
+	            
+	            <li class="like">
+		            <a class="fbshare" href="#">
+						<span class="logo"> </span> Share on Facebook
+					</a>
+	            </li>
+	          	<li class="email">
+	          		<a rel="my story" href="mailto:?subject=From+%26%238220%3BMadonna%26%238221%3B+to+%26%238220%3BMDNA%26%238221%3B%3A+All+12+Of+Madonna%26%238217%3Bs+Albums+Ranked+By+Greatness&body=http%3A%2F%2Fwww.queerty.com%2Ffrom-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422" onClick="ga('send', 'event', 'Share', 'Email', 'Email');">
+	          			<span class="logo"> </span> Email
+	          		</a>
+	          	</li>
+			  	<li class="comments_link"><a href="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422#comments" onClick="ga('send', 'event', 'Share', 'Comments', 'Comments');">
+			  	<span class="logo"> </span> Comments  (29)			  	</a></li>  	
+</ul>
+	</div>
+
+               <div class="clear"> </div>
+               <div class="item_pages">
+               
+				</div>
+                <div class="clear"> </div>
+
+                <div class="copy">
+                       <p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-album-covers-MDNA-580x435.jpg"><img class="alignright size-medium wp-image-315993" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-album-covers-MDNA-580x435-360x270.jpg" alt="Madonna-album-covers-MDNA-580x435" width="360" height="270" pagespeed_url_hash="3927634803" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>The internet went crazy yesterday withÂ news that <a href="http://www.queerty.com/madonna-completes-work-on-13th-album-heres-hoping-its-better-than-mdna-20140421/" target="_blank">Madonna had completed work on her 13th studio album</a>. In the wee hours of Monday morning,Â Fashion photographersÂ Mert and Marcus posted a picture of the QueenÂ onÂ Instagram, along with the caption:Â âIn my room listening to the NEW ALBUM!!!!! Im DYING!!!!!! LET ME LOVE YOU FROM INSIDE OUT ???????? @madonnaâ</p>
+<p>There&#8217;s no denying <a href="http://www.queerty.com/madonnas-mdna-album-biggest-second-week-sales-drop-in-chart-history-20120410/" target="_blank">Madge&#8217;s greatness has diminished</a> somewhat in recent years, but we&#8217;re not convinced she&#8217;s completely lost her magic touch. We know there&#8217;s still a masterpieceÂ or two left in her. And we can&#8217;t wait to hear what she has in store.</p>
+<p>In anticipation of her newÂ release, we&#8217;ve ranked all 12 of the Material Girl&#8217;sÂ albums in order of greatness. We can&#8217;t help but wonder where her 13th effort will fall on our chart.</p>
+<p><strong>Scroll down to see our officialÂ ranking. And let us know where you thinkÂ in the comments section below.</strong></p>
+<p><strong>12.Â <em>American LifeÂ </em>(2003)</strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/madonna-american-life.jpg"><img class="aligncenter size-medium wp-image-315864" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/madonna-american-life-360x360.jpg" alt="madonna---american-life" width="360" height="360" pagespeed_url_hash="406307479" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>It&#8217;s probably safe to say that everyone &#8212; including Madonna &#8212; would like to forget that 2003&#8217;sÂ <em>American Life</em>Â ever happened. The Kabbalah-inspired acoustic/electronica disasterÂ featuresÂ Madge/Esther awkwardly rappingÂ about &#8220;drinking a soy latte&#8221; and &#8220;getting a double shot-ey&#8221; that &#8220;goes right through her bod-ey,&#8221; among other things. The albumÂ failed to spawn anyÂ memorial singlesÂ and remains her lowest-sellingÂ to date.</p>
+<p><strong>11.Â <em>MDNAÂ </em>(2012)</strong></p>
+<p><a href="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422/madonna-mdna-cover/" rel="attachment wp-att-315871"><img class="aligncenter size-medium wp-image-315871" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/madonna-mdna-cover-360x360.jpg" alt="" width="360" height="360" pagespeed_url_hash="2836367750" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>Perhaps no other Madonna album inspires as much divide among fans as 2012&#8217;s <em><a href="http://www.queerty.com/review-is-mdna-madonnas-latest-triumph-or-tragedy-20120322/" target="_blank">MDNA</a>.</em>Â Some love it, others loathe it.<em>Â </em>This was Madonna&#8217;sÂ first albumÂ <a href="http://www.queerty.com/lady-gaga-to-madonna-i-dont-want-your-f-ing-thrown-20131113/" target="_blank">post-Lady Gaga</a>, post-divorce fromÂ Guy Richie, and post-menopause. Turns out those three things combined were a recipe for disaster, which, in hindsight, really isn&#8217;t all that surprising. <em>MDNA</em>Â was panned by critics, suffered one of the <a href="http://www.queerty.com/madonnas-mdna-album-biggest-second-week-sales-drop-in-chart-history-20120410/" target="_blank">largest sales drops in Billboard history</a> between its first and second weeks,Â had virtually no impact on radio, and was even trashed by its own producer, William Orbit. In all fairness, had it been released by another pop artist &#8212; perhaps someone younger and less established &#8212; it may have fared better. But coming from an icon like Madonna, it was, put simply, a disappointment.</p>
+<p><strong>10.Â <em>Hard CandyÂ </em>(2008)</strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/madonna_candy.jpg"><img class="aligncenter size-medium wp-image-315865" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/madonna_candy-360x360.jpg" alt="madonna_candy" width="360" height="360" pagespeed_url_hash="3238236725" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>InÂ itsÂ defense, 2008&#8217;sÂ <em>Hard Candy</em>Â had big shoes to fill. ItÂ followedÂ one of the Material Girl&#8217;sÂ strongest late-career albums to date,Â <em>Confessions on a Dance Floor,Â </em>as well as her critically-acclaimed, sold-out world tour. Miss CicconeÂ paired up with producers Timbaland, Pharrell Williams and Justin Timberlake in hopes of cashing in on their popular, of-the-moment sound. The only problem: She was about two years behind the trend.Â <i>Hard Candy</i>Â sounded dated before it was even released. On top of that, it featured one ofÂ theÂ most cringe-worthy songs from Madge&#8217;sÂ entireÂ catalog,Â <em>Spanish Lesson</em>, in whichÂ she assaults listeners&#8217; ears with incorrect Spanish-to-English translations for three and a half minutes. We still haven&#8217;t totally forgiven her for that.</p>
+<p><strong>9.Â <em>Bedtime StoriesÂ </em>(1994)</strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna_-_Bedtime_Stories.jpg"><img class="aligncenter size-full wp-image-315879" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna_-_Bedtime_Stories.jpg" alt="Madonna_-_Bedtime_Stories" width="300" height="300" pagespeed_url_hash="2260911127" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>While we love 1994&#8217;s mid-tempo, R&amp;B-infusedÂ <em>Bedtime Stories</em>Â (it makes for great sex music), the cold, hard truth is, it didn&#8217;t haveÂ nearlyÂ the same impact as many of Madonna&#8217;s other efforts. Sure itÂ spawned one of the biggest singles of her career (<em>Take A BowÂ </em>spentÂ <span style="color: #252525;">seven weeks at #1) as well as the iconic S&amp;M-themed <em>Human Nature</em>Â music video, but in terms ofÂ cultural causatum, it didn&#8217;t offerÂ much. Not even a tour. But we heart it anyway.</span></p>
+<p><strong>8.Â <em>Like A VirginÂ </em>(1984)</strong></p>
+<p><a href="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422/likeavirgin/" rel="attachment wp-att-315877"><img class="aligncenter size-medium wp-image-315877" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/likeavirgin-360x360.jpg" alt="" width="360" height="360" pagespeed_url_hash="3697890304" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>We debated listingÂ <em>Like A VirginÂ </em>at #8 since it was anÂ importantÂ album in Madonna&#8217;s career and we love it to death. It features two of her most memorable early hits âÂ &#8220;Like A Virgin&#8221;Â and<em>Â </em>&#8220;Material Girl&#8221;<em>Â â</em>Â andÂ solidified her status as a culturalÂ force to be reckoned with. However, if we&#8217;re being really honest, the album kinda sounds like an extension of her previous one âÂ 1983&#8217;sÂ <em>Madonna â</em>Â only without as many good songs. <em>Like A VirginÂ </em>has as manyÂ mediocreÂ tracks as it does good ones. Does anybody even sing along toÂ &#8220;<span style="color: #252525;">Shoo-Bee-Doo,&#8221; &#8220;Over and Over,&#8221;Â &#8220;Love Don&#8217;t Live Here Anymore&#8221;Â or &#8220;Pretender&#8221;Â anymore?</span></p>
+<p><strong>7.Â <em>EroticaÂ </em>(1992)</strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/madonna-erotica-frontal.jpg"><img class="aligncenter size-medium wp-image-315883" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/madonna-erotica-frontal-360x360.jpg" alt="madonna-erotica-frontal" width="360" height="360" pagespeed_url_hash="4137642734" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>When Madonna&#8217;s fifth studio albumÂ <em>Erotica</em>Â (or as we like to call it <em>Eroti-ca</em>)<em>Â </em>was first released in 1992, it shocked the world. So much so that it was banned in several countries. Critics were divided over the album&#8217;s quality. SomeÂ calledÂ itÂ the pop star&#8217;sÂ most ambitious to date. OthersÂ said it wasÂ nothing more thanÂ pornography for the ears. The album contains one of our all-time favorite songs, the bitch-slapping, club-bangingÂ <em>Thief of Hearts.Â </em>Seriously, why wasn&#8217;t that track made into a single?</p>
+<p><b>6.Â <em>Music</em>Â (2000)</b></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-celebration-12th-album-music-review-cover.jpg"><img class="aligncenter size-medium wp-image-315881" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-celebration-12th-album-music-review-cover-360x360.jpg" alt="Madonna celebration 12th album music review cover" width="360" height="360" pagespeed_url_hash="574396439" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>2000&#8217;sÂ <em>Music</em>Â followed Madonna&#8217;s multi-GrammyÂ Award-winning magnum opusÂ <em>Ray of Light,Â </em>and, frankly,Â sheÂ couldn&#8217;t have done a better job.Â After the whole Earth-Mother-Spiritual-Y0ga-Goddess phase, sheÂ decided to let her hair down and have a little fun, and the end result was 44 minutes of pure pop perfection.Â This is the album (and supporting tour) that made Madonna the official Queen of Pop.Â <em>Music</em>Â offers the perfect balance of pop songs, dance tracks, and mid-tempo ballads that still make for a throughly enjoyable listen nearly 15 years later.</p>
+<p><strong>5.Â <b><em>True BlueÂ </em>(1987)</b></strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/v2.jpg"><img class="aligncenter size-medium wp-image-315954" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/v2-360x360.jpg" alt="v2" width="360" height="360" pagespeed_url_hash="3519038867" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>This album single-handedly defines &#8217;80s music and remains one of the best-selling albums of all time more than 25 years after it was released. With songs like &#8220;Papa Don&#8217;t Preach,&#8221; &#8220;Open Your Heart,&#8221; &#8220;La Isla Bonita,&#8221; &#8220;Live to Tell&#8221;Â and &#8220;True Blue<em>,&#8221;Â </em>Madonna&#8217;s third studio effortÂ is jam-packed with hits. It&#8217;s no surprise it reached #1 in 28 countries and spen<span style="color: #252525;">t 34 consecutive weeks at the top of theÂ </span>European Top 100 Albums<span style="color: #252525;">Â chart, longer than any other album in history. It&#8217;s one of Madonna&#8217;s most pure funÂ albums and weÂ continue to blast it regularly to this day.</span></p>
+<p><strong>4.Â <strong><em>Confessions on a Dance FloorÂ </em>(2005)</strong></strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-Confessions-On-A-Dancefloor.jpg"><img class="aligncenter size-medium wp-image-315955" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-Confessions-On-A-Dancefloor-360x360.jpg" alt="Madonna - Confessions On A Dancefloor" width="360" height="360" pagespeed_url_hash="723809956" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>Perhaps her last trulyÂ great artistic achievement to date, <i>Confessions on a Dance FloorÂ </i>is Madonna&#8217;s late-career, disco-infused, infectious masterpiece. It&#8217;s the album that reminded us why we fell in love with herÂ in the first place. The Queen paired up with producer Stuart Price to create 12 dance songs that flowed seamlessly together. Then she slipped into a pink leotard and roller skates and started grinding on a boombox. Seriously, how could anyoneÂ <em>not</em> loveÂ everything about that?Â Our only criticism is the song &#8220;I Love New York,&#8221; in which Madge rhymes &#8220;New York&#8221; with &#8220;dork.&#8221; But by 2005, a bad rhyme or questionable lyric here and there had becomeÂ a staple item in every Madonna record.</p>
+<p><strong>3.Â <em>Ray of LightÂ </em>(1998)</strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/ray-of-light.jpg"><img class="aligncenter size-medium wp-image-315972" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/ray-of-light-360x360.jpg" alt="ray-of-light" width="360" height="360" pagespeed_url_hash="2752228714" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>Oh boy, we&#8217;re down to the top three&#8230; There&#8217;s no denyingÂ <em>Ray of Light</em> was Madonna&#8217;s most inspired album âÂ lyrically, musically, thematically. It&#8217;s also the album that won her her first Grammy. And itÂ proved thatÂ sheÂ could actually âÂ well âÂ <em>sing</em>. HerÂ voice was in top form afterÂ <em>Evita</em>.Â Madonna has oftenÂ called theÂ <em>Ray of Light-</em>era her favorite, and we can understand why. It&#8217;s the albumÂ that finally got people toÂ take her seriously as a musician. It&#8217;s also the album she&#8217;s never been quite able to match. Was it just a stroke of genius? Or does sheÂ have anotherÂ <em>Ray of Light</em>Â in her somewhere?</p>
+<p><strong>2.Â <em>Like A PrayerÂ </em>(1989)</strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-celebration-12th-album-like-a-prayer-review-cover.jpg"><img class="aligncenter size-medium wp-image-315976" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/Madonna-celebration-12th-album-like-a-prayer-review-cover-360x360.jpg" alt="Madonna celebration 12th album like a prayer review cover" width="360" height="360" pagespeed_url_hash="850909063" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>The title track alone is what landsÂ <em>Like A Prayer</em> in the #2 spot of our list. To this day, every time it comes on the radio, we can&#8217;t help but turn it up. The album, too, is pretty damn good. Madonna tackles someÂ ratherÂ loftyÂ themes âÂ the Catholic church, her divorce from Sean Penn, her mother&#8217;s death âÂ but songs likeÂ <em>Express Yourself</em> andÂ <em>Cherish</em> keep the mood from getting too heavy. All in all,Â <em>Like A Prayer</em> is probably one of her most personal albums. And it achieves subtle greatness without trying too hard.</p>
+<p><strong>1.</strong>Â <strong><em>Madonna</em> (1983)</strong></p>
+<p><a href="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/MadonnaTheFirstAlbum1983AlbumCover.jpg"><img class="aligncenter size-full wp-image-315983" src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2014/04/MadonnaTheFirstAlbum1983AlbumCover.jpg" alt="MadonnaTheFirstAlbum1983AlbumCover" width="300" height="300" pagespeed_url_hash="901003767" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a></p>
+<p>In the beginning, there wasÂ <em><a href="http://www.queerty.com/seven-ways-to-celebrate-the-30th-anniversary-of-madonnas-debut-album-20130727/" target="_blank">Madonna</a>.Â </em>The Queen&#8217;s self-titled debut comes in at #1 on our list because âÂ well â it&#8217;s the album that started it all. WithoutÂ <em>Madonna</em> there would be no Madonna. On top of that, the songs are pretty dope. This is the album that brought us &#8220;Holiday,&#8221; &#8220;Lucky Star,&#8221; &#8220;Burning Up&#8221;Â and &#8220;Borderline.&#8221;Â But, truthfully, every song is good. It&#8217;s crazy to think this album turned 30 last year. Here&#8217;s to 30 more!Â <em>L&#8217;chaim!</em></p>
+                </div>
+                <div class="item_pages">
+               				</div>
+                <div class="clear"> </div>
+    <!-- Queerty_Post_Sponsor -->
+    <script type='text/javascript'>GA_googleFillSlot("Queerty_text_sponsorship");</script>   
+                <div class="clear"> </div>
+
+
+                <div class="commentprompt"><strong><a href="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422#comments">Jump to <span class="commentcount_number">29</span> Comments</a></strong></div>
+        <div class="post_toolbar bottom">
+        	<ul class="entry-share">
+	            <li class="twitter">
+	            	<a href="https://twitter.com/intent/tweet?via=queerty&related=gaycities&url=http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422&text=From &#8220;Madonna&#8221; to &#8220;MDNA&#8221;: All 12 Of Madonna&#8217;s Albums Ranked By Greatness" onClick="ga('send', 'event', 'Share', 'Twitter', 'Bottom:Share on Twitter');"> 
+	            		<span class="logo"> </span> Share on Twitter
+	            	</a>
+	            </li>
+
+	          	<li class="email">
+	          		<a rel="my story" href="mailto:?subject=From+%26%238220%3BMadonna%26%238221%3B+to+%26%238220%3BMDNA%26%238221%3B%3A+All+12+Of+Madonna%26%238217%3Bs+Albums+Ranked+By+Greatness&body=http%3A%2F%2Fwww.queerty.com%2Ffrom-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422" onClick="ga('send', 'event', 'Share', 'Email', 'Bottom: Email');">
+	          			<span class="logo"> </span> Email
+	          		</a>
+	          	</li>         	
+	 			
+	 			<li class="linkedin"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/Share" data-url="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422" data-counter="right"></script></li>
+		
+								<li class="like">
+					<div class="fb-like" data-href="http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422" data-colorscheme="light" data-layout="button_count" data-action="recommend" data-show-faces="true" data-ref="qty_post_bottom"></div>
+				</li>
+			</ul>	
+          </div>
+                     
+                <div class="tags">
+                 
+                <strong>By:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Graham Gremore				<br><strong>On:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apr 22, 2014                
+                <br><strong>Tagged:</strong> <a href="http://www.queerty.com/tag/madonna" rel="tag">Madonna</a></div>
+                
+                <div class="clear"> </div>
+                
+<script type="text/javascript">window.jQuery=jQuery.noConflict(true);window.$=window.jQuery;$(function(){$(".like .fbshare").click(function(){FB.ui({method:'feed',display:'popup',link:'http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422',},function(response){ga('send','event','Share','Facebook','Share on Facebook');});});$(".blockFeature .itemFeature").click(function(event){ga('send','event','BlockFeature',$(this).attr("id"),$(this).attr("id"));});$(".blockFeaturebottom .itemFeature").click(function(event){ga('send','event','BlockFeatureBottom',$(this).attr("id"),$(this).attr("id"));});$("#sidebarFeatureSpreadVertical .item").click(function(event){ga('send','event','sidebarFeature',$(this).attr("id"),$(this).attr("id"));});});</script>
+
+<script language='JavaScript'>var OutbrainPermaLink='http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422';var OB_demoMode=false;var OBITm="1303885482189";var OB_langJS='http://widgets.outbrain.com/lang_en.js';if(typeof(OB_Script)!='undefined')
+OutbrainStart();else{var OB_Script=true;var str='<script src="http://widgets.outbrain.com/OutbrainRater.js" type="text/javascript"><\/script>';document.write(str);}</script>
+                <a name="respond"></a>
+
+                
+	<li class="comments comments-area" id="comments">
+
+	
+			<div class="subhead">29 Comments</div>
+
+		<ul class="commentlist">
+			
+
+		<li class="comment byuser comment-author-retrocub even thread-even depth-1 comments_item " id="li-comment-821818">
+			<a name="comment-821818"></a>
+			<div class="comments_avatar">
+				<img alt='retrocub' src='http://1.gravatar.com/avatar/dbb948407d6ac7c8d712986fe371bd93?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2069566847" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					retrocub				</span>
+				
+				<p>Um, MANY Madonna fans, and music critics for that matter, all see &#8220;American Life&#8221; now as a lost masterpiece, and many of us have always loved it.  Speak for YOURSELVES. As for &#8220;MDNA&#8221;, it was NOT critically panned- it actually received many excellent reviews upon its release. &#8220;MDNA&#8221; also had the #1 grossing tour of the year, beating Lady Gaga&#8217;s stupid tour.  You failed to mention that.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 4:44 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821818", "retrocub")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-kfitz421 odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821827">
+			<a name="comment-821827"></a>
+			<div class="comments_avatar">
+				<img alt='kfitz421' src='http://1.gravatar.com/avatar/3c59f4e8b5deffb0aae06ccffd345e36?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2758526072" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					<a href='http://kfitzmedia.virb.com' rel='external nofollow' class='url'>kfitz421</a>				</span>
+				
+				<p>Uhhhhh, this is way off.</p>
+<p>American Life is great from beginning to end. When she&#8217;s rapping in the title song, American Life, she&#8217;s being ironic. Also, she was a middle aged blonde white woman at the time and she obviously knew that rapping would piss people off so that was just another reason to do it. American Life has seriously  great lyrics, i.e. intervention, nobody knows me, nothing fails, x-static process and love profusion to just name a few.</p>
+<p>Hard Candy is lyrically fun and inspiring, especially Incredible. She was just dancing and having fun &#8220;I know that you think I&#8217;m crazy and I don&#8217;t want you to save me I have never felt this free&#8221; &#8211; and yall think she&#8217;s crazy.</p>
+<p>MDNA &#8211; awesome. amazing tour.</p>
+<p>Bed Time Stories is more than just an album to have sex to. Great lyrics about the loss of love ones, staying true to yourself, expressing yourself and not repressing yourself and saying fuck off to someone you were in love with. IF ANYTHING, this is not the album to have sex to, I guess you just think all R&amp;B-ish sounding things equal sex.</p>
+<p>Putting True Blue before music is fucked up, so is making MADONNA #1???? WHAT?<br/>
+MADONNA is a great album, but I think number one is wayyyyyyyy out of line.</p>
+<p>I don&#8217;t think it is quite possible to compare all her albums because they are all so different, I think everyone has a favorite based on what phase in their lives that they are at. Currently, I would say that Bed Time Stories is my most listened to but I am always changing which of these GREAT albums that I listen to on repeat.</p>
+<p>I&#8217;ve never had the urge to sign in and write something until I saw this post.<br/>
+S<br/>
+M<br/>
+H</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 4:59 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821827", "kfitz421")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-kfitz421 even thread-even depth-1 comments_item " id="li-comment-821830">
+			<a name="comment-821830"></a>
+			<div class="comments_avatar">
+				<img alt='kfitz421' src='http://1.gravatar.com/avatar/3c59f4e8b5deffb0aae06ccffd345e36?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2758526072" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					<a href='http://kfitzmedia.virb.com' rel='external nofollow' class='url'>kfitz421</a>				</span>
+				
+				<p>@<a class="atr_link" href="#comment-821818" rel="nofollow">retrocub</a>: PREACH</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 5:00 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821830", "kfitz421")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-Michael_Dalton odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821836">
+			<a name="comment-821836"></a>
+			<div class="comments_avatar">
+				<img alt='Michael' src='https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash1/275133_100002496241994_3351076_q.jpg' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="1452126723" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					<a href='http://www.facebook.com/michael.dalton.908' rel='external nofollow' class='url'>Michael</a>				</span>
+				
+				<p>Why is it when ever fans here negative comments about MDNA they always bring up the bloody tour that supported it? What, the gross made it a better album?  We&#8217;re talking about a studio album that was rushed, for the most part infantile, and far beneath her proven high standards.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 5:16 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821836", "Michael")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-tysdaddy even thread-even depth-1 comments_item " id="li-comment-821839">
+			<a name="comment-821839"></a>
+			<div class="comments_avatar">
+				<img alt='TysDaddy' src='http://1.gravatar.com/avatar/f1524a06d7a6270ca7491a9738b0816d?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="350642522" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					TysDaddy				</span>
+				
+				<p>Like a Virgin made Madonna Madonna more than Madonna did. Music is WAY too high on this list. Bedtime Stories should also be higher. Good thing this is OPINION not FACT!</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 5:22 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821839", "TysDaddy")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-lykeitiz odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821851">
+			<a name="comment-821851"></a>
+			<div class="comments_avatar">
+				<img alt='lykeitiz' src='http://1.gravatar.com/avatar/f095d4246237cc3143503310ebd5435f?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="1350793139" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					lykeitiz				</span>
+				
+				<p>I&#8217;m shocked at how much of this list I DO agree with.  Art is subjective, and at least this was written with thought.  However, I still think there&#8217;s no way &#8220;Madonna&#8221; is #1, or that &#8220;MDNA&#8221; is #11.  No way.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 5:54 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821851", "lykeitiz")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-kingeidilleg even thread-even depth-1 comments_item " id="li-comment-821855">
+			<a name="comment-821855"></a>
+			<div class="comments_avatar">
+				<img alt='KingEidilleg' src='http://0.gravatar.com/avatar/4bbc2a67f2ba344d734b32a7e797f67f?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2760967635" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					KingEidilleg				</span>
+				
+				<p>Suppose it&#8217;s a matter of taste&#8230;.but like retrocub mentioned MDNA was NOT critically panned. &#8216;Some&#8217; guys/girls on the internet were very vocal about their dislike of it though. Most critics liked it, but didn&#8217;t love it. My least favourite album is Hard Candy, and by a longshot I might add.<br/>
+Might as well give my top 12:<br/>
+1 Ray Of Light<br/>
+2 Confessions On A Dancefloor<br/>
+3 Like A Prayer<br/>
+4 Music<br/>
+5 True Blue<br/>
+6 American Life<br/>
+7 Erotica (You&#8217;re absolutely right about Thief of Hearts!)<br/>
+8 MDNA<br/>
+9 Madonna<br/>
+10 Bedtime Stories<br/>
+11 Like A Virgin<br/>
+12 Hard Candy</p>
+<p>To be honest the rankings differ from day to day, all depends on my mood &#8230;. except for number 1 and number 12, they&#8217;re pretty much set in stone.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 6:13 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821855", "KingEidilleg")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-blackceo odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821870">
+			<a name="comment-821870"></a>
+			<div class="comments_avatar">
+				<img alt='Blackceo' src='http://1.gravatar.com/avatar/f798b2e33e414f005ced431024841527?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2547984751" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					Blackceo				</span>
+				
+				<p>Ok I will be busting out the Madonna tracks for my evening run tonight thanks to this article.  But, umm&#8230;(and I know that music is subjective&#8230;but)where is Something to Remember on this list.  Granted I love the pop stuff, particularly from the 80s period, but I loved the album Something to Remember.  It was that period where she was criticized for not having ballads and not really being a great &#8220;singer&#8221;.  When I&#8217;m not in the mood for the pop stuff, I love the laid back flow of Something to Remember.</p>
+<p>I Want You, I&#8217;ll Remember (which was the theme and song from my senior prom for which I had major influence since I was senior class president), Take a Bow, This Used to be my Playground, Something to Remember, and Rain are my favorites from that album.  I just love that album so much.</p>
+<p>Probably won&#8217;t get much agreement but my all time favorite Madonna song and video remains &#8220;Bad Girl&#8221; from Erotica.  The musical arrangement and lyrics are just haunting and actually reflect a brief period in my life (slutty and high risk behaviors, drugs, smoking) that I can relate to.   I think it is one of Madonna&#8217;s most underrated songs and it is my favorite music video of hers.  She was so beautiful in it and I just loved how that video was directed.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 7:02 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821870", "Blackceo")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-chpoof even thread-even depth-1 comments_item " id="li-comment-821891">
+			<a name="comment-821891"></a>
+			<div class="comments_avatar">
+				<img alt='MMDD' src='http://1.gravatar.com/avatar/3112486932e9fb671d6c908bf3fb0011?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="1784441316" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					MMDD				</span>
+				
+				<p>I know it&#8217;s a soundtrack, but I&#8217;M BREATHLESS should have made this list.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 8:02 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821891", "MMDD")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-distinguetraces odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821904">
+			<a name="comment-821904"></a>
+			<div class="comments_avatar">
+				<img alt='DistingueTraces' src='http://1.gravatar.com/avatar/52d7f34d4156b95e45e06bfc034b9790?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="1840555471" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					DistingueTraces				</span>
+				
+				<p><i>Music</i> should be way higher, and <i>Ray of Light</i> is obviously #1 by far in terms of quality, if not necessarily cultural impact.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 9:09 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821904", "DistingueTraces")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-Anthony_Powers even thread-even depth-1 comments_item " id="li-comment-821933">
+			<a name="comment-821933"></a>
+			<div class="comments_avatar">
+				<img alt='WhyteRabbit' src='https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/1118358_774495916_917427165_q.jpg' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="1121443116" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					<a href='http://www.facebook.com/XwhyterabbitX' rel='external nofollow' class='url'>WhyteRabbit</a>				</span>
+				
+				<p>i think it should look much more like this&#8230;<br/>
+12 Hard Candy (2008)<br/>
+11 MDNA (2012)<br/>
+10 Music (2000)<br/>
+09 True Blue (1987)<br/>
+08 American Life (2003)<br/>
+07 Madonna (1983)<br/>
+06 Bedtime Stories (1994)<br/>
+05 Like A Virgin (1984)<br/>
+04 Erotica (1992)<br/>
+03 Confessions on a Dance Floor (2005)<br/>
+02 Like A Prayer (1989)<br/>
+01 Ray of Light (1998)</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 10:39 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821933", "WhyteRabbit")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-Anthony_Powers odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821934">
+			<a name="comment-821934"></a>
+			<div class="comments_avatar">
+				<img alt='WhyteRabbit' src='https://fbcdn-profile-a.akamaihd.net/hprofile-ak-ash2/1118358_774495916_917427165_q.jpg' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="1121443116" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					<a href='http://www.facebook.com/XwhyterabbitX' rel='external nofollow' class='url'>WhyteRabbit</a>				</span>
+				
+				<p>and &#8220;I&#8217;m Breathless&#8221; (as it was a studio album) should be about #5</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 10:41 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821934", "WhyteRabbit")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-mr-guy even thread-even depth-1 comments_item " id="li-comment-821938">
+			<a name="comment-821938"></a>
+			<div class="comments_avatar">
+				<img alt='PRINCE OF SNARKNESS aka DIVKID' src='http://1.gravatar.com/avatar/51020b7f03c610553cf3e4a9662c7e18?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="471802882" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					PRINCE OF SNARKNESS aka DIVKID				</span>
+				
+				<p>I hadn&#8217;t realised just how bad and dated her album art is particularly for one so steeped in the visual, arguably her chief claim to fame, other than fucking her way up and then back down again. So in that spirit here is my Madonna cover art rundown:</p>
+<p>1) Erotica &#8212; Simple and effective and still looking fresh.<br/>
+2) True Blue &#8212; strong visual. Classic.<br/>
+3) Madonna &#8212;  okay<br/>
+The rest are not worth discussing, with their wishy-washy insipid palettes (when they&#8217;re not sickly garish), graceless overfussy typefaces and complete absence of the visually arresting or of having any claim to that timelessness as seen in the work of some of her peers. There&#8217;s an obvious read across to the music. Put simply: a hack.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 10:46 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821938", "PRINCE OF SNARKNESS aka DIVKID")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-southsam7 odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821944">
+			<a name="comment-821944"></a>
+			<div class="comments_avatar">
+				<img alt='southsam7' src='http://0.gravatar.com/avatar/80b94f3cc44a55c2e6fe6f785248a6d9?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="1847779970" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					southsam7				</span>
+				
+				<p>I don&#8217;t agree with the rankings but any Madonna publicity/news is good.</p>
+<p>The author left out several albums: Something to Remember, GHVII, Immaculate Collection, Dick Tracy and several others.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 11:32 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821944", "southsam7")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-wooly101 even thread-even depth-1 comments_item " id="li-comment-821946">
+			<a name="comment-821946"></a>
+			<div class="comments_avatar">
+				<img alt='wooly101' src='http://1.gravatar.com/avatar/923b0f2203747bf20e210041c1cfa9e2?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="947624532" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					wooly101				</span>
+				
+				<p>Gee, must have been a slow day for news.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 11:42 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821946", "wooly101")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-erikwm odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821950">
+			<a name="comment-821950"></a>
+			<div class="comments_avatar">
+				<img alt='erikwm' src='http://1.gravatar.com/avatar/54ceaf66447d63390917724374809f18?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="4150151232" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					erikwm				</span>
+				
+				<p>&#8220;Like a Prayer&#8221; &#8212; and the Blond Ambition Tour that followed it &#8212; was the pinnacle of Madonna&#8217;s career. She was never better than in that moment.</p>
+<p>&#8220;Like a Prayer&#8221; was her best album, but the Blond Ambition Tour was her greatest masterpiece. Rolling Stone ranked it the best tour of the 90&#8217;s. The video for it won a Grammy. It was chronicled in the immensely entertaining &#8220;Truth or Dare&#8221; documentary. It was unlike anything done before and has been the template for all other pop stars since.</p>
+<p>Blond Ambition was Madonna&#8217;s moment &#8212; a masterpiece.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 22, 2014 at 11:57 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("821950", "erikwm")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-nixter even thread-even depth-1 comments_item " id="li-comment-821978">
+			<a name="comment-821978"></a>
+			<div class="comments_avatar">
+				<img alt='Nixter' src='http://1.gravatar.com/avatar/5369956172aeb55aad72a9a63a2db869?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2547211190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					Nixter				</span>
+				
+				<p>@<a class="atr_link" href="#comment-821950" rel="nofollow">erikwm</a>: Sure, but not for me-it was her WHO&#8217;S THAT GIRL tour- wow!Loved it! I was smitten!</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 2:44 am					&middot; <span class="atr_reply" onclick='atr_replyTo("821978", "Nixter")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-nixter odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-821979">
+			<a name="comment-821979"></a>
+			<div class="comments_avatar">
+				<img alt='Nixter' src='http://1.gravatar.com/avatar/5369956172aeb55aad72a9a63a2db869?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2547211190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					Nixter				</span>
+				
+				<p>@<a class="atr_link" href="#comment-821933" rel="nofollow">WhyteRabbit</a>: TRUE BLUE #9?! Are you crazy??!!</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 2:44 am					&middot; <span class="atr_reply" onclick='atr_replyTo("821979", "Nixter")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-quintolover even thread-even depth-1 comments_item " id="li-comment-821989">
+			<a name="comment-821989"></a>
+			<div class="comments_avatar">
+				<img alt='QuintoLover' src='http://0.gravatar.com/avatar/cc738da4e268de90a746379fc7f6b440?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2528664311" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					QuintoLover				</span>
+				
+				<p>After reading this list, I decided to actually listen to all of Madonna&#8217;s albums (mostly just familiar with singles). Listening to them in order and&#8230; Okay, I gotta say I am liking Madonna so far but there is NO WAY this can be her BEST album. Lucky Star is even more inane than todays pop trash. Love most of the other songs butâ¦ there&#8217;s only 8! Loving most of the songs shouldn&#8217;t be very difficult with such a small track list.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 3:58 am					&middot; <span class="atr_reply" onclick='atr_replyTo("821989", "QuintoLover")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-ivanph odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-822007">
+			<a name="comment-822007"></a>
+			<div class="comments_avatar">
+				<img alt='IvanPH' src='http://0.gravatar.com/avatar/4047870331b49f2b77656e2e6c6f861c?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="17331848" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					IvanPH				</span>
+				
+				<p>EROTICA is just number 7?! Seriously, bottom half? What an abomination. It has some of her most creative and catchy songs ever like EROTICA, RAIN, FEVER, BAD GIRL, DEEPER &amp; DEEPER. It should be on top, if not, in the top three with Ray of Light and True Blue.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 7:39 am					&middot; <span class="atr_reply" onclick='atr_replyTo("822007", "IvanPH")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-jonjct even thread-even depth-1 comments_item " id="li-comment-822011">
+			<a name="comment-822011"></a>
+			<div class="comments_avatar">
+				<img alt='jonjct' src='http://0.gravatar.com/avatar/6e66b9440f9cefa1f4cd88f088565e27?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2155342406" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					jonjct				</span>
+				
+				<p>I am NOT a fan.  For many, many reasons, but I&#8217;ll skip that right now.  I was surprised that she has just 12 albums/CDs, I thought that after a 35 year career that there would be more. Ray of Light has to be #1.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 8:01 am					&middot; <span class="atr_reply" onclick='atr_replyTo("822011", "jonjct")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-middleagespread odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-822015">
+			<a name="comment-822015"></a>
+			<div class="comments_avatar">
+				<img alt='middleagespread' src='http://0.gravatar.com/avatar/cc25c5ad8eb7e1aedca33288c161411b?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="4263717267" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					middleagespread				</span>
+				
+				<p>Burning Up and Vogue are still my favorite songs after all these years. Burning Up says it perfectly for me about how I am in when I first meet a guy. Vogue takes me back to the fun times with my best friend.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 8:47 am					&middot; <span class="atr_reply" onclick='atr_replyTo("822015", "middleagespread")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-madonnaids even thread-even depth-1 comments_item " id="li-comment-822032">
+			<a name="comment-822032"></a>
+			<div class="comments_avatar">
+				<img alt='Madonnaids' src='http://0.gravatar.com/avatar/4037808a6428360749044e758cd5943a?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="553401092" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					Madonnaids				</span>
+				
+				<p>This is the woman who started AIDS. She is RESPONSIBLE for it. At least Gaga can sing and dance .</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 12:30 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("822032", "Madonnaids")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-trelin odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-822059">
+			<a name="comment-822059"></a>
+			<div class="comments_avatar">
+				<img alt='trelin' src='http://1.gravatar.com/avatar/5b5f94a6039732038f9929def9131cf1?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2357336599" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					trelin				</span>
+				
+				<p>@<a class="atr_link" href="#comment-821870" rel="nofollow">Blackceo</a>: Bad Girl is probably the BEST video of her career.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 2:20 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("822059", "trelin")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-fluo even thread-even depth-1 comments_item " id="li-comment-822149">
+			<a name="comment-822149"></a>
+			<div class="comments_avatar">
+				<img alt='FLUO' src='http://1.gravatar.com/avatar/3f4b7516fcfcac6ad6cbc39d6a433310?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="826274236" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					FLUO				</span>
+				
+				<p>@<a class="atr_link" href="#comment-821818" rel="nofollow">retrocub</a>: @<a class="atr_link" href="#comment-821818" rel="nofollow">retrocub</a>: Damn right! What about &#8216;Mother and Father&#8217; ? &#8216;Easy Ride&#8217;? Also, &#8216;Hollywood&#8217; is one of her criminally underrated singles</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 4:56 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("822149", "FLUO")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-blackceo odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-822248">
+			<a name="comment-822248"></a>
+			<div class="comments_avatar">
+				<img alt='Blackceo' src='http://1.gravatar.com/avatar/f798b2e33e414f005ced431024841527?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2547984751" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					Blackceo				</span>
+				
+				<p>My partner was giving me the stank face wondering what the hell was up with the all Madonna songs last night and today. I said blame Queerty.  I hadn&#8217;t listened to some of her stuff in awhile and I was up so late jamming last night and was in my office at work just raping the replay on Bad Girl and Live to Tell.  Good times.  Thanks Queerty.</p>
+<p>@<a class="atr_link" href="#comment-822059" rel="nofollow">trelin</a>: </p>
+<p>Yeah I agree.  It is ashame Bad Girl is so overlooked because the song and video received positive reviews.  I&#8217;ve read that at the time of its release people were sort of over the over sexualized Madonna videos and her sex book was also out around that time.  However, Bad Girl as far as I know is the only video I can think of where she really tells a story.  It was just so artistically beautiful.  She only performed that song live once; on Saturday Night Live.  It was her best live vocal performances in my opinion.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 9:00 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("822248", "Blackceo")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-danemichael even thread-even depth-1 comments_item " id="li-comment-822257">
+			<a name="comment-822257"></a>
+			<div class="comments_avatar">
+				<img alt='danemichael' src='http://0.gravatar.com/avatar/862fc1f19d08c755b2f97899e79216c7?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="1297018010" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					danemichael				</span>
+				
+				<p>Hated Erotica. As a matter of fact it is the only Madonna CD I got rid of within a month of having it. Madonna and Like a Virgin is the my two favorite.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 9:49 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("822257", "danemichael")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-hotshot70 odd alt thread-odd thread-alt depth-1 comments_item " id="li-comment-822263">
+			<a name="comment-822263"></a>
+			<div class="comments_avatar">
+				<img alt='hotshot70' src='http://1.gravatar.com/avatar/b75673691a840cf56ca3b4f78f20994c?s=60&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="3111724116" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					hotshot70				</span>
+				
+				<p>12 albums? She is too damn old to continue. GRANDMADONNA should stop trying to be relevant and get dentures to replace that horrid grill, eat prunes and take geritol. No one cares about her anymore, except as the joke she has become. &#8220;Oh, look, Madonna&#8217;s crashing the awards show again! She wants to be Lady Gaga!&#8221;</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 23, 2014 at 10:31 pm					&middot; <span class="atr_reply" onclick='atr_replyTo("822263", "hotshot70")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+
+
+		<li class="comment byuser comment-author-newecreator even thread-even depth-1 comments_item " id="li-comment-822296">
+			<a name="comment-822296"></a>
+			<div class="comments_avatar">
+				<img alt='newecreator' src='http://0.gravatar.com/avatar/ea3aa927d0cf9f03328df714f724b421?s=60&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D60&amp;r=PG' class='avatar avatar-60 photo' height='60' width='60' pagespeed_url_hash="2676524947" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>			</div>
+			<div class="comments_item_body">
+				<span class="comments_item_count">
+					newecreator				</span>
+				
+				<p>Confessions is the best in my opinion.</p>
+				
+								
+				<div class="comments_item_date">
+					Apr 24, 2014 at 12:00 am					&middot; <span class="atr_reply" onclick='atr_replyTo("822296", "newecreator")' title="Reply to this comment">@Reply<img class="atr_reply_img" alt="Reply to this comment" src="http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/reply-w-comment-preview-custom/reply.png" pagespeed_url_hash="3196342190" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></span>				    &middot; 					 
+				    				</div>
+			</div>
+
+       </li>
+       		
+	</li><!-- #comment-## -->
+		</ul><!-- .commentlist -->
+	
+	
+
+		
+
+    <!-- Comment Form -->    
+    
+     								<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Add your Comment <small><a rel="nofollow" id="cancel-comment-reply-link" href="/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422#respond" style="display:none;">Cancel reply</a></small></h3>
+									<div class="nocomments"><h2>Please <a href="https://www.queerty.com/wp/wp-login.php?redirect_to=http%3A%2F%2Fwww.queerty.com%2Ffrom-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422">log in</a> to add your comment</h2><p>Need an account? <strong><a href="https://www.queerty.com/wp/wp-login.php?action=register">Register</a></strong> It's free and easy.</p></div>												</div><!-- #respond -->
+			 <br clear=all><br>
+</div><!-- #comments -->
+                <div class="clear"> </div>
+
+        
+
+        
+    <div id="singlePageContentWrap_Sidebar">
+            <!-- BOX AD Open -->
+<div class="advBox_SidebarRight" align="center">
+      <script type="text/javascript">GA_googleFillSlot("Queerty_MREC");</script>
+</div>
+<!-- BOX AD Close -->
+
+<div id="sidebarFeatureSpreadVertical">
+<div class='sidebarTitle topLine'>POPULAR ON QUEERTY</div>  
+<!--using transient-->	<div class="item" id="sidebarfeature_item1">		
+		<div class="thumb">
+			<a href="http://www.queerty.com/wanda-sykes-remembers-that-time-she-accidentally-came-out-to-america-20150224" title="Wanda Sykes Remembers That Time She Accidentally Came Out To America"><img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Screen-Shot-2015-02-24-at-10.19.25-AM-150x80.png" alt="Wanda Sykes Remembers That Time She Accidentally Came Out To America" class="feature-sidebar-thumbnail" width="150" height="80" pagespeed_url_hash="2112607416" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+		</div>		
+						
+		<div class="hed">			
+							<span class="slugText">IN QUOTES</span>
+				
+			<p><a href="http://www.queerty.com/wanda-sykes-remembers-that-time-she-accidentally-came-out-to-america-20150224">
+			Wanda Sykes Remembers That Time She Accidentally Came Out To America			</a></p>
+		</div>
+	<!-- div 'item' close --></div>
+	<div class="item" id="sidebarfeature_item2">		
+		<div class="thumb">
+			<a href="http://www.queerty.com/padding-101-just-one-of-the-invaluable-topics-to-be-covered-at-rupauls-first-ever-drag-con-20150224" title="" Padding 101" Just One Of The Invaluable Topics To Be Covered At RuPaul's First Ever "Drag Con""><img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/drag-race-6-queen-collage-150x80.jpg" alt="&quot;Padding 101&quot; Just One Of The Invaluable Topics To Be Covered At RuPaul&#039;s First Ever &quot;Drag Con&quot;" class="feature-sidebar-thumbnail" width="150" height="80" pagespeed_url_hash="3761963404" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+		</div>		
+						
+		<div class="hed">			
+							<span class="slugText">SO YOU THINK YOU CAN DRAG</span>
+				
+			<p><a href="http://www.queerty.com/padding-101-just-one-of-the-invaluable-topics-to-be-covered-at-rupauls-first-ever-drag-con-20150224">
+			"Padding 101" Just One Of The Invaluable Topics To Be Covered At RuPaul's First Ever "Drag Con"			</a></p>
+		</div>
+	<!-- div 'item' close --></div>
+	<div class="item" id="sidebarfeature_item3">		
+		<div class="thumb">
+			<a href="http://www.queerty.com/michael-sam-hilariously-punks-nosy-tmz-reporter-with-game-of-thrones-references-20150224" title="Michael Sam Hilariously Punks Nosy TMZ Reporter With <em>Game Of Thrones</em> References"><img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Screen-Shot-2015-02-24-at-9.10.43-AM-150x80.png" alt="Michael Sam Hilariously Punks Nosy TMZ Reporter With Game Of Thrones References" class="feature-sidebar-thumbnail" width="150" height="80" pagespeed_url_hash="777614013" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+		</div>		
+						
+		<div class="hed">			
+							<span class="slugText">WESTEROS BOUND</span>
+				
+			<p><a href="http://www.queerty.com/michael-sam-hilariously-punks-nosy-tmz-reporter-with-game-of-thrones-references-20150224">
+			Michael Sam Punks TMZ Reporter With <em>Game Of Thrones</em> References			</a></p>
+		</div>
+	<!-- div 'item' close --></div>
+	<div class="item" id="sidebarfeature_item4">		
+		<div class="thumb">
+			<a href="http://www.queerty.com/take-a-looking-tour-of-san-francisco-with-seven-hotspots-20150224" title="Take A " Looking" Tour Of San Francisco With Seven Hotspots"><img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Looking_2-150x80.jpg" alt="Take A &quot;Looking&quot; Tour Of San Francisco With Seven Hotspots" class="feature-sidebar-thumbnail" width="150" height="80" pagespeed_url_hash="3958672716" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></a>
+		</div>		
+						
+		<div class="hed">			
+							<span class="slugText">City Of Love</span>
+				
+			<p><a href="http://www.queerty.com/take-a-looking-tour-of-san-francisco-with-seven-hotspots-20150224">
+			Take A "Looking" Tour Of San Francisco With Seven Hotspots			</a></p>
+		</div>
+	<!-- div 'item' close --></div>
+
+<!-- div 'sidebarFeatureSpreadVertical' close --></div>
+
+<div class='sidebarTitle topLine' style="font-size:20px;">QUEERTY DAILY</div>
+<form action="http://queerty.us1.list-manage2.com/subscribe/post?u=ecab442566f15d8d4dcf64b0d&amp;id=221c27272a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" style="padding-bottom:15px;">
+	<input type="email" value="" name="EMAIL" class="required email" style="width:150px; border: 1px solid #a5a5a5;
+padding:6px 5px; font-size:16px; width:170px;" required id="mce-EMAIL" placeholder="Enter Email Address"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-size: 16px;
+padding: 7px 12px;
+background: #3e433e;
+color: #fff;
+border: 0;
+cursor: pointer;
+text-transform: uppercase;
+border-radius: 0;
+-webkit-box-shadow: 0;
+-webkit-appearance: none;">
+	<input type="hidden" value="2" name="group[5409][2]" id="mce-group[5409]-5409-0">
+	<input type="hidden" value="1" name="group[5409][1]" id="mce-group[5409]-5409-1">
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_ecab442566f15d8d4dcf64b0d_221c27272a" value=""></div>
+   <br/>
+</form>
+<a href="https://twitter.com/queerty" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @queerty</a>&nbsp;
+<div class="fb-like" data-href="http://www.facebook.com/queerty" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+<br clear=all><br>
+
+      <script type="text/javascript">GA_googleFillSlot("Queerty_Article_Sidebar_Fixed");</script>
+
+<br>
+
+<br>
+<div class='sidebarTitle topLine'>FROM AROUND THE WEB</div>
+
+<script type="text/JavaScript">var OB_permalink='http://www.queerty.com/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422';var OB_Template="queerty";var OB_widgetId='SB_1';var OB_langJS='http://widgets.outbrain.com/lang_en.js';if(typeof(OB_Script)!='undefined')
+OutbrainStart();else
+{var OB_Script=true;var str="<script src='http://widgets.outbrain.com/outbrainWidget.js'; type='text/javascript'></"+"script>";document.write(str);}</script>
+   
+<!-- SKY AD Open -->
+<div class="advBox_SidebarRight" id="articlelowersky">
+      <script type="text/javascript">GA_googleFillSlot("Queerty_Sky");</script>
+</div>
+<!-- SKY AD Close -->    <!-- div 'singlePageContentWrap_Sidebar' close --></div>
+<!-- div 'singlePageContentWrap' close --></div>
+
+<!-- Queerty_LB_2 -->
+<div style="margin-left:-10px">
+<script type='text/javascript'>GA_googleFillSlot("Queerty_LB_2");</script>
+</div>
+<ul class="blockFeaturebottom">
+<!--using transient--><li class="itemFeature " id="bottom_block_item1">
+
+	        <span class="slugText"><a href="http://www.queerty.com/photos-inside-chicagos-arcade-party-20150224">PARTY HAUS</a></span>
+    
+
+	<a href="http://www.queerty.com/photos-inside-chicagos-arcade-party-20150224" title="PHOTOS: Inside Chicago&#8217;s Arcade Party" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/10978676_966709490008473_6714716256953869077_n-230x115.jpg" alt="PHOTOS: Inside Chicago&#039;s Arcade Party" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="191991920" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/photos-inside-chicagos-arcade-party-20150224">
+    PHOTOS: Inside Chicago&#8217;s Arcade Party    </a>
+    </div>
+</li>
+
+<li class="itemFeature " id="bottom_block_item2">
+
+	        <span class="slugText"><a href="http://www.queerty.com/wanda-sykes-remembers-that-time-she-accidentally-came-out-to-america-20150224">IN QUOTES</a></span>
+    
+
+	<a href="http://www.queerty.com/wanda-sykes-remembers-that-time-she-accidentally-came-out-to-america-20150224" title="Wanda Sykes Remembers That Time She Accidentally Came Out To America" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Screen-Shot-2015-02-24-at-10.19.25-AM-230x115.png" alt="Wanda Sykes Remembers That Time She Accidentally Came Out To America" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="2877274590" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/wanda-sykes-remembers-that-time-she-accidentally-came-out-to-america-20150224">
+    Wanda Sykes Remembers That Time She Accidentally Came Out To America    </a>
+    </div>
+</li>
+
+<li class="itemFeature " id="bottom_block_item3">
+
+	        <span class="slugText"><a href="http://www.queerty.com/padding-101-just-one-of-the-invaluable-topics-to-be-covered-at-rupauls-first-ever-drag-con-20150224">SO YOU THINK YOU CAN DRAG</a></span>
+    
+
+	<a href="http://www.queerty.com/padding-101-just-one-of-the-invaluable-topics-to-be-covered-at-rupauls-first-ever-drag-con-20150224" title="&#8220;Padding 101&#8243; Just One Of The Invaluable Topics To Be Covered At RuPaul&#8217;s First Ever &#8220;Drag Con&#8221;" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/drag-race-6-queen-collage-230x115.jpg" alt="&quot;Padding 101&quot; Just One Of The Invaluable Topics To Be Covered At RuPaul&#039;s First Ever &quot;Drag Con&quot;" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="4207895738" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/padding-101-just-one-of-the-invaluable-topics-to-be-covered-at-rupauls-first-ever-drag-con-20150224">
+    &#8220;Padding 101&#8243; Just One Of The Invaluable Topics To Be Covered At RuPaul&#8217;s First Ever &#8220;Drag Con&#8221;    </a>
+    </div>
+</li>
+
+<li class="itemFeature " id="bottom_block_item4">
+
+	        <span class="slugText"><a href="http://www.queerty.com/take-a-looking-tour-of-san-francisco-with-seven-hotspots-20150224">City Of Love</a></span>
+    
+
+	<a href="http://www.queerty.com/take-a-looking-tour-of-san-francisco-with-seven-hotspots-20150224" title="Take A &#8220;Looking&#8221; Tour Of San Francisco With Seven Hotspots" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Looking_2-230x115.jpg" alt="Take A &quot;Looking&quot; Tour Of San Francisco With Seven Hotspots" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="4207011834" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/take-a-looking-tour-of-san-francisco-with-seven-hotspots-20150224">
+    Take A &#8220;Looking&#8221; Tour Of San Francisco With Seven Hotspots    </a>
+    </div>
+</li>
+
+<li class="itemFeature  blockFeatureHidden " id="bottom_block_item5">
+
+	        <span class="slugText"><a href="http://www.queerty.com/whiplash-fellini-satyricon-young-bodies-heal-quickly-more-20150224">SCREENING ROOM</a></span>
+    
+
+	<a href="http://www.queerty.com/whiplash-fellini-satyricon-young-bodies-heal-quickly-more-20150224" title="&#8220;Whiplash,&#8221; &#8220;Fellini Satyricon,&#8221; &#8220;Young Bodies Heal Quickly,&#8221; &#038; More!" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/Whiplash-Scream-230x115.jpg" alt="&quot;Whiplash,&quot; &quot;Fellini Satyricon,&quot; &quot;Young Bodies Heal Quickly,&quot; &amp; More!" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="2298772334" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/whiplash-fellini-satyricon-young-bodies-heal-quickly-more-20150224">
+    &#8220;Whiplash,&#8221; &#8220;Fellini Satyricon,&#8221; &#8220;Young Bodies Heal Quickly,&#8221; &#038; More!    </a>
+    </div>
+</li>
+
+<li class="itemFeature  blockFeatureHidden " id="bottom_block_item6">
+
+	        <span class="slugText"><a href="http://www.queerty.com/the-imitation-game-director-defends-films-absence-of-gay-sex-scenes-20150223">IN QUOTES</a></span>
+    
+
+	<a href="http://www.queerty.com/the-imitation-game-director-defends-films-absence-of-gay-sex-scenes-20150223" title="<em>The Imitation Game</em> Director Defends Film&#8217;s Absence Of Gay Sex Scenes" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/the_imitation_game_turing_machine_still-230x115.jpg" alt="The Imitation Game Director Defends Film&#039;s Absence Of Gay Sex Scenes" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="384673820" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/the-imitation-game-director-defends-films-absence-of-gay-sex-scenes-20150223">
+    <em>The Imitation Game</em> Director Defends Film&#8217;s Absence Of Gay Sex Scenes    </a>
+    </div>
+</li>
+
+<li class="itemFeature  blockFeatureHidden " id="bottom_block_item7">
+
+	        <span class="slugText"><a href="http://www.queerty.com/looking-at-looking-season-2-episode-6-20150223">JUST "LOOKING"</a></span>
+    
+
+	<a href="http://www.queerty.com/looking-at-looking-season-2-episode-6-20150223" title="Looking At &#8220;Looking&#8221;: Season 2, Episode 6" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/s2e06-cover-230x115.jpg" alt="Looking At &quot;Looking&quot;: Season 2, Episode 6" class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="2737995698" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/looking-at-looking-season-2-episode-6-20150223">
+    Looking At &#8220;Looking&#8221;: Season 2, Episode 6    </a>
+    </div>
+</li>
+
+<li class="itemFeature  blockFeatureHidden " id="bottom_block_item8">
+
+	        <span class="slugText"><a href="http://www.queerty.com/married-d-c-lawyer-may-have-been-murdered-during-secret-gay-hookup-20150223">DANGEROUS LIAISON</a></span>
+    
+
+	<a href="http://www.queerty.com/married-d-c-lawyer-may-have-been-murdered-during-secret-gay-hookup-20150223" title="Married D.C. Lawyer May Have Been Murdered During Secret Gay Hookup" class="thumb">
+		<img src="http://queerty-prodweb.s3.amazonaws.com/wp/docs/2015/02/gay-men-bad-in-bed-230x115.jpg" alt="Married D.C. Lawyer May Have Been Murdered During Secret Gay Hookup " class="wipebanner-feature-thumbnail" width="230" height="115" pagespeed_url_hash="928972322" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>	</a>
+
+
+    <div class="hed"><a href="http://www.queerty.com/married-d-c-lawyer-may-have-been-murdered-during-secret-gay-hookup-20150223">
+    Married D.C. Lawyer May Have Been Murdered During Secret Gay Hookup    </a>
+    </div>
+</li>
+
+
+</ul><!-- div 'blockFeature' close -->   
+<br clear=all>
+<div class="footer">
+<ul class="footerSections">
+<li id="footerRecentPosts"><div class="blockTitle">Most Recent Posts</div>
+<!--using transient--><ul class="list" id="footerRecentPosts">
+	<li class="hed">
+		<a href="http://www.queerty.com/photos-inside-chicagos-arcade-party-20150224">PHOTOS: Inside Chicago's Arcade Party</a> 
+		<strong><a href="http://www.queerty.com/photos-inside-chicagos-arcade-party-20150224#comments"></a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/wanda-sykes-remembers-that-time-she-accidentally-came-out-to-america-20150224">Wanda Sykes Remembers That Time She Accidentally Came Out To America</a> 
+		<strong><a href="http://www.queerty.com/wanda-sykes-remembers-that-time-she-accidentally-came-out-to-america-20150224#comments">(1)</a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/padding-101-just-one-of-the-invaluable-topics-to-be-covered-at-rupauls-first-ever-drag-con-20150224">"Padding 101" Just One Of The Invaluable Topics To Be Covered At RuPaul's First Ever "Drag Con"</a> 
+		<strong><a href="http://www.queerty.com/padding-101-just-one-of-the-invaluable-topics-to-be-covered-at-rupauls-first-ever-drag-con-20150224#comments"></a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/michael-sam-hilariously-punks-nosy-tmz-reporter-with-game-of-thrones-references-20150224">Michael Sam Hilariously Punks Nosy TMZ Reporter With <em>Game Of Thrones</em> References</a> 
+		<strong><a href="http://www.queerty.com/michael-sam-hilariously-punks-nosy-tmz-reporter-with-game-of-thrones-references-20150224#comments">(11)</a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/take-a-looking-tour-of-san-francisco-with-seven-hotspots-20150224">Take A "Looking" Tour Of San Francisco With Seven Hotspots</a> 
+		<strong><a href="http://www.queerty.com/take-a-looking-tour-of-san-francisco-with-seven-hotspots-20150224#comments">(1)</a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/same-sex-couples-may-soon-be-able-to-produce-biological-children-together-scientists-say-20150224">Same-Sex Couples May Soon Be Able To Produce Biological Children Together, Scientists Say</a> 
+		<strong><a href="http://www.queerty.com/same-sex-couples-may-soon-be-able-to-produce-biological-children-together-scientists-say-20150224#comments">(15)</a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/cher-has-no-f-ing-patience-for-arkansas-homophobic-governor-20150224">Cher Has No F-ing Patience For Arkansas' Homophobic Governor</a> 
+		<strong><a href="http://www.queerty.com/cher-has-no-f-ing-patience-for-arkansas-homophobic-governor-20150224#comments">(9)</a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/whiplash-fellini-satyricon-young-bodies-heal-quickly-more-20150224">"Whiplash," "Fellini Satyricon," "Young Bodies Heal Quickly," & More!</a> 
+		<strong><a href="http://www.queerty.com/whiplash-fellini-satyricon-young-bodies-heal-quickly-more-20150224#comments"></a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/straight-guy-accidentally-visits-gay-bathhouse-freaks-out-turns-to-the-internet-for-advice-20150223">Straight Guy Accidentally Visits Gay Bathhouse, Freaks Out, Turns To The Internet For Advice</a> 
+		<strong><a href="http://www.queerty.com/straight-guy-accidentally-visits-gay-bathhouse-freaks-out-turns-to-the-internet-for-advice-20150223#comments">(26)</a></strong>
+	</li>
+	<li class="hed">
+		<a href="http://www.queerty.com/the-imitation-game-director-defends-films-absence-of-gay-sex-scenes-20150223"><em>The Imitation Game</em> Director Defends Film's Absence Of Gay Sex Scenes</a> 
+		<strong><a href="http://www.queerty.com/the-imitation-game-director-defends-films-absence-of-gay-sex-scenes-20150223#comments">(51)</a></strong>
+	</li>
+</ul>
+</li>
+<li>
+<div class="blockTitle">Contact Us</div>
+<center><b>
+<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#104;&#111;&#108;&#108;&#097;&#064;&#113;&#117;&#101;&#101;&#114;&#116;&#121;&#046;&#099;&#111;&#109;">Share a tip or link</a>&nbsp; - &nbsp;<a href="http://queerty.uservoice.com/">Technical Site Bug or Suggestions</a> - &nbsp;<a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#097;&#100;&#118;&#101;&#114;&#116;&#105;&#115;&#105;&#110;&#103;&#064;&#113;&#117;&#101;&#101;&#114;&#116;&#121;&#046;&#099;&#111;&#109;">Advertise with us</a></b></center><br>
+<div class="blockTitle">Search Queerty</div>
+<form method="get" id="footsearchform" action="http://www.queerty.com/">
+<input type="text" class="inputbox" value="" name="s" id="s_bot" size="45"/><input type="submit" id="searchsubmit" class="button" value="Search"/>
+</form><br>
+<div class="blockTitle">People in the News</div>
+<a href="http://www.queerty.com/tag/Colby-Keller">Colby Keller</a> &middot; <a href="http://www.queerty.com/tag/Neil-Patrick-Harris">Neil Patrick Harris</a> &middot; <a href="http://www.queerty.com/tag/Tom-Daley">Tom Daley</a> &middot; <a href="http://www.queerty.com/tag/Laverne-Cox">Laverne Cox</a> &middot; <a href="http://www.queerty.com/tag/Nick-Gruber">Nick Gruber</a> &middot; <a href="http://www.queerty.com/tag/Zac-Efron">Zac Efron</a> &middot; <a href="http://www.queerty.com/tag/Nick-Jonas">Nick Jonas</a> &middot; <a href="http://www.queerty.com/tag/Zachary-Quinto">Zachary Quinto</a> &middot; 	
+
+<div class="blockTitle">Popular Tags</div>
+<a href='http://www.queerty.com/tag/barack-obama' class='tag-link-450' title='1,645 topics' style='font-size: 11.438596491228pt;'>Barack Obama</a>
+<a href='http://www.queerty.com/tag/california' class='tag-link-115' title='919 topics' style='font-size: 9.6140350877193pt;'>California</a>
+<a href='http://www.queerty.com/tag/celebs' class='tag-link-2868' title='1,144 topics' style='font-size: 10.315789473684pt;'>Celebs / Celebrities</a>
+<a href='http://www.queerty.com/tag/coming-out' class='tag-link-572' title='571 topics' style='font-size: 8.2105263157895pt;'>Coming Out</a>
+<a href='http://www.queerty.com/tag/crime' class='tag-link-881' title='958 topics' style='font-size: 9.7543859649123pt;'>Crime</a>
+<a href='http://www.queerty.com/tag/discrimination' class='tag-link-1503' title='968 topics' style='font-size: 9.8245614035088pt;'>Discrimination</a>
+<a href='http://www.queerty.com/tag/dont-ask-dont-tell' class='tag-link-1260' title='1,192 topics' style='font-size: 10.456140350877pt;'>Don't Ask Don't Tell (DADT)</a>
+<a href='http://www.queerty.com/tag/education' class='tag-link-1932' title='659 topics' style='font-size: 8.6315789473684pt;'>Education</a>
+<a href='http://www.queerty.com/tag/entertainment' class='tag-link-2215' title='2,094 topics' style='font-size: 12.140350877193pt;'>Entertainment</a>
+<a href='http://www.queerty.com/tag/fashion' class='tag-link-13' title='873 topics' style='font-size: 9.4736842105263pt;'>Fashion</a>
+<a href='http://www.queerty.com/tag/gay' class='tag-link-2223' title='6,605 topics' style='font-size: 15.649122807018pt;'>Gay</a>
+<a href='http://www.queerty.com/tag/gay-marriage' class='tag-link-33488' title='651 topics' style='font-size: 8.5614035087719pt;'>gay marriage</a>
+<a href='http://www.queerty.com/tag/gossip' class='tag-link-90' title='2,070 topics' style='font-size: 12.140350877193pt;'>Gossip</a>
+<a href='http://www.queerty.com/tag/health' class='tag-link-1025' title='749 topics' style='font-size: 9.0526315789474pt;'>Health</a>
+<a href='http://www.queerty.com/tag/hivaids' class='tag-link-2961' title='542 topics' style='font-size: 8pt;'>HIV/AIDS</a>
+<a href='http://www.queerty.com/tag/homophobia' class='tag-link-446' title='1,322 topics' style='font-size: 10.736842105263pt;'>Homophobia</a>
+<a href='http://www.queerty.com/tag/human-rights-campaign-hrc' class='tag-link-1126' title='603 topics' style='font-size: 8.3508771929825pt;'>Human Rights Campaign (HRC)</a>
+<a href='http://www.queerty.com/tag/humor' class='tag-link-247' title='684 topics' style='font-size: 8.7719298245614pt;'>Humor</a>
+<a href='http://www.queerty.com/tag/john-mccain' class='tag-link-2196' title='535 topics' style='font-size: 8pt;'>John McCain</a>
+<a href='http://www.queerty.com/tag/lawsuits' class='tag-link-1450' title='539 topics' style='font-size: 8pt;'>Lawsuits</a>
+<a href='http://www.queerty.com/tag/marriage' class='tag-link-117' title='3,162 topics' style='font-size: 13.40350877193pt;'>Marriage</a>
+<a href='http://www.queerty.com/tag/marriage-equality' class='tag-link-9767' title='1,502 topics' style='font-size: 11.157894736842pt;'>Marriage Equality</a>
+<a href='http://www.queerty.com/tag/media' class='tag-link-1566' title='1,362 topics' style='font-size: 10.80701754386pt;'>Media</a>
+<a href='http://www.queerty.com/tag/military' class='tag-link-393' title='880 topics' style='font-size: 9.4736842105263pt;'>Military</a>
+<a href='http://www.queerty.com/tag/models' class='tag-link-1060' title='590 topics' style='font-size: 8.280701754386pt;'>Models</a>
+<a href='http://www.queerty.com/tag/morning-goods' class='tag-link-1' title='1,270 topics' style='font-size: 10.59649122807pt;'>Morning Goods</a>
+<a href='http://www.queerty.com/tag/movies' class='tag-link-80' title='833 topics' style='font-size: 9.3333333333333pt;'>Movies</a>
+<a href='http://www.queerty.com/tag/music' class='tag-link-42' title='1,967 topics' style='font-size: 11.929824561404pt;'>Music</a>
+<a href='http://www.queerty.com/tag/music-videos' class='tag-link-2691' title='1,133 topics' style='font-size: 10.245614035088pt;'>Music Videos</a>
+<a href='http://www.queerty.com/tag/news' class='tag-link-34' title='7,363 topics' style='font-size: 16pt;'>News</a>
+<a href='http://www.queerty.com/tag/new-york' class='tag-link-61' title='910 topics' style='font-size: 9.6140350877193pt;'>New York</a>
+<a href='http://www.queerty.com/tag/photos' class='tag-link-7718' title='2,911 topics' style='font-size: 13.122807017544pt;'>Photos</a>
+<a href='http://www.queerty.com/tag/politics' class='tag-link-114' title='3,567 topics' style='font-size: 13.754385964912pt;'>Politics</a>
+<a href='http://www.queerty.com/tag/porn' class='tag-link-139' title='549 topics' style='font-size: 8.0701754385965pt;'>Porn</a>
+<a href='http://www.queerty.com/tag/prop-8' class='tag-link-9582' title='841 topics' style='font-size: 9.4035087719298pt;'>Prop 8</a>
+<a href='http://www.queerty.com/tag/queerty' class='tag-link-310' title='906 topics' style='font-size: 9.6140350877193pt;'>Queerty</a>
+<a href='http://www.queerty.com/tag/religion' class='tag-link-264' title='1,705 topics' style='font-size: 11.508771929825pt;'>Religion</a>
+<a href='http://www.queerty.com/tag/republicans' class='tag-link-2198' title='556 topics' style='font-size: 8.140350877193pt;'>Republicans</a>
+<a href='http://www.queerty.com/tag/risque' class='tag-link-13230' title='612 topics' style='font-size: 8.4210526315789pt;'>risque</a>
+<a href='http://www.queerty.com/tag/scandal' class='tag-link-2764' title='641 topics' style='font-size: 8.5614035087719pt;'>Scandal</a>
+<a href='http://www.queerty.com/tag/sex' class='tag-link-60' title='904 topics' style='font-size: 9.6140350877193pt;'>Sex</a>
+<a href='http://www.queerty.com/tag/sports' class='tag-link-167' title='674 topics' style='font-size: 8.7017543859649pt;'>Sports</a>
+<a href='http://www.queerty.com/tag/television' class='tag-link-52' title='1,393 topics' style='font-size: 10.877192982456pt;'>Television</a>
+<a href='http://www.queerty.com/tag/transgender' class='tag-link-154' title='592 topics' style='font-size: 8.280701754386pt;'>Transgender</a>
+<a href='http://www.queerty.com/tag/video' class='tag-link-2390' title='842 topics' style='font-size: 9.4035087719298pt;'>Video</a>	
+</li>
+<li><div class="blockTitle">On GayCities</div>
+<ul>
+<li><b><a href="http://www.gaycities.com/">GayCities</a></b> - Uncover the best of what's happening
+<li><b><a href="http://www.gaycities.com/iphone/">GayCities iPhone App</a></b> - Find nearby places & events</li>
+<li><br><b>Share your take in these Popular Cities:</b>
+<ul class="list">
+	<li><a href="http://newyork.gaycities.com/">New York</a></li>
+	<li><a href="http://sanfrancisco.gaycities.com/">San Francisco</a></li>
+	<li><a href="http://chicago.gaycities.com/">Chicago</a></li>
+	<li><a href="http://losangeles.gaycities.com/">Los Angeles</a></li>
+	<li><a href="http://washingtondc.gaycities.com/">Washington DC</a></li>
+	<li><a href="http://atlanta.gaycities.com/">Atlanta</a></li>
+	<li><a href="http://sandiego.gaycities.com/">San Diego</a></li>
+	<li><a href="http://fortlauderdale.gaycities.com/">Fort Lauderdale</a></li>
+	<li><a href="http://dallas.gaycities.com/">Dallas</a></li>
+	<li><a href="http://toronto.gaycities.com/">Toronto</a></li>
+	<li><a href="http://london.gaycities.com/">London</a></li>
+	<li><a href="http://amsterdam.gaycities.com/">Amsterdam</a></li>
+	<li><a href="http://www.gaycities.com/places/"><b>See all 200+ cities...</b></a></li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<br clear=all>
+<div style="width:900px; height:70px; margin-left:auto; margin-right:auto;">
+	<div style="float:left; height:50px; width:150px; padding-top:20px;">
+		<div class="g-ytsubscribe" data-channel="queertytv" data-layout="default" style="height:50px;"></div>
+	</div>
+	<div class="fb-like" data-href="http://facebook.com/queerty" data-width="650" data-ref="qty_page_like_bottom" data-show-faces="true" data-send="false" style="float:left;"></div>
+
+</div>
+<br clear=all>
+<div id="bottomMenuBar">
+<a href="http://www.queerty.com/">Queerty Home</a> | <a href="http://www.queerty.com/advertising/">Advertise</a> | <a href="http://www.queerty.com/queertys-comment-policy/">Comments Policy</a> | <a href="http://www.queerty.com/privacy-policy/">Privacy Statement</a> | <a href="http://www.queerty.com/terms-of-use/">Terms of Use</a> | Copyright 2015 Queerty, Inc.
+<!-- div 'bottomMenuBar' close -->
+</div>
+
+</div>
+<!-- div 'pageframe2' close --></div>
+<!-- div 'pageframe' close --></div>
+<!-- Compete XL Code for queerty.com -->
+
+
+  <!-- Load Twitter JS-API asynchronously -->
+  <script type="text/javascript" charset="utf-8">window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}});}(document,"script","twitter-wjs"));twttr.ready(function(twttr){twttr.events.bind('tweet',function(event){ga('send','social','twitter','tweet','http://www.queerty.com/creepy-man-desires-nothing-more-than-for-you-to-watch-him-masturbate-in-the-window-20150223');});twttr.events.bind('follow',function(event){ga('send','social','twitter','follow','http://www.queerty.com/creepy-man-desires-nothing-more-than-for-you-to-watch-him-masturbate-in-the-window-20150223');});});</script>
+<!--end twitter-->
+
+<!--facebook script-->
+<div id="fb-root"></div>
+<script>window.fbAsyncInit=function(){FB.init({appId:153299894806318,channelUrl:'//www.queerty.com/assets/channel.php',status:true,cookie:true,xfbml:true});FB.Event.subscribe('edge.create',function(href,widget){ga('send','social','facebook','like','http://www.queerty.com/creepy-man-desires-nothing-more-than-for-you-to-watch-him-masturbate-in-the-window-20150223');});};(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="//connect.facebook.net/en_US/all.js";fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script>
+
+<!--end facebook-->
+
+<!-- Quantcast Tag, part 2 -->
+<script type="text/javascript">_qevents.push({qacct:"p-3a_FtJ1e9ZPvw"});</script>
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-3a_FtJ1e9ZPvw.gif" border="0" height="1" width="1" alt="Quantcast" pagespeed_url_hash="3412200495"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- Begin comScore Tag -->
+<script>var _comscore=_comscore||[];_comscore.push({c1:"2",c2:"10348241"});(function(){var s=document.createElement("script"),el=document.getElementsByTagName("script")[0];s.async=true;s.src=(document.location.protocol=="https:"?"https://sb":"http://b")+".scorecardresearch.com/beacon.js";el.parentNode.insertBefore(s,el);})();</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=10348241&cv=2.0&cj=1" pagespeed_url_hash="2737372043"/>
+</noscript>
+<!-- End comScore Tag -->
+
+
+<!--tynt-->
+
+<!-- WP-FB AutoConnect Init v4.0.5 (NEW API) -->
+    <div id="fb-root"></div>
+    <script type="text/javascript">window.fbAsyncInit=function()
+{FB.init({appId:'153299894806318',status:true,cookie:true,xfbml:true,oauth:true,channelUrl:'http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-content/plugins/wp-fb-autoconnect/assets/channel.html'});};(function(){var e=document.createElement('script');e.src=document.location.protocol+'//connect.facebook.net/en_US/all.js';e.async=true;document.getElementById('fb-root').appendChild(e);}());</script>
+    
+<!-- WP-FB AutoConnect Callback v4.0.5 -->
+<form id="wp-fb-ac-fm" name="jfb_js_login_callback_form" method="post" action="https://www.queerty.com/wp/wp-login.php">
+          <input type="hidden" name="redirectTo" value="/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422"/>
+          <input type="hidden" name="access_token" id="jfb_access_token" value="0"/>
+          <input type="hidden" name="fbuid" id="jfb_fbuid" value="0"/>
+          <input type="hidden" id="autoconnect_nonce" name="autoconnect_nonce" value="5debc7a2fe"/><input type="hidden" name="_wp_http_referer" value="/from-madonna-to-mdna-all-12-of-madonnas-albums-ranked-by-greatness-20140422"/>             
+     </form>
+
+        <script type="text/javascript">function jfb_js_login_callback()
+{FB.getLoginStatus(function(response)
+{if(!response.authResponse)
+{return;}
+jQuery('#jfb_access_token').val(response.authResponse.accessToken);jQuery("#jfb_fbuid").val(response.authResponse.userID);document.jfb_js_login_callback_form.submit();})}</script>
+    <script type='text/javascript' src='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-includes/js/jquery/ui/jquery.ui.widget.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-includes/js/jquery/ui/jquery.ui.mouse.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='http://d3qke3e8pe2nmf.cloudfront.net/wp/wp-includes/js/jquery/ui/jquery.ui.sortable.min.js?ver=1.10.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201509'></script>
+<script type='text/javascript'>//<![CDATA[
+var FB_WP=FB_WP||{};FB_WP.queue={_methods:[],flushed:false,add:function(fn){FB_WP.queue.flushed?fn():FB_WP.queue._methods.push(fn)},flush:function(){for(var fn;fn=FB_WP.queue._methods.shift();){fn()}FB_WP.queue.flushed=true}};window.fbAsyncInit=function(){FB.init({"xfbml":true,"appId":"153299894806318"});if(FB_WP&&FB_WP.queue&&FB_WP.queue.flush){FB_WP.queue.flush()}}
+//]]></script>
+<script type="text/javascript">(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="http:\/\/connect.facebook.net\/en_US\/all.js";fjs.parentNode.insertBefore(js,fjs)}(document,"script","facebook-jssdk"));</script>
+
+	<script src="http://stats.wp.com/e-201509.js" type="text/javascript"></script>
+	<script type="text/javascript">st_go({v:'ext',j:'1:3.2',blog:'39647146',post:'315863',tz:'-5'});var load_cmc=function(){linktracker_init(39647146,315863,2);};if(typeof addLoadEvent!='undefined')addLoadEvent(load_cmc);else load_cmc();</script><div id="fb-root"></div><script type="text/javascript">(function(){var po=document.createElement('script');po.type='text/javascript';po.async=true;po.src='https://apis.google.com/js/plusone.js?onload=onLoadCallback';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(po,s);})();</script>
+
+<!--rt-->
+<img src="http://ad.yieldmanager.com/pixel?id=2197031&t=2" width="1" height="1" pagespeed_url_hash="3903064946" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/>
+<!--end rt-->
+
+<script type="text/javascript">setTimeout(function(){var a=document.createElement("script");var b=document.getElementsByTagName("script")[0];a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/4975.js?"+Math.floor(new Date().getTime()/3600000);a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)},1);</script>
+<script type="text/javascript">__compete_code='7ea3533ac1fd2202c98ed4f371959b32';</script>
+<script type="text/javascript" src="//c.compete.com/bootstrap/s/7ea3533ac1fd2202c98ed4f371959b32/queerty-com/bootstrap.js"></script>
+<noscript>
+    <img width="1" height="1" src="https://ssl-queerty-com-7ea353.c-col.com" pagespeed_url_hash="3888267828"/>
+</noscript>
+<div class="printfooter">
+	<b>Copyright 2015 Queerty, Inc.</b><br>
+	Follow Queerty at Queerty.com, twitter.com/queerty and facebook.com/queerty. <br>
+</div>
+
+<script type="text/javascript">window.jQuery=jQuery.noConflict(true);window.$=window.jQuery;$(function(){$(".footer #footerRecentPosts a").click(function(event){ga('send','event','Footer','RecentPosts',$(this).text());event.stopImmediatePropagation();});$(".footer a").click(function(){ga('send','event','Footer',$(this).attr("href"),$(this).text());});});</script>
+
+<script>(function(w,d){var s1=d.getElementsByTagName('script')[0],s=d.createElement('script'),cid='361';s.src='//tru.am/scripts/ta-pagesocial-sdk.js';if(s.addEventListener){s.addEventListener('load',function(){w.TRUE_ANTHEM.configure(cid);},false);}else{s.onreadystatechange=function(){if(s.readyState in{loaded:1,complete:1}){s.onreadystatechange=null;w.TRUE_ANTHEM.configure(cid);}};}
+s1.parentNode.insertBefore(s,s1);}(window,document));</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-2.newrelic.com","licenseKey":"b33a58a88f","applicationID":"4222096","transactionName":"ZVwEbBBQXhJTVUdQDFwWM0oLHlkPVlNLFxNaSQ==","queueTime":0,"applicationTime":10,"atts":"SRsHGlhKTRw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-476.min.js"}</script></body>
+</html>
+<!-- Dynamic page generated in 0.862 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2015-02-24 15:08:03 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

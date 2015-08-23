@@ -1,0 +1,14 @@
+Server: nginx/1.6.2
+Date: Tue, 24 Feb 2015 20:52:47 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: close
+X-Powered-By: PHP/5.4.37
+Expires: Tue, 24 Feb 2015 21:52:47 GMT
+Cache-Control: max-age=3600
+Pragma: no-cache
+Set-Cookie: cinemablend_session=18b09b70000cc48bb4a143b98205db30; path=/; domain=.cinemablend.com
+X-Cache-Status: HIT
+View: desktop
+
+

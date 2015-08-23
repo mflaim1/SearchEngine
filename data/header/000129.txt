@@ -1,0 +1,14 @@
+Date: Tue, 24 Feb 2015 20:49:38 GMT
+Server: HTTPDaemon
+X-Frame-Options: SAMEORIGIN
+Cache-Control: private
+Content-Type: text/html; charset=iso-8859-1
+Set-Cookie: uu=BCYkQ1JIdhzCTLUw2PfNpXJ-gRZu8YByTK63s3mxkbsKvD1QiWU5hZcrd2d8-IaB8P_3SBTvmo-CmT_aV6fnXw7wKK7Gncg9GDYydR7fdpho_1PzMxJ7J04AbwEvexPLMY2yf2Kvp-A8Em0C70WwZ7NTBcXY6IJ8gXXuORgbFAMhEDLZATF5jfWDaYvOgn0BZJJvy_brjaCGp2bOptIj-GSBeQ6gKeupwR3CgVnkcnmLM87WoIxcXzb8V5ueyRFDCyN8;expires=Thu, 30 Dec 2037 00:00:00 GMT;path=/;domain=.imdb.com
+Set-Cookie: cs=dSpkOh4V5eL5mVLNLMqz9AnJEiSO2SUS3lFyJI2qkqydWgEnHcpRB87ZIoQumTIkju9VcglZEiSJziUXja1xcRmZsoeu2SSyblESJI7vJDOO2RIkjvkSJI7ZEmTOiWIUg=;expires=Wed, 25 Feb 2015 08:00:00 GMT;path=/;domain=.imdb.com
+Set-Cookie: session-id=971-4810978-2366271;path=/;domain=.imdb.com;expires=Sun, 23 Feb 2020 12:49:38 GMT
+Set-Cookie: session-id-time=1582490978;path=/;domain=.imdb.com;expires=Sun, 23 Feb 2020 12:49:38 GMT
+P3P: policyref="http://i.imdb.com/images/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "
+Vary: User-Agent
+Transfer-Encoding: chunked
+
+

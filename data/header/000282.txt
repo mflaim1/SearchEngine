@@ -1,0 +1,15 @@
+Server: Apache/2.2.22 (Ubuntu)
+X-Mod-Pagespeed: 1.8.31.5-4307
+Vary: Accept-Encoding,Cookie
+Cache-Control: max-age=3, must-revalidate
+Cache-Control: max-age=0, no-cache
+Content-Type: text/html; charset=UTF-8
+WP-Super-Cache: Served supercache file from PHP
+Date: Tue, 24 Feb 2015 20:53:52 GMT
+Keep-Alive: timeout=5, max=96
+Transfer-Encoding: chunked
+Connection: close
+Set-Cookie: X-Mapping-fjhppofk=2552AD212BEBED62396B54864C087BA2; path=/
+X-Powered-By: PHP/5.3.10-1ubuntu3.13
+
+

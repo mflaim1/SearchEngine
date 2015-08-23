@@ -1,0 +1,2042 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+				<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgMEU1NSGwcJUVZXBwA="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:22,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1);t("loader").features.stn=!0,t(2),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:8,2:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:22,2:23,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:23,2:22,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:23,2:22,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:23,2:22,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:23,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],12:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:21,2:22,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.licenseKey&&t.applicationID&&f&&f.body){s(h,function(e,n){e in t||(t[e]=n)}),l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=l.proto+t.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u="addEventListener",d="attachEvent",p=(""+location).split("?")[0],h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},l=e.exports={offset:i(),origin:p,features:{}};f[u]?(f[u]("DOMContentLoaded",o,!1),c[u]("load",n,!1)):(f[d]("onreadystatechange",r),c[d]("onload",n)),a("mark",["firstbyte",i()])},{1:21,2:12,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],21:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],22:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],23:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:22,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, target-densityDpi=device-dpi" />
+		<script src="//cdn.optimizely.com/js/76980741.js"></script>
+    	    	<script>var _sf_startpt=(new Date()).getTime()</script>	
+		<title>Jimmy Page on the 'Swagger' of Led Zeppelin's 'Physical Graffiti' | Rolling Stone</title>
+		<link rel="stylesheet" href="/assets/css/main.css">
+				<script src="/assets/lib/modernizr-2.6.2.min.js"></script>
+		
+		<script type="text/javascript">
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement("script");
+    gads.async = true;
+    gads.type = "text/javascript";
+    var useSSL = "https:" == document.location.protocol;
+    gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+    var node =document.getElementsByTagName("script")[0];
+    node.parentNode.insertBefore(gads, node);
+   })();
+</script>		
+									<meta name="description" content="Led Zeppelin&#039;s Jimmy Page discusses the making of &#039;Physical Graffiti&#039; and hints at his new album." />
+										<meta name="news_keywords" content="jimmy page physical graffiti,led zeppelin physical graiffiti,jimmy page interview,physical graffiti stream,jimmy page soundtracks" />
+							
+		            
+                                    
+            <link rel="canonical" href="http://www.rollingstone.com/music/features/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223" />
+			<meta property="og:url" content="http://www.rollingstone.com/music/features/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223" />
+		
+		    			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:site" content="@RollingStone" />
+							<meta name="twitter:title" content="Jimmy Page on the &#039;Swagger&#039; of Led Zeppelin&#039;s &#039;Physical Graffiti&#039;" />
+				<meta property="og:title" content="Jimmy Page on the &#039;Swagger&#039; of Led Zeppelin&#039;s &#039;Physical Graffiti&#039;" />
+										<meta name="twitter:description" content="Forty years after its release, the guitarist explains how the band made a masterpiece" />
+				<meta property="og:description" content="Forty years after its release, the guitarist explains how the band made a masterpiece" />
+															<meta property="og:image" content="http://assets.rollingstone.com/assets/2015/article/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223/186510/large_rect/1424300285/1401x788-85365270.jpg" />
+					<meta property="og:image:width" content="1200" />
+					<meta property="og:image:height" content="630" />
+					<meta name="twitter:image:src" content="http://assets.rollingstone.com/assets/2015/article/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223/186510/large_rect/1424300285/1401x788-85365270.jpg" />
+										<meta property="fb:app_id" content="107978575944240" />
+			<meta property="og:type" content="article" />
+			<meta property="og:site_name" content="Rolling Stone" />
+			<meta property="article:publisher" content="https://www.facebook.com/rollingstone">
+		
+        <meta property="article:published_time" content="2015-02-23T15:50:00Z">
+		
+				    
+
+                    <script type="application/ld+json">
+{"@context":"http://schema.org","@type":"Article","headline":"Jimmy Page on the 'Swagger' of Led Zeppelin's 'Physical Graffiti'","datePublished":"2015-02-23T15:50:00+00:00","image":"http://assets.rollingstone.com/assets/2015/article/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223/186510/large_rect/1424300285/1401x788-85365270.jpg","description":"Forty years after its release, the guitarist explains how the band made a masterpiece","publisher":{"@type":"Organization","name":"Rolling Stone","sameAs":"http://www.rollingstone.com"},"url":"http://www.rollingstone.com/music/features/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223","author":[{"@type":"Person","name":"Kory Grow","sameAs":"http://plus.google.com/+KoryGrow"}]}
+</script>
+
+		    		    <script>
+    if (typeof dataLayer === 'undefined') { dataLayer = []; }
+Â  Â  dataLayer.push({
+Â  Â  Â  Â  'pageAttributes': [
+			'PinterestPinIt',
+			'FacebookJsSdk',
+			'GooglePlusOne',
+			'TwitterWidgets'
+        ],
+        'ismobile': false,
+        'channel' : 'music'
+Â  Â  });
+
+            dataLayer[0].pageCategory = ["content","article","feature"];
+    </script>	
+            		
+    <script>
+    dataLayer[0].pageAttributes.push('DisqusComments','DisqusCount');
+    dataLayer.push({
+Â  Â  Â  Â  'disqus_identifier': 'rs-188690',
+Â  Â  Â  Â  'disqus_title': 'Jimmy Page on the &#039;Swagger&#039; of Led Zeppelin&#039;s &#039;Physical Graffiti&#039;',
+Â  Â  Â  Â  'disqus_url': 'http://www.rollingstone.com/music/features/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223'
+Â  Â  });
+</script>
+    <script>
+    dataLayer[0].pageAttributes.push('Zergnet');
+</script>
+		
+        <link rel="publisher" href="https://plus.google.com/+rollingstone" />
+                <script src="//use.typekit.net/aco8bsm.js"></script>
+        <script>
+            window.___gcfg = {
+              lang: 'en-US',
+              parsetags: 'explicit'
+            };
+
+            window.onload = function() { 
+                gapi.plusone.go("social-links");
+                gapi.ytsubscribe.go("social-links");
+            };
+        </script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+	</head>
+
+	<body class="    article article-no-lead-image" 
+          data-track-category="Article Page" 
+          data-page-targeting="{&quot;ct&quot;:&quot;music&quot;,&quot;t&quot;:[&quot;jimmy-page&quot;,&quot;led-zeppelin&quot;],&quot;c&quot;:&quot;kory-grow&quot;}"
+          itemscope itemtype="http://schema.org/WebPage">
+                  
+		<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-6PGSH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-6PGSH');</script>
+<!-- End Google Tag Manager -->
+
+				
+<header id="site-header" data-track-action="top-nav">
+			<div class="header-top page-container no-feature">
+				<div class="rs-logo-big" itemscope itemtype="http://schema.org/Organization">
+			 				<a href="/" itemprop="url" data-track data-track-label="RS Logo">
+					<img itemprop="logo" src="/assets/img/global-logo-rs.svg" alt="Rolling Stone">
+				</a>
+					</div>
+		<ul id="social-links" class="social-links " data-track-action="Social" data-track-category="Global Nav">
+			<li><div class="fb-like" data-href="https://www.facebook.com/RollingStone" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></li>
+			<li><a href="https://twitter.com/RollingStone" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @RollingStone</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+			<li><div class="g-plusone" data-height="20" data-annotation="none" data-href="https://plus.google.com/+rollingstone/posts"></div></li>
+			<li><div class="g-ytsubscribe" data-channel="RollingStone" data-layout="default" data-count="hidden"></div></li>
+		</ul>
+
+		<ul class="cta" data-track-action="Circ" data-track-category="Global Nav">
+					
+			<li><a href="https://subscribe.rollingstone.com/storefront/link/1022874.html" data-track data-track-label="Subscribe" target="_blank">Subscribe</a></li>
+			<li class="subscribe-top"><a href="/coverwall" data-track data-track-label="Coverwall">Coverwall</a></li>
+		</ul>
+	</div>
+	<div class="header-bottom header-top-border no-feature">
+		<div class="header-bottom-content page-container">
+					<div class="rs-logo">
+				<a href="							/
+						">
+					<img src="/assets/img/rs-collapsed-nav-logo2.svg" alt="Rolling Stone">
+				</a>
+			</div>
+			<nav id="site-nav">
+				<ul class="primary-nav clearfix">
+										
+					<li class="primary-nav-item ">
+					
+																
+											<a href="/music" class="active" data-track data-track-category="Global Nav" data-track-label="Music" data-track-action="Click">music</a>
+											
+						<div class="sub-nav">
+		<ul class="subnav-container" data-track-category="First Level Nav">
+						<li class="feature-container open-category">
+			<ul class="features clearfix" data-track-category="Global Nav">
+																			
+					<li class="subnav-col col-one">
+												
+												<h2>
+							<span class="type-31">Latest </span>
+							<span class="type-47">Music</span>
+						</h2>
+						<a href="/music/features/led-zeppelins-physical-graffiti-at-40-soundgardens-kim-thayil-looks-back-20150224" data-track data-track-action="Music" data-track-label="Latest Featured">
+							<div class="img-container">
+								    <img src="/assets/img/blank.gif" alt="Kim Thayil" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/article/led-zeppelins-physical-graffiti-at-40-soundgardens-kim-thayil-looks-back-20150224/186523/lead_large/1424303348/300x179-453389644.jpg" />
+
+							</div>
+							<h3 class="type-29">Kim Thayil Looks Back on Led Zep&#039;s &#039;Physical Graffiti&#039;</h3>
+							
+															<p class="author type-05">By Kory Grow</p>
+													</a>
+					</li>
+
+					<li class="subnav-col col-two">
+						<div class="col-content">
+															<a href="/music/videos/misterwives-live-performance-sperry-sessions-20150224" data-track data-track-action="Music" data-track-label="Latest Featured 1">
+									<h3 class="type-10">Watch MisterWives Play Three Standouts From Their Debut LP</h3>
+									<time class="type-05">6 hours ago</time>
+								</a>
+															<a href="/music/news/watch-kanye-wests-poignant-speech-about-racism-at-bet-honors-20150224" data-track data-track-action="Music" data-track-label="Latest Featured 2">
+									<h3 class="type-10">Watch Kanye West&#039;s Poignant Speech on Racism at BET Honors</h3>
+									<time class="type-05">3 hours ago</time>
+								</a>
+															<a href="/music/live-reviews/kim-gordon-kurt-cobains-chaos-made-for-amazing-theater-20150224" data-track data-track-action="Music" data-track-label="Latest Featured 3">
+									<h3 class="type-10">Kim Gordon: Kurt Cobain&#039;s Chaos Made for &#039;Amazing Theater&#039;</h3>
+									<time class="type-05">4 hours ago</time>
+								</a>
+							
+															<a class="type-15 more-link" href="/music/news" data-track data-track-action="Music" data-track-label="More Music News">More Music News Â»</a>
+													</div>
+					</li>
+
+					<li class="subnav-col col-three">
+													<h2 class="type-31">Interviews</h2>
+						
+							<div class="col-content contributor music">
+																	<a class="contributor-box interview-box" href="/music/features/mark-ronson-on-loving-steely-dan-and-finding-the-funk-with-bruno-mars-20150210">
+										<img src="/assets/img/isos/MarkRonson_20150121.png" alt="Mark Ronson" />
+									</a>
+								
+								<a href="/music/features/mark-ronson-on-loving-steely-dan-and-finding-the-funk-with-bruno-mars-20150210" data-track data-track-action="Music" data-track-label="Interview Featured">
+									<h3 class="type-28 upper-case">Mark Ronson on Loving Steely Dan and Finding the Funk</h3>
+									<p class="type-09 interview-dek">Producer on his funked-up new single and...</p>
+								</a>
+
+								<a class="type-15 more-link" href="/music/features" data-track data-track-action="Music" data-track-label="More Music Interviews">More Interviews Â»</a>
+							</div>
+
+											</li>
+
+					<li class="subnav-col col-four">
+													<h2 class="type-31">Reviews</h2>
+						
+						<div class="col-content">
+																																																					<a href="/music/albumreviews/led-zeppelin-physical-graffiti-deluxe-edition-20150224" data-track data-track-action="Music" data-track-label="Music Review 1">
+											<div class="review-nav-details clearfix">
+												    <img src="/assets/img/blank.gif" alt="Led Zeppelin" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/albumreview/led-zeppelin-physical-graffiti-deluxe-edition-20150224/186057/small_square/1423855808/100x100-74279770.jpg" />
+
+
+												<h3 class="review-nav-item hd">Led Zeppelin</h3>
+												<h4 class="review-nav-item sub-hd">Physical Graffiti: Deluxe Edition</h4>
+												<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        		</div>
+											</div>
+										</a>
+																																																							<a href="/music/albumreviews/kid-rock-first-kiss-20150224" data-track data-track-action="Music" data-track-label="Music Review 2">
+											<div class="review-nav-details clearfix">
+												    <img src="/assets/img/blank.gif" alt="Kid Rock" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/albumreview/kid-rock-first-kiss-20150224/186792/small_square/1424468084/100x100-kid-rock-extralarge_1418258942197.jpg" />
+
+
+												<h3 class="review-nav-item hd">Kid Rock</h3>
+												<h4 class="review-nav-item sub-hd">First Kiss</h4>
+												<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        		</div>
+											</div>
+										</a>
+																																																							<a href="/music/albumreviews/dan-deacon-gliss-riffer-20150224" data-track data-track-action="Music" data-track-label="Music Review 3">
+											<div class="review-nav-details clearfix">
+												    <img src="/assets/img/blank.gif" alt="Dan Deacon" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/albumreview/dan-deacon-gliss-riffer-20150224/186058/small_square/1423855914/100x100-Unknown.jpeg" />
+
+
+												<h3 class="review-nav-item hd">Dan Deacon</h3>
+												<h4 class="review-nav-item sub-hd">Gliss Riffer</h4>
+												<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        		</div>
+											</div>
+										</a>
+																								
+							<a class="type-15 more-link"
+																	href="/music/new-albums"
+																data-track data-track-action="Music"
+								data-track-label="More Music Reviews">
+																	More Music Reviews Â»
+															</a>
+						</div>
+					</li>
+
+					<li class="col-five">
+													<a class="type-14" href="/music/lists">Lists</a>
+													<a class="type-14" href="/music/pictures">Galleries</a>
+													<a class="type-14" href="/music/videos">Videos</a>
+													<a class="type-14" href="/music/premieres">Premieres</a>
+													<a class="type-14" href="/music/artists">Artists</a>
+													<a class="type-14" href="/music/yahoo-music">Yahoo Music</a>
+													<a class="type-14" href="/contributor/david-fricke">David Fricke</a>
+													<a class="type-14" href="/music/videos/willie-nelson-rs-films-mastering-the-craft-trigger-20150211">RS Films: Mastering the Craft</a>
+											</li>
+							</ul>
+		</li>
+	</ul>
+</div>					</li>
+										
+					<li class="primary-nav-item ">
+					
+																
+											<a href="/politics"  data-track data-track-category="Global Nav" data-track-label="Politics" data-track-action="Click">politics</a>
+											
+						<div class="sub-nav">
+		<ul class="subnav-container" data-track-category="First Level Nav">
+						<li class="feature-container">
+			<ul class="features clearfix" data-track-category="Global Nav">
+																			
+					<li class="subnav-col col-one">
+												
+												<h2>
+							<span class="type-31">Latest </span>
+							<span class="type-47">Politics</span>
+						</h2>
+						<a href="/politics/news/the-pentagon-climate-change-how-climate-deniers-put-national-security-at-risk-20150212" data-track data-track-action="Politics" data-track-label="Latest Featured">
+							<div class="img-container">
+								    <img src="/assets/img/blank.gif" alt="Pentagon and climate change" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/article/the-pentagon-climate-change-how-climate-deniers-put-national-security-at-risk-20150212/185786/lead_large/1423685863/300x179-RSTONE-MILITARY-FIN.jpg" />
+
+							</div>
+							<h3 class="type-29">How Climate Deniers Put National Security at Risk</h3>
+							
+															<p class="author type-05">By Jeff Goodell</p>
+													</a>
+					</li>
+
+					<li class="subnav-col col-two">
+						<div class="col-content">
+															<a href="/politics/news/is-jpmorgan-chase-profiting-off-of-forced-evictions-in-china-20150210" data-track data-track-action="Politics" data-track-label="Latest Featured 1">
+									<h3 class="type-10">JPMorgan Chase Profiting Off of Forced Evictions in China?</h3>
+									<time class="type-05">February 10, 2015</time>
+								</a>
+															<a href="/politics/news/21st-century-dissidents-two-activists-speak-20150205" data-track data-track-action="Politics" data-track-label="Latest Featured 2">
+									<h3 class="type-10">21st Century Dissidents: Two Activists Speak</h3>
+									<time class="type-05">February 5, 2015</time>
+								</a>
+															<a href="/culture/news/marijuana-officially-legal-in-alaska-for-private-use-20150224" data-track data-track-action="Politics" data-track-label="Latest Featured 3">
+									<h3 class="type-10">Marijuana Officially Legal in Alaska for Private Use</h3>
+									<time class="type-05">5 hours ago</time>
+								</a>
+							
+															<a class="type-15 more-link" href="/politics/news" data-track data-track-action="Politics" data-track-label="More Politics News">More Politics News Â»</a>
+													</div>
+					</li>
+
+					<li class="subnav-col col-three">
+													<div class="col-content contributor">
+																	<a class="contributor-box" href="/contributor/matt-taibbi">
+										<h3 class="type-29">Matt Taibbi</h3>
+										<p class="type-16">Contributor</p>
+										<img src="/assets/img/RS_20_Isos_Taibbi.png" alt="Matt Taibbi" />
+									</a>
+								
+																										<a href="/politics/news/rudy-giuliani-american-soviet-20150221" data-track data-track-action="Politics" data-track-label="Contributor 1">
+										<h3 class="type-10">Rudy Giuliani, American Soviet</h3>
+
+																					<p class="author type-05">By Matt Taibbi</p>
+																			</a>
+																										<a href="/politics/news/a-whistleblowers-horror-story-20150218" data-track data-track-action="Politics" data-track-label="Contributor 2">
+										<h3 class="type-10">A Whistleblower&#039;s Horror Story</h3>
+
+																					<p class="author type-05">By Matt Taibbi</p>
+																			</a>
+															</div>
+						
+											</li>
+
+					<li class="subnav-col col-four">
+													<h2 class="type-31">Lists</h2>
+						
+						<div class="col-content">
+																																											<a href="/politics/news/policing-is-a-dirty-job-but-nobodys-gotta-do-it-6-ideas-for-a-cop-free-world-20141216" data-track data-track-action="Politics" data-track-label="Latest List 1">
+											<h3 class="type-10">6 Ideas for a Cop-Free World</h3>
+
+																							<p class="author type-05">By JosÃ© MartÃ­n</p>
+																					</a>
+																																													<a href="/politics/news/4-reasons-tlc-s-my-husband-s-not-gay-is-dangerous-for-lgbt-people-20150109" data-track data-track-action="Politics" data-track-label="Latest List 2">
+											<h3 class="type-10">4 Reasons TLCâs &#039;My Husbandâs Not Gay&#039; is Dangerous</h3>
+
+																							<p class="author type-05">By Eliel Cruz</p>
+																					</a>
+																																													<a href="/politics/news/drone-rules-in-afghanistan-go-unchanged-and-other-reasons-the-war-isnt-really-over-20150107" data-track data-track-action="Politics" data-track-label="Latest List 3">
+											<h3 class="type-10">4 Reasons the War in Afghanistan Isn&#039;t Really Over</h3>
+
+																							<p class="author type-05">By John Knefel</p>
+																					</a>
+																								
+							<a class="type-15 more-link"
+																	href="/politics/lists"
+																data-track data-track-action="Politics"
+								data-track-label="More Politics Lists">
+																	More Politics Lists Â»
+															</a>
+						</div>
+					</li>
+
+					<li class="col-five">
+													<a class="type-14" href="/politics/news">News</a>
+													<a class="type-14" href="/politics/videos">Videos</a>
+													<a class="type-14" href="/politics/pictures">Galleries</a>
+													<a class="type-14" href="/feature/gun-control/americas-gun-violence-epidemic">Gun Control</a>
+													<a class="type-14" href="/topic/climate-change">Climate Change</a>
+													<a class="type-14" href="/politics/news/in-defense-of-obama-20141008">Barack Obama</a>
+													<a class="type-14" href="/topic/marijuana">Drug Legalization</a>
+													<a class="type-14" href="/politics/news/inside-the-koch-brothers-toxic-empire-20140924">The Koch Brothers</a>
+											</li>
+							</ul>
+		</li>
+	</ul>
+</div>					</li>
+										
+					<li class="primary-nav-item ">
+					
+																											
+											<a href="/tv"  data-track data-track-category="Global Nav" data-track-label="TV" data-track-action="Click">tv</a>
+											
+						<div class="sub-nav">
+		<ul class="subnav-container" data-track-category="First Level Nav">
+						<li class="feature-container">
+			<ul class="features clearfix" data-track-category="Global Nav">
+																			
+					<li class="subnav-col col-one">
+												
+												<h2>
+							<span class="type-31">Latest </span>
+							<span class="type-47">TV</span>
+						</h2>
+						<a href="/tv/features/oscars-2015-everything-is-awesome-especially-if-you-re-terrence-howard-20150223" data-track data-track-action="TV" data-track-label="Latest Featured">
+							<div class="img-container">
+								    <img src="/assets/img/blank.gif" alt="Tegan and Sara, and The Lonely Island" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/article/oscars-2015-everything-is-awesome-especially-if-you-re-terrence-howard-20150223/186975/lead_large/1424710404/300x179-464170634.jpg" />
+
+							</div>
+							<h3 class="type-29">Rob Sheffield on Oscars 2015: Everything Is Awesome</h3>
+							
+															<p class="author type-05">By Rob Sheffield</p>
+													</a>
+					</li>
+
+					<li class="subnav-col col-two">
+						<div class="col-content">
+															<a href="/culture/features/danny-devito-at-70-a-national-treasure-on-sex-drugs-and-family-20150220" data-track data-track-action="TV" data-track-label="Latest Featured 1">
+									<h3 class="type-10">Danny DeVito, National Teasure, on Sex, Drugs and Family</h3>
+									<time class="type-05">4 days ago</time>
+								</a>
+															<a href="/tv/features/jon-stewart-is-ready-for-next-iteration-of-the-daily-show-20150220" data-track data-track-action="TV" data-track-label="Latest Featured 2">
+									<h3 class="type-10">Jon Stewart Is Ready for &#039;Next Iteration&#039; of &#039;Daily Show&#039;</h3>
+									<time class="type-05">4 days ago</time>
+								</a>
+															<a href="/tv/lists/carrie-brownstein-broad-city-and-more-on-best-of-snl-20150217" data-track data-track-action="TV" data-track-label="Latest Featured 3">
+									<h3 class="type-10">Why I Love &#039;SNL&#039;: Broad City, Albert Brooks Sound Off</h3>
+									<time class="type-05">February 17, 2015</time>
+								</a>
+							
+															<a class="type-15 more-link" href="/tv/news" data-track data-track-action="TV" data-track-label="More TV News">More TV News Â»</a>
+													</div>
+					</li>
+
+					<li class="subnav-col col-three">
+													<div class="col-content contributor">
+																	<a class="contributor-box" href="/contributor/rob-sheffield">
+										<h3 class="type-29">Rob Sheffield</h3>
+										<p class="type-16">Contributor</p>
+										<img src="/assets/img/RS_20_Isos_Sheffield.png" alt="Rob Sheffield" />
+									</a>
+								
+																										<a href="/tv/features/oscars-2015-everything-is-awesome-especially-if-you-re-terrence-howard-20150223" data-track data-track-action="TV" data-track-label="Contributor 1">
+										<h3 class="type-10">Rob Sheffield on Oscars 2015: Everything Is Awesome</h3>
+
+																					<p class="author type-05">By Rob Sheffield</p>
+																			</a>
+																										<a href="/tv/lists/saturday-night-live-all-141-cast-members-ranked-20150211" data-track data-track-action="TV" data-track-label="Contributor 2">
+										<h3 class="type-10">&#039;Saturday Night Live&#039;: All 141 Cast Members Ranked</h3>
+
+																					<p class="author type-05">By Rob Sheffield</p>
+																			</a>
+															</div>
+						
+											</li>
+
+					<li class="subnav-col col-four">
+													<h2 class="type-31">Lists</h2>
+						
+						<div class="col-content">
+																																											<a href="/movies/lists/oscars-2015-s-20-best-worst-and-wtf-moments-20150223" data-track data-track-action="TV" data-track-label="Latest List 1">
+											<h3 class="type-10">Oscars 2015âs 20 Best, Worst and WTF Moments</h3>
+
+																							<p class="author type-05">By Cady Drell</p>
+																					</a>
+																																													<a href="/tv/lists/40-best-saturday-night-live-characters-of-all-time-20150216" data-track data-track-action="TV" data-track-label="Latest List 2">
+											<h3 class="type-10">40 Best &#039;Saturday Night Live&#039; Characters of All Time</h3>
+
+																							<p class="author type-05">By Rob Sheffield</p>
+																					</a>
+																																													<a href="/tv/lists/20-best-its-always-sunny-in-philadelphia-episodes-20150220" data-track data-track-action="TV" data-track-label="Latest List 3">
+											<h3 class="type-10">20 Best &#039;It&#039;s Always Sunny in Philadelphia&#039; Episodes</h3>
+
+																							<p class="author type-05">By Noel Murray</p>
+																					</a>
+																								
+							<a class="type-15 more-link"
+																	href="/tv/lists"
+																data-track data-track-action="TV"
+								data-track-label="More TV Lists">
+																	More TV Lists Â»
+															</a>
+						</div>
+					</li>
+
+					<li class="col-five">
+													<a class="type-14" href="/tv/lists">Lists</a>
+													<a class="type-14" href="/tv/pictures">Galleries</a>
+													<a class="type-14" href="/tv/features">Interviews</a>
+													<a class="type-14" href="/tv/recaps">Recaps</a>
+													<a class="type-14" href="/tv/videos">Videos</a>
+													<a class="type-14" href="/music/best-of-2014">Best TV of 2014</a>
+													<a class="type-14" href="/emmy-awards">Emmy Awards</a>
+											</li>
+							</ul>
+		</li>
+	</ul>
+</div>					</li>
+										
+					<li class="primary-nav-item ">
+					
+																
+											<a href="/movies"  data-track data-track-category="Global Nav" data-track-label="Movies" data-track-action="Click">movies</a>
+											
+						<div class="sub-nav">
+		<ul class="subnav-container" data-track-category="First Level Nav">
+						<li class="feature-container">
+			<ul class="features clearfix" data-track-category="Global Nav">
+																			
+					<li class="subnav-col col-one">
+												
+												<h2>
+							<span class="type-31">Latest </span>
+							<span class="type-47">Movies</span>
+						</h2>
+						<a href="/movies/lists/dont-you-forget-about-me-breakfast-club-at-30-20150224" data-track data-track-action="Movies" data-track-label="Latest Featured">
+							<div class="img-container">
+								    <img src="/assets/img/blank.gif" alt="Breakfast Club" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/list/dont-you-forget-about-me-breakfast-club-at-30-20150224/186370/lead_large/1424271841/300x179-b75dd31761fbf9e5dc7b036389d257ff.jpg" />
+
+							</div>
+							<h3 class="type-29">Don&#039;t You Forget About Me: &#039;Breakfast Club&#039; at 30</h3>
+							
+															<p class="author type-05">By Jennifer Wood</p>
+													</a>
+					</li>
+
+					<li class="subnav-col col-two">
+						<div class="col-content">
+															<a href="/movies/lists/oscars-2015-s-20-best-worst-and-wtf-moments-20150223" data-track data-track-action="Movies" data-track-label="Latest Featured 1">
+									<h3 class="type-10">Oscars 2015âs 20 Best, Worst and WTF Moments</h3>
+									<time class="type-05">1 day ago</time>
+								</a>
+															<a href="/tv/features/oscars-2015-everything-is-awesome-especially-if-you-re-terrence-howard-20150223" data-track data-track-action="Movies" data-track-label="Latest Featured 2">
+									<h3 class="type-10">Rob Sheffield on Oscars 2015: Everything Is Awesome</h3>
+									<time class="type-05">1 day ago</time>
+								</a>
+															<a href="/movies/news/pee-wee-herman-returns-for-big-holiday-on-netflix-20150224" data-track data-track-action="Movies" data-track-label="Latest Featured 3">
+									<h3 class="type-10">Pee-wee Herman Returns for &#039;Big Holiday&#039; on Netflix</h3>
+									<time class="type-05">3 hours ago</time>
+								</a>
+							
+															<a class="type-15 more-link" href="/movies/news" data-track data-track-action="Movies" data-track-label="More Movies News">More Movies News Â»</a>
+													</div>
+					</li>
+
+					<li class="subnav-col col-three">
+													<h2 class="type-31">Reviews</h2>
+
+							<div class="col-content">
+																							<a href="/movies/reviews/mcfarland-usa-20150219" data-track data-track-action="Movies" data-track-label="Movie Review 1">
+									<div class="review-nav-details movie clearfix">
+									    <img src="/assets/img/blank.gif" alt="Mcfarland, usa" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/moviereview/mcfarland-usa-20150219/186536/small_square/1424354928/100x100-MCDMCUS_EC052_H.JPG" />
+
+
+										<h3 class="review-nav-item hd">McFarland, USA</h3>
+										<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    		        <span class="star half sm"></span>
+        	
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        		</div>
+									</div>
+								</a>
+																							<a href="/movies/reviews/wild-tales-20150219" data-track data-track-action="Movies" data-track-label="Movie Review 2">
+									<div class="review-nav-details movie clearfix">
+									    <img src="/assets/img/blank.gif" alt="Wild Tales" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/moviereview/wild-tales-20150219/186537/small_square/1424355325/100x100-17.jpg" />
+
+
+										<h3 class="review-nav-item hd">Wild Tales</h3>
+										<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    		        <span class="star half sm"></span>
+        	
+    	        		</div>
+									</div>
+								</a>
+																							<a href="/movies/reviews/fifty-shades-of-grey-20150211" data-track data-track-action="Movies" data-track-label="Movie Review 3">
+									<div class="review-nav-details movie clearfix">
+									    <img src="/assets/img/blank.gif" alt="Jamie Dornan and Dakota Johnson" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/moviereview/fifty-shades-of-grey-20150211/185504/small_square/1423589861/100x100-2434_D030_00011_R_CROP.JPG_cmyk.jpg" />
+
+
+										<h3 class="review-nav-item hd">Fifty Shades of Grey</h3>
+										<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        		</div>
+									</div>
+								</a>
+							
+								<a class="type-15 more-link" href="/movies/reviews" data-track data-track-action="Movies" data-track-label="More Movies Reviews">More Movies Reviews Â»</a>
+							</div>
+						
+											</li>
+
+					<li class="subnav-col col-four">
+													<h2 class="type-31">Lists</h2>
+						
+						<div class="col-content">
+																																											<a href="/movies/lists/25-best-oscar-winning-performances-based-on-real-people-20150218" data-track data-track-action="Movies" data-track-label="Latest List 1">
+											<h3 class="type-10">25 Best Oscar-Winning Performances Based on Real People</h3>
+
+																							<p class="author type-05">By Noel Murray</p>
+																					</a>
+																																													<a href="/movies/lists/25-greatest-best-picture-oscar-losers-20150211" data-track data-track-action="Movies" data-track-label="Latest List 2">
+											<h3 class="type-10">Second Best: 25 Best Pic Nominees That Should Have Won</h3>
+
+																							<p class="author type-05">By Tim Grierson</p>
+																					</a>
+																																													<a href="/movies/lists/50-best-sci-fi-movies-of-the-1970s-20150114" data-track data-track-action="Movies" data-track-label="Latest List 3">
+											<h3 class="type-10">50 Best Sci-Fi Movies of the 1970s</h3>
+
+																							<p class="author type-05">By David Fear</p>
+																					</a>
+																								
+							<a class="type-15 more-link"
+																	href="/movies/lists"
+																data-track data-track-action="Movies"
+								data-track-label="More Movies Lists">
+																	More Movies Lists Â»
+															</a>
+						</div>
+					</li>
+
+					<li class="col-five">
+													<a class="type-14" href="/movies/features">Interviews</a>
+													<a class="type-14" href="/movies/pictures">Galleries</a>
+													<a class="type-14" href="/movies/videos">Videos</a>
+													<a class="type-14" href="/contributor/peter-travers">Peter Travers</a>
+													<a class="type-14" href="/movies/oscars-2015">Oscars</a>
+													<a class="type-14" href="/music/best-of-2014">Best of 2014</a>
+													<a class="type-14" href="/movies/sundance">Sundance</a>
+													<a class="type-14" href="/music/lists/2015-preview-68-reasons-to-love-this-year-20150105">2015 Preview</a>
+											</li>
+							</ul>
+		</li>
+	</ul>
+</div>					</li>
+										
+					<li class="primary-nav-item ">
+					
+																
+											<a href="/culture"  data-track data-track-category="Global Nav" data-track-label="Culture" data-track-action="Click">culture</a>
+											
+						<div class="sub-nav">
+		<ul class="subnav-container" data-track-category="First Level Nav">
+						<li class="feature-container">
+			<ul class="features clearfix" data-track-category="Global Nav">
+																			
+					<li class="subnav-col col-one">
+												
+												<h2>
+							<span class="type-31">Latest </span>
+							<span class="type-47">Culture</span>
+						</h2>
+						<a href="/culture/features/is-this-the-chicago-cubs-year-20150224" data-track data-track-action="Culture" data-track-label="Latest Featured">
+							<div class="img-container">
+								    <img src="/assets/img/blank.gif" alt="Jon Lester" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/article/is-this-the-chicago-cubs-year-20150224/187023/lead_large/1424723183/300x179-42-65182709.jpg" />
+
+							</div>
+							<h3 class="type-29">Is This the Chicago Cubs&#039; Year?</h3>
+							
+															<p class="author type-05">By Dan Epstein</p>
+													</a>
+					</li>
+
+					<li class="subnav-col col-two">
+						<div class="col-content">
+															<a href="/culture/news/wwe-raw-randy-ortons-back-with-a-vengeance-20150224" data-track data-track-action="Culture" data-track-label="Latest Featured 1">
+									<h3 class="type-10">&#039;WWE RAW&#039;: Randy Orton&#039;s Backâ¦With a Vengeance?</h3>
+									<time class="type-05">4 hours ago</time>
+								</a>
+															<a href="/culture/features/mayweather-vs-pacquiao-2010s-best-fight-2015s-biggest-problem-20150223" data-track data-track-action="Culture" data-track-label="Latest Featured 2">
+									<h3 class="type-10">Mayweather vs. Pacquiao: 2010&#039;s Fight, 2015&#039;s Reality</h3>
+									<time class="type-05">1 day ago</time>
+								</a>
+															<a href="/culture/features/the-daytona-500-joey-logano-and-nascars-days-of-blunder-20150223" data-track data-track-action="Culture" data-track-label="Latest Featured 3">
+									<h3 class="type-10">The Daytona 500: NASCAR&#039;s Days of Blunder</h3>
+									<time class="type-05">1 day ago</time>
+								</a>
+							
+															<a class="type-15 more-link" href="/culture/news" data-track data-track-action="Culture" data-track-label="More Culture News">More Culture News Â»</a>
+													</div>
+					</li>
+
+					<li class="subnav-col col-three">
+													<h2 class="type-31">Feature</h2>
+						
+							<div class="col-content">
+								<a href="/culture/features/colt-cabana-gets-the-last-laugh-how-wrestlings-comedian-built-an-empire-20150218" data-track data-track-action="Culture" data-track-label="Feature">
+									<div class="colThree-pic">
+										    <img src="/assets/img/blank.gif" alt="Colt Cabana" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/article/colt-cabana-gets-the-last-laugh-how-wrestlings-comedian-built-an-empire-20150218/186297/small_square/1424210683/200x200-ReaderFLEX1.jpg" />
+
+									</div>
+									<h3 class="type-28 upper-case">Colt Cabana: Wrestling&#039;s Comedian Gets the Last Laugh</h3>
+									<p class="type-09">The remarkable rise of Scott Colton, a WWE...</p>
+								</a>
+							</div>
+						
+											</li>
+
+					<li class="subnav-col col-four">
+													<h2 class="type-31">Lists</h2>
+						
+						<div class="col-content">
+																																											<a href="/culture/news/the-everything-index-kanyes-kid-weeps-for-us-all-20150218" data-track data-track-action="Culture" data-track-label="Latest List 1">
+											<h3 class="type-10">The Everything Index: Kanye&#039;s Kid Weeps for Us All</h3>
+
+																							<p class="author type-05">By James Montgomery</p>
+																					</a>
+																																													<a href="/movies/features/the-super-bowl-of-movie-marketing-every-trailer-you-need-to-see-20150202" data-track data-track-action="Culture" data-track-label="Latest List 2">
+											<h3 class="type-10">Watch the Super Bowl&#039;s Best Movie Trailers</h3>
+
+																							<p class="author type-05">By Kate Erbland</p>
+																					</a>
+																																													<a href="/tv/features/super-bowl-xlixs-best-and-worst-commercials-20150202" data-track data-track-action="Culture" data-track-label="Latest List 3">
+											<h3 class="type-10">Super Bowl XLIX&#039;s Best and Worst Commercials</h3>
+
+																							<p class="author type-05">By Jason Gallagher</p>
+																					</a>
+																								
+							<a class="type-15 more-link"
+																	href="/culture/lists"
+																data-track data-track-action="Culture"
+								data-track-label="More Culture Lists">
+																	More Culture Lists Â»
+															</a>
+						</div>
+					</li>
+
+					<li class="col-five">
+													<a class="type-14" href="/topic/nfl">NFL</a>
+													<a class="type-14" href="/topic/nba">NBA</a>
+													<a class="type-14" href="/topic/wrestling">WWE</a>
+													<a class="type-14" href="/culture/pictures">Galleries</a>
+													<a class="type-14" href="/culture/features">Interviews</a>
+													<a class="type-14" href="/culture/videos">Videos</a>
+													<a class="type-14" href="/topic/marijuana">Drug Legalization</a>
+													<a class="type-14" href="/topic/gay-rights">LGBT</a>
+											</li>
+							</ul>
+		</li>
+	</ul>
+</div>					</li>
+										
+					<li class="primary-nav-item ">
+					
+																
+											<a  data-track data-track-category="Global Nav" data-track-label="Reviews" data-track-action="Click">reviews</a>
+											
+						<div class="sub-nav">
+		<ul class="subnav-container" data-track-category="First Level Nav">
+						<li class="feature-container">
+			<ul class="features clearfix" data-track-category="Global Nav">
+																								
+					<li class="subnav-col col-one reviews-music">
+						<h2>
+							<span class="type-31">Reviews</span>
+							<span class="type-47">Music</span>
+						</h2>
+						
+																				<a href="/music/albumreviews/led-zeppelin-physical-graffiti-deluxe-edition-20150224" data-track data-track-action="Reviews" data-track-label="Music Review 1">
+								<div class="review-nav-details clearfix">
+									    <img src="/assets/img/blank.gif" alt="Led Zeppelin" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/albumreview/led-zeppelin-physical-graffiti-deluxe-edition-20150224/186057/small_square/1423855808/100x100-74279770.jpg" />
+
+
+									<h3 class="review-nav-item hd">Led Zeppelin</h3>
+									<h4 class="review-nav-item sub-hd">Physical Graffiti: Deluxe Edition</h4>
+									<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        		</div>
+								</div>
+							</a>
+																				<a href="/music/albumreviews/kid-rock-first-kiss-20150224" data-track data-track-action="Reviews" data-track-label="Music Review 2">
+								<div class="review-nav-details clearfix">
+									    <img src="/assets/img/blank.gif" alt="Kid Rock" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/albumreview/kid-rock-first-kiss-20150224/186792/small_square/1424468084/100x100-kid-rock-extralarge_1418258942197.jpg" />
+
+
+									<h3 class="review-nav-item hd">Kid Rock</h3>
+									<h4 class="review-nav-item sub-hd">First Kiss</h4>
+									<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        		</div>
+								</div>
+							</a>
+																				<a href="/music/albumreviews/drake-if-youre-reading-this-its-too-late-20150217" data-track data-track-action="Reviews" data-track-label="Music Review 3">
+								<div class="review-nav-details clearfix">
+									    <img src="/assets/img/blank.gif" alt="Drake" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/albumreview/drake-if-youre-reading-this-its-too-late-20150217/186247/small_square/1424191973/100x100-455600744.jpg" />
+
+
+									<h3 class="review-nav-item hd">Drake</h3>
+									<h4 class="review-nav-item sub-hd">If You&#039;re Reading This It&#039;s Too Late</h4>
+									<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        		</div>
+								</div>
+							</a>
+						
+						<a class="type-15 more-link" href="/music/new-albums" data-track data-track-action="Reviews" data-track-label="More Music Reviews">More Music Reviews Â»</a>
+					</li>
+
+					<li class="subnav-col col-two reviews-list">
+						<div class="col-content contributor">
+							<a class="contributor-box" href="/contributor/david-fricke">
+								<h3 class="type-29">David Fricke</h3>
+								<p class="type-16">Contributor</p>
+								<img src="/assets/img/RS_20_Isos_Fricke.png" alt="David Fricke" />
+							</a>
+
+																							<a href="/music/features/trey-anastasio-on-dead-reunion-shows-i-dont-want-to-just-copy-jerry-20150217" data-track data-track-action="Reviews" data-track-label="Music Contributor 1">
+									<h3 class="type-10">Anastasio on Dead Gigs: &#039;I Don&#039;t Want to Just Copy Jerry&#039;</h3>
+									
+																			<p class="author type-05">By David Fricke</p>
+																	</a>
+																							<a href="/music/features/frickes-picks-radio-remembering-big-brothers-sam-andrew-20150220" data-track data-track-action="Reviews" data-track-label="Music Contributor 2">
+									<h3 class="type-10">Fricke&#039;s Picks Radio: Remembering Big Brother&#039;s Sam Andrew</h3>
+									
+																			<p class="author type-05">By David Fricke</p>
+																	</a>
+													</div>
+					</li>
+
+					<li class="subnav-col col-three review-movies">
+						<h2>
+							<span class="type-31">Reviews</span>
+							<span class="type-47">Movies</span>
+						</h2>
+
+						<div class="col-content">
+																				<a href="/movies/reviews/mcfarland-usa-20150219" data-track data-track-action="Reviews" data-track-label="Movies Review 1">
+								<div class="review-nav-details movie clearfix">
+								    <img src="/assets/img/blank.gif" alt="Mcfarland, usa" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/moviereview/mcfarland-usa-20150219/186536/small_square/1424354928/100x100-MCDMCUS_EC052_H.JPG" />
+
+
+									<h3 class="review-nav-item hd">McFarland, USA</h3>
+									<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    		        <span class="star half sm"></span>
+        	
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        		</div>
+								</div>
+							</a>
+																				<a href="/movies/reviews/wild-tales-20150219" data-track data-track-action="Reviews" data-track-label="Movies Review 2">
+								<div class="review-nav-details movie clearfix">
+								    <img src="/assets/img/blank.gif" alt="Wild Tales" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/moviereview/wild-tales-20150219/186537/small_square/1424355325/100x100-17.jpg" />
+
+
+									<h3 class="review-nav-item hd">Wild Tales</h3>
+									<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    		        <span class="star half sm"></span>
+        	
+    	        		</div>
+								</div>
+							</a>
+																				<a href="/movies/reviews/fifty-shades-of-grey-20150211" data-track data-track-action="Reviews" data-track-label="Movies Review 3">
+								<div class="review-nav-details movie clearfix">
+								    <img src="/assets/img/blank.gif" alt="Jamie Dornan and Dakota Johnson" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/moviereview/fifty-shades-of-grey-20150211/185504/small_square/1423589861/100x100-2434_D030_00011_R_CROP.JPG_cmyk.jpg" />
+
+
+									<h3 class="review-nav-item hd">Fifty Shades of Grey</h3>
+									<div class="rating-stars">
+    	        	    	    	    <span class="star full sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        	    	    	        	<span class="star sm"></span>
+	        
+    	        		</div>
+								</div>
+							</a>
+						
+						<a class="type-15 more-link" href="/movies/reviews" data-track data-track-action="Reviews" data-track-label="More Movie Reviews">More Movies Reviews Â»</a>
+						</div>
+					</li>
+
+					<li class="subnav-col col-four reviews-list">
+						<div class="col-content contributor">
+							<a class="contributor-box" href="/contributor/peter-travers">
+								<h3 class="type-29">Peter Travers</h3>
+								<p class="type-16">Contributor</p>
+								<img src="/assets/img/RS_20_Isos_Travers.png" alt="Peter Travers" />
+							</a>
+
+																							<a href="/movies/lists/oscars-2015-peter-travers-on-who-will-win-20150216" data-track data-track-action="Reviews" data-track-label="Movies Contributor 1">
+									<h3 class="type-10">Read Peter Travers&#039; Oscar 2015 Picks</h3>
+									
+																			<p class="author type-05">By Peter Travers</p>
+																	</a>
+																							<a href="/movies/videos/watch-peter-travers-gag-over-januarys-worst-films-20150202" data-track data-track-action="Reviews" data-track-label="Movies Contributor 2">
+									<h3 class="type-10">Watch Peter Travers Gag Over January&#039;s Worst Films</h3>
+									
+																			<p class="author type-05">By Rolling Stone</p>
+																	</a>
+													</div>
+					</li>
+
+					<li class="col-five">
+													<a class="type-14" href="/music/songreviews">Song Reviews</a>
+													<a class="type-14" href="/music/live-reviews">Live Reviews</a>
+													<a class="type-14" href="/music/artists">Artists</a>
+													<a class="type-14" href="/music/lists">Music Lists</a>
+													<a class="type-14" href="/movie/lists">Movie Lists</a>
+													<a class="type-14" href="/music/best-of-2014">Best of 2014</a>
+													<a class="type-14" href="/music/yahoo-music">Yahoo Music</a>
+													<a class="type-14" href="/most-groundbreaking-albums-of-all-time">Groundbreaking Albums</a>
+											</li>
+							</ul>
+		</li>
+	</ul>
+</div>					</li>
+										
+					<li class="primary-nav-item ">
+					
+																
+					 
+						<a href="/lists"  data-track data-track-category="Global Nav" data-track-label="Lists" data-track-action="Click">lists</a>
+											
+						<div class="sub-nav">
+		<ul class="subnav-container" data-track-category="First Level Nav">
+						<li class="feature-container">
+			<ul class="features clearfix" data-track-category="Global Nav">
+																			
+					<li class="subnav-col col-one">
+												
+												<h2>
+							<span class="type-31">Latest </span>
+							<span class="type-47">Lists</span>
+						</h2>
+						<a href="/tv/lists/saturday-night-live-all-141-cast-members-ranked-20150211" data-track data-track-action="Lists" data-track-label="Latest Featured">
+							<div class="img-container">
+								    <img src="/assets/img/blank.gif" alt="Saturday Night Live" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/list/saturday-night-live-all-141-cast-members-ranked-20150211/185621/lead_large/1424105576/300x179-SNL-40-article.jpg" />
+
+							</div>
+							<h3 class="type-29">&#039;Saturday Night Live&#039;: All 141 Cast Members Ranked</h3>
+							
+															<p class="author type-05">By Rob Sheffield</p>
+													</a>
+					</li>
+
+					<li class="subnav-col col-two col-lists">
+						<div class="col-content">
+															<a href="/music/lists/booting-ass-and-taking-names-countrys-20-best-revenge-songs-20150213" data-track data-track-action="Lists" data-track-label="Latest Featured 1">
+									<h3 class="type-10">Booting Ass &amp; Taking Names: 20 Best Country Revenge Songs</h3>
+									<time class="type-05">February 13, 2015</time>
+								</a>
+															<a href="/movies/lists/oscars-2015-peter-travers-on-who-will-win-20150216" data-track data-track-action="Lists" data-track-label="Latest Featured 2">
+									<h3 class="type-10">Read Peter Travers&#039; Oscar 2015 Picks</h3>
+									<time class="type-05">February 16, 2015</time>
+								</a>
+															<a href="/movies/lists/18-comedians-who-went-serious-for-oscar-20150213" data-track data-track-action="Lists" data-track-label="Latest Featured 3">
+									<h3 class="type-10">18 Comedians Who Went Serious for Oscar</h3>
+									<time class="type-05">February 13, 2015</time>
+								</a>
+							
+															<a class="type-15 more-link" href="/lists" data-track data-track-action="Lists" data-track-label="More Lists">More Lists Â»</a>
+													</div>
+					</li>
+
+					<li class="subnav-col col-three">
+													<h2>
+								<span class="type-31">Greatest</span>
+								<span class="type-47">Lists</span>
+							</h2>
+
+							<a href="/music/lists/500-greatest-albums-of-all-time-20120531" data-track data-track-action="Lists" data-track-label="Greatest Featured">
+								<div class="img-container">
+									    <img src="/assets/img/blank.gif" alt="" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/images/list_container/500-greatest-albums-of-all-time-20120531/20121019-500-songs-624x420-1350683879.jpg" />
+
+								</div>
+								<h3 class="type-29">500 Greatest Albums of All Time</h3>
+
+															</a>
+											</li>
+
+					<li class="subnav-col col-four lists">
+												
+						<div class="col-content">
+															<div class="col-content">
+																			<a href="/music/lists/100-greatest-guitarists-20111123" data-track data-track-action="Lists" data-track-label="Greatest Featured 1">
+											<h3 class="type-10">100 Greatest Guitarists</h3>
+											<time class="type-05">November 23, 2011</time>
+										</a>
+																			<a href="/music/pictures/100-greatest-country-songs-of-all-time-20140601" data-track data-track-action="Lists" data-track-label="Greatest Featured 2">
+											<h3 class="type-10">100 Greatest Country Songs of All Time </h3>
+											<time class="type-05">June 1, 2014</time>
+										</a>
+																			<a href="/music/lists/100-best-singles-of-1984-pops-greatest-year-20140917" data-track data-track-action="Lists" data-track-label="Greatest Featured 3">
+											<h3 class="type-10">100 Best Singles of 1984: Pop&#039;s Greatest Year</h3>
+											<time class="type-05">September 17, 2014</time>
+										</a>
+																	</div>
+
+							
+							<a class="type-15 more-link"
+																	href=""
+																data-track data-track-action="Lists"
+								data-track-label="More Lists Lists">
+																							</a>
+						</div>
+					</li>
+
+					<li class="col-five">
+													<a class="type-14" href="/music/lists">Music</a>
+													<a class="type-14" href="/politics/lists">Politics</a>
+													<a class="type-14" href="/tv/lists">TV</a>
+													<a class="type-14" href="/movies/lists">Movies</a>
+													<a class="type-14" href="/culture/lists">Culture</a>
+													<a class="type-14" href="/most-groundbreaking-albums-of-all-time">Groundbreaking Albums</a>
+													<a class="type-14" href="/music/best-of-2014">Best of 2014</a>
+													<a class="type-14" href="/music/lists/2015-preview-68-reasons-to-love-this-year-20150105">2015 Preview</a>
+											</li>
+							</ul>
+		</li>
+	</ul>
+</div>					</li>
+										
+					<li class="primary-nav-item rs-country-chan-btn">
+					
+																
+											<a href="/country"  data-track data-track-category="Global Nav" data-track-label="Country" data-track-action="Click">RS country</a>
+											
+						<div class="sub-nav">
+		<ul class="subnav-container" data-track-category="First Level Nav">
+						<li class="feature-container">
+			<ul class="features clearfix" data-track-category="Global Nav">
+																			
+					<li class="subnav-col col-one">
+												
+												<h2>
+							<span class="type-31">Latest </span>
+							<span class="type-47">Country</span>
+						</h2>
+						<a href="/music/news/tim-mcgraw-honors-glen-campbell-with-moving-oscars-performance-20150222" data-track data-track-action="Country" data-track-label="Latest Featured">
+							<div class="img-container">
+								    <img src="/assets/img/blank.gif" alt="Tim McGraw Oscars" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/article/tim-mcgraw-honors-glen-campbell-with-moving-oscars-performance-20150222/186899/lead_large/1424660043/300x179-464172308.jpg" />
+
+							</div>
+							<h3 class="type-29">Tim McGraw Honors Glen Campbell at the Oscars</h3>
+							
+															<p class="author type-05">By Beville Dunkerley</p>
+													</a>
+					</li>
+
+					<li class="subnav-col col-two">
+						<div class="col-content">
+															<a href="/music/videos/go-behind-the-scenes-of-ashley-monroes-chic-on-to-something-good-video-20150223" data-track data-track-action="Country" data-track-label="Latest Featured 1">
+									<h3 class="type-10">Go Behind the Scenes of Ashley Monroe&#039;s Album Photo Shoot</h3>
+									<time class="type-05">1 day ago</time>
+								</a>
+															<a href="/music/news/tyler-farr-digs-deep-with-new-album-suffer-in-peace-20150223" data-track data-track-action="Country" data-track-label="Latest Featured 2">
+									<h3 class="type-10">Tyler Farr Digs Deep With &#039;Suffer in Peace&#039; Album</h3>
+									<time class="type-05">1 day ago</time>
+								</a>
+															<a href="/music/premieres/hear-girls-guns-and-glory-honor-hank-williams-on-new-tribute-album-20150223" data-track data-track-action="Country" data-track-label="Latest Featured 3">
+									<h3 class="type-10">Hear Girls Guns and Glory Honor Hank Williams on Live Album</h3>
+									<time class="type-05">1 day ago</time>
+								</a>
+							
+															<a class="type-15 more-link" href="/country/news" data-track data-track-action="Country" data-track-label="More Country News">More Country News Â»</a>
+													</div>
+					</li>
+
+					<li class="subnav-col col-three">
+													<h2 class="type-31">Interviews</h2>
+						
+							<div class="col-content contributor music">
+																	<a class="contributor-box interview-box" href="/music/news/keith-urban-harry-connick-jr-trade-jabs-talk-idol-revamp-20150121">
+										<img src="/assets/img/isos/KeithUrban_20150203.png" alt="Keith Urban" />
+									</a>
+								
+								<a href="/music/news/keith-urban-harry-connick-jr-trade-jabs-talk-idol-revamp-20150121" data-track data-track-action="Country" data-track-label="Interview Featured">
+									<h3 class="type-28 upper-case">Keith Urban Talks Eric Church Duet, Sturgill Love</h3>
+									<p class="type-09 interview-dek">The judges open up about &#039;American Idol&#039;...</p>
+								</a>
+
+								<a class="type-15 more-link" href="/country/features" data-track data-track-action="Country" data-track-label="More Country Interviews">More Interviews Â»</a>
+							</div>
+
+											</li>
+
+					<li class="subnav-col col-four">
+													<h2 class="type-31">Lists</h2>
+						
+						<div class="col-content">
+																																											<a href="/music/lists/10-new-country-artists-you-need-to-know-winter-2015-20150130" data-track data-track-action="Country" data-track-label="Latest List 1">
+											<h3 class="type-10">10 New Country Artists You Should Know</h3>
+
+																							<p class="author type-05">By Rolling Stone</p>
+																					</a>
+																																													<a href="/music/lists/booting-ass-and-taking-names-countrys-20-best-revenge-songs-20150213" data-track data-track-action="Country" data-track-label="Latest List 2">
+											<h3 class="type-10">Booting Ass &amp; Taking Names: 20 Best Country Revenge Songs</h3>
+
+																							<p class="author type-05">By Stephen Betts</p>
+																					</a>
+																																													<a href="/music/lists/hank-williams-five-most-haunting-performances-20140917" data-track data-track-action="Country" data-track-label="Latest List 3">
+											<h3 class="type-10">Hear Hank Williams&#039; Five Most Haunting Performances</h3>
+
+																							<p class="author type-05">By Joseph Hudak</p>
+																					</a>
+																								
+							<a class="type-15 more-link"
+																	href="/country/lists"
+																data-track data-track-action="Country"
+								data-track-label="More Country Lists">
+																	More Country Lists Â»
+															</a>
+						</div>
+					</li>
+
+					<li class="col-five">
+													<a class="type-14" href="/country/news">News</a>
+													<a class="type-14" href="/country/pictures">Galleries</a>
+													<a class="type-14" href="/country/features">Features</a>
+													<a class="type-14" href="/country/videos">Videos</a>
+													<a class="type-14" href="/music/pictures/100-greatest-country-songs-of-all-time-20140601">100 Greatest Country Songs</a>
+													<a class="type-14" href="/music/yahoo-music">Yahoo Music</a>
+													<a class="type-14" href="/music/best-of-2014">Best of 2014</a>
+													<a class="type-14" href="/music/lists/2015-preview-68-reasons-to-love-this-year-20150105">2015 Preview</a>
+											</li>
+							</ul>
+		</li>
+	</ul>
+</div>					</li>
+					
+					<li class="primary-nav-item subscribe-bot"><a href="/coverwall" data-track data-track-category="Global Nav" data-track-label="Coverwall" data-track-action="Click">Coverwall</a>
+						<div class="sub-nav coverwall-sub-nav">
+	<ul class="subnav-container" data-track-category="First Level Nav">
+		<li class="feature-container">
+			<ul class="features clearfix" data-track-category="Global Nav" data-track-action="CoverWall">
+					<li class="subnav-col col-one">
+                                            <h2 class="type-47">
+                                                <span class="type-47">About the <em>Coverwall</em></span>
+                                            </h2>
+                                            <img src="http://assets.rollingstone.com/coverwall/about-coverwall.jpg">
+                                        </li>
+
+					<li class="subnav-col col-two">
+						<div class="col-content type-13">
+                                                    From John and Yoko to Miley Cyrus, Annie Leibovitz to David LaChapelle, the cover of Rolling Stone has always been an art form in its own right. Now you can explore all our covers, and read full articles from classic issues dating back to our 1967 launch in our brand-new Cover Wall.
+                                                    <br>
+                                                    <a class="type-16 more-link" href="/coverwall" data-track data-track-label="Explore">Explore the Coverwall Â»</a>
+						</div>
+					</li>
+
+					<li class="subnav-col col-three">
+						
+                                            <h2><span class="type-47">Featured Issue</span>
+							</h2>
+                                            <img src="http://assets.rollingstone.com/coverwall/0674-cover-238x.jpg">
+					</li>
+
+                                        <li class="subnav-col col-four lists" >
+						<div class="col-content">
+                                                                                                            <a href="/music/news/kurt-cobain-the-rolling-stone-interview-19940127" data-track data-track-label="Latest Featured 1">
+                                                                <h3 class="type-10">Kurt Cobain, The Rolling Stone Interview: Success Doesn&#039;t Suck</h3>
+								<p class="type-05">By David Fricke</p>
+							</a>
+                                                                                                            <a href="/music/features/1994-music-awards-readers-picks-19940127" data-track data-track-label="Latest Featured 2">
+                                                                <h3 class="type-10">1994 Music Awards: Readers Picks</h3>
+								<p class="type-05">By David Fricke</p>
+							</a>
+                                                                                                            <a href="/music/features/liz-phair-19940127" data-track data-track-label="Latest Featured 3">
+                                                                <h3 class="type-10">Q&amp;A: Liz Phair</h3>
+								<p class="type-05">By Jancee Dunn</p>
+							</a>
+                                                                                                        <a class="type-16 more-link" href="/coverwall/1994" data-track data-track-label="More Covers">More Covers From 1994 Â»</a>
+                                                </div>
+					</li>
+
+					<li class="col-five">
+						                                                    <a class="type-14" href="/coverwall/1969" data-track data-track-label="60s">1960s</a>
+						                                                    <a class="type-14" href="/coverwall/1979" data-track data-track-label="70s">1970s</a>
+						                                                    <a class="type-14" href="/coverwall/1989" data-track data-track-label="80s">1980s</a>
+						                                                    <a class="type-14" href="/coverwall/1999" data-track data-track-label="90s">1990s</a>
+						                                                    <a class="type-14" href="/coverwall/2009" data-track data-track-label="00s">2000s</a>
+                                                    <a class="type-14" href="/coverwall/2013" data-track data-track-label="10s">2010s</a>
+                                                    <a target="_blank" href="http://ad.doubleclick.net/ddm/clk/288145259;115140045;a" class="google-play-logo" data-track data-track-label="Google Play">
+                                                        <img src="/assets/img/coverwall/google-play-logo.svg">
+                                                        <img class="cw-google-tracker js-deferred-lazy-load" width="1" height="1" data-src="http://ad.doubleclick.net/ad/N5295.5218.ROLLINGSTONE/B8514260.115140045;sz=1x1;ord=%%CACHEBUSTER%%?">
+                                                    </a>
+                                        </li>
+			</ul>
+		</li>
+	</ul>
+</div>					</li>
+
+					<li id="header-search-item">
+						<!-- ko allowBindings: false -->
+						<div id="header-search">
+							<span class="btn-search-open" data-bind="click: openSearch">Search</span>
+							<div class="search-container search-overlay-container" data-bind="css: { shown: isOpen }">
+								<form method="get" class="search clearfix" action="/search" data-bind="submit: submitSearch">
+									<input type="text" class="query typeahead" id="global-search" name="q" data-bind="value: query, valueUpdate: 'afterkeydown', hasFocus: isOpen">
+									<input type="submit" class="hidden-submit-btn" data-track data-track-category="Global Nav" data-track-label="Search" data-track-action="Click">
+									<div class="loading-results" data-bind="visible: hasQuery"></div>
+									<button type="submit" disabled class="btn-submit" data-bind="attr: { disabled: !hasQuery() }, click: fixiOSPosition, event: { mousedown: goToResults }" data-track data-track-category="Global Nav" data-track-label="Search" data-track-action="Click"></button>
+								</form>
+								<div class="see-all-container" data-bind="visible: hasQuery">
+									<button class="see-all" data-bind="click: fixiOSPosition, event: { mousedown: goToResults }" data-track data-track-category="Search Hover" data-track-action="More Results" data-track-label="Click">More Results</button>
+								</div>
+							</div>
+						</div>
+						<!-- /ko -->
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+				<div class="content-wrap page-container">
+                    			<div class="leaderboard-hd-container">
+				<div class="leaderboard leaderboard-hd">
+					    
+    <div class="ad-container " data-ad-id="leaderboard_header"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[[1035,300],[1035,250],[1035,125],[994,300],[980,300],[970,250],[970,125],[970,90],[970,66],[728,90]]" data-ad-targeting="[]"></div>	
+
+				</div>
+			</div>
+                    				
+			    <article itemscope itemtype="http://schema.org/Article">
+    
+ 	        <div class="article-hd" itemscope>
+                <section class="hub-sponsorship">
+                                        <div class="article-spon">
+                        
+    <div class="ad-container " data-ad-id="sponsoredby_ad"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[288,33]" data-ad-targeting="[]"></div>	
+
+                </div>
+                    </section>
+        <h1 class="article-title" itemprop="headline">Jimmy Page on the &#039;Swagger&#039; of Led Zeppelin&#039;s &#039;Physical Graffiti&#039;</h1>         <h2 class="article-sub-title">Forty years after its release, the guitarist explains how the band made a masterpiece</h2>
+        <div class="article-contributor">
+                            <div class="author-block">
+                                    </div>
+                <span class="author">By <a href="/contributor/kory-grow" rel="author">Kory Grow</a></span>
+                        <time>February 23, 2015</time>
+                    </div>
+        
+<div class="social-icons-container">
+    <ul class="social-bar horizontal" data-track-action="Social Top">
+        <li class="facebook">
+            <a class="rs-icon-facebook" href="http://rol.st/1MN1TZc" data-track data-track-label="Share - Facebook" data-href="http://rol.st/1MN1TZc">
+                <span>Share</span>
+            </a>
+        </li>
+        <li class="twitter">
+            <a class="rs-icon-twitter" href="http://rol.st/1MN1TZc" data-lang="en" data-url="http://rol.st/1MN1TZc" data-text="Jimmy&#x20;Page&#x20;on&#x20;the&#x20;&#x27;Swagger&#x27;&#x20;of&#x20;Led&#x20;Zeppelin&#x27;s&#x20;&#x27;Physical&#x20;Graffiti&#x27;" data-via="rollingstone" data-track data-track-label="Share - Twitter">
+                <span>Tweet</span>
+            </a>
+        </li>
+                <li class="googleplus">
+            <a  class="rs-icon-gplus" href="http://rol.st/1MN1TZc" data-href="http://rol.st/1MN1TZc" data-track data-track-label="Share â Google +">
+                <span>Share</span>
+            </a>
+        </li>
+                        <li class="comments">
+                            <a class="rs-icon-comment" href="#comments" data-track data-track-label="Comment">
+                            <span>Comment</span>
+            </a>
+        </li>
+                        <li class="email">
+            <a  class="rs-icon-mail-alt" href="mailto:&nbsp;?subject=Check this out on Rolling Stone!&body=Hey, I saw this on Rolling Stone and thought youâd be interested in it.%0D%0A%0D%0Ahttp://www.rollingstone.com/music/features/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223" data-track data-track-label="Share - Email">
+                <span>Email</span>
+            </a>
+        </li>
+            </ul>
+    <div class="clearfix"></div>
+</div>
+    </div>
+
+	<div class="columns two-col">
+		<div class="primary">
+			    <div class="has-bulleted-list article-container">
+        	        
+        <div>
+            
+<div class="social-stick social-icons-container">
+    <ul class="social-bar vertical" data-track-action="Social Left">
+        <li class="facebook">
+            <a class="rs-icon-facebook" href="http://rol.st/1MN1TZc" data-track data-track-label="Share - Facebook" data-href="http://rol.st/1MN1TZc">
+                <span>Share</span>
+            </a>
+        </li>
+        <li class="twitter">
+            <a class="rs-icon-twitter" href="http://rol.st/1MN1TZc" data-lang="en" data-url="http://rol.st/1MN1TZc" data-text="Jimmy&#x20;Page&#x20;on&#x20;the&#x20;&#x27;Swagger&#x27;&#x20;of&#x20;Led&#x20;Zeppelin&#x27;s&#x20;&#x27;Physical&#x20;Graffiti&#x27;" data-via="rollingstone" data-track data-track-label="Share - Twitter">
+                <span>Tweet</span>
+            </a>
+        </li>
+                <li class="googleplus">
+            <a  class="rs-icon-gplus" href="http://rol.st/1MN1TZc" data-href="http://rol.st/1MN1TZc" data-track data-track-label="Share â Google +">
+                <span>Share</span>
+            </a>
+        </li>
+                        <li class="comments">
+                            <a class="rs-icon-comment" href="#comments" data-track data-track-label="Comment">
+                            <span>Comment</span>
+            </a>
+        </li>
+                        <li class="email">
+            <a  class="rs-icon-mail-alt" href="mailto:&nbsp;?subject=Check this out on Rolling Stone!&body=Hey, I saw this on Rolling Stone and thought youâd be interested in it.%0D%0A%0D%0Ahttp://www.rollingstone.com/music/features/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223" data-track data-track-label="Share - Email">
+                <span>Email</span>
+            </a>
+        </li>
+            </ul>
+    <div class="clearfix"></div>
+</div>
+            <div class="article-content js-sticky-ad article-noleadimage" itemscope itemprop="articleBody">
+                
+ 
+<figure class="embed float-left">
+        <img src="http://assets.rollingstone.com/assets/2015/media/186509/_original/1424300271/1035x1553-85365270.jpg" alt="Jimmy Page" class="" />
+
+    <figcaption>
+        Jimmy Page performing live in 1975. <span class="credit">Graham Wiltshire/Redferns/Getty</span>
+            </figcaption>
+
+</figure>
+<p>By the time <a href="http://www.rollingstone.com/music/artists/led-zeppelin">Led Zeppelin</a> released <a href="http://www.rollingstone.com/music/albumreviews/physical-graffiti-19750327"><em>Physical Graffiti</em></a> in 1975, they no longer needed to prove anything. "All of us knew that it was a monumental piece of work, just because of the various paths that we'd trodden along to get to this," says the group's guitarist and producer <a href="http://www.rollingstone.com/music/artists/jimmy-page">Jimmy Page</a>, in one of the music rooms at London's Olympic Studios where the double-LP was originally mixed. "It was like a voyage of discovery, a topographical adventure."</p>
+<aside class="related-article">
+    <h4>Sidebar</h4>
+    <a href="/music/albumreviews/led-zeppelin-physical-graffiti-deluxe-edition-20150224" data-track data-track-action="Interstitial" data-track-label="URL">
+        <div class="image-holder">    <img src="http://assets.rollingstone.com/assets/2015/albumreview/led-zeppelin-physical-graffiti-deluxe-edition-20150224/186057/small_rect/1423855808/300x169-74279770.jpg" alt="Led Zeppelin" class="" />
+</div>
+        Led Zeppelin &#039;Physical Graffiti: Deluxe Edition&#039; Review &raquo;
+    </a>
+    
+</aside>
+
+<p>After refining the band's blend of heavy-hitting blues-rock and introspective English folk on their five previous records, Led Zeppelin made <em>Physical Graffiti </em>their victory lap. They were now successful enough to operate their own record label, Swan Song, and the album &mdash; their first offering on the imprint &mdash; was their lengthy battle cry. Clocking in at a little over 80 minutes, <em>Physical Graffiti</em> contained some of their hardest-rocking tunes ("The Wanton Song," "Custard Pie," "Houses of the Holy"), trippiest epics ("Kashmir," "In the Light," "Ten Years Gone") and sweetest rock &amp; roll diversions ("Black Country Girl," "Boogie With Stu"). The record showed Led Zeppelin at both their most excessive and most impressive.</p>
+<p>Now, along with the rest of Led Zeppelin's canon, <a href="http://www.rollingstone.com/music/news/led-zeppelin-physical-graffiti-super-deluxe-reissue-next-month-20150108">Page has given <em>Physical Graffiti </em>an overhaul</a> &mdash; remastering the original LP and compiling an album-length bonus disc of alternate mixes and early sketches of the songs on the record. Some are subtle, like the <a href="http://www.rollingstone.com/music/premieres/led-zeppelin-house-holy-physical-graffiti-rough-mix-20150120">understated rough mix of "Houses of the Holy"</a> and <a href="http://www.rollingstone.com/music/premieres/led-zeppelin-house-holy-physical-graffiti-rough-mix-20150120">overdub-free version of "Trampled Under Foot" (titled "Brandy and Coke")</a>, and others are drastic, such as "Everybody Makes It Through," a psychedelic draft of what would become the LP's portal to other worlds, "In the Light."</p>
+<p>When Page recalls the first rumblings of the album, he remembers the excitement he felt about returning to Headley Grange, the 18th century English estate where the group had recorded its landmark fourth LP. "I knew what we could do at Headley Grange after having had such a rewarding and productive experience there before," he says. "I knew the secrets of what could be done there."</p>
+<p><strong>What was it about returning to Headley Grange that excited you?<br> </strong>I knew how we did the drums in the main hall for [the fourth album's] "When the Levee Breaks." And some numbers would come out of thin air, like for example the way "Rock &amp; Roll" did on the fourth album and then on <em>Physical Graffiti</em>, "Trampled Under Foot," which came out of thin air like that, just starting out of a riff. I was basically musically salivating on the way there. I was just looking forward to the whole process of everybody being there and just having a whole run at basically working out whatever material I had had or anyone else might've had.</p>
+<p><strong>You had written music at home prior to the sessions. Were you living in Aleister Crowley's former estate at that point?</strong><br> No, I wasn't at Crowley's house. I lived in the countryside in Sussex, and it was a really interesting house. At the top of the house, I had a multitrack studio put in, and it gave me a chance to work on textures. I had the whole of "Ten Years Gone," all of the guitar orchestration, prepared in that house. I came up with "The Wanton Song" and "Sick Again," and I had the whole concept of the "Kashmir" basically there.<span class="pagebreak"><!-- pagebreak --></span></p>
+<p><strong>How did the sessions at Headley Grange begin?<br> </strong>It sort of kicked off with myself and John Bonham there. I had a good half-dozen things at least. And one of them &mdash; the first one that I couldn't wait to get the drums in the hall, to get this big drum sound and then play the riff of &mdash; was "Kashmir." I wanted to try out these ideas that I had for the cascading brass part and figure out the guitar's pace on it. I always thought of that guitar part as being something that was augmented by the orchestra. Basically, it was just really good to start kicking it off with him, 'cause he and I worked so well together.</p>
+<blockquote class="pquote">"This was meant to be something pretty epic and substantial."</blockquote>
+<p><strong>What were the roots of "Kashmir"?<br> </strong>Well, I had the ideas for the riff and the cascading part, which is actually electric 12-string and it's brass on the record, from something that I had been working on before we even went to Headley. It was another piece of music entirely, and right at the very end of it, while I was playing along, I played the acoustic guitar part in reverse, and there was a sort of fanfare, or the cascades, followed by the riff, and I thought, "Whoa." It just occurs right at the end. I said, "Oh, boy, I can visualize this. It's going to be built around the drum kit, and I'm going to get in there with John Bonham." It's the first thing that I ran through with him, because I just know that he is gonna love it, and he loves it, and we just play the riff over and over and over, because it's like a child's riff. Musically, it's a round, like "Fr&egrave;re Jacques," where you can lay things on top of it. That was the idea of having this riff that was gonna be really intense, and probably pretty majestic as well, but quite intriguing. But the fact was, it was going to be built around the sound of Headley, and the drums in the hall. That's how I heard it, and that's how I saw it, but I also heard it with orchestra in mind.</p>
+<p>It was the first track where we actually heard the complement of a full orchestra on top of the brass, and the strings. We'd used strings on "Friends," on the third album, just a small string session, but this was really something that was meant to be pretty epic and substantial.</p>
+<p><strong>Robert Plant has attributed the lyrics to "Kashmir" to a trip you two took in Morocco. Was the riff similarly inspired?<br> </strong>No. It had already been taking on a really magnificent and substantial shape, and Robert said, "You know, I've got some lyrics that I wrote when we were in Morocco I'd like to try on this," and that's what he did. But that was way after the event of actually having the whole of the structure of the song.<span class="pagebreak"><!-- pagebreak --></span></p>
+ 
+
+ 
+<figure class="embed full-width">
+        <img src="http://assets.rollingstone.com/assets/2015/media/186513/_original/1424300919/1035x795-458901526.jpg" alt="Jimmy Page" class="" />
+
+    <figcaption>
+        Jimmy Page speaking in Los Angeles on November 12th, 2014. <span class="credit">Kevin Winter/Getty</span>
+            </figcaption>
+
+</figure>
+<p><strong>You included a "rough orchestra mix" of the song on the new companion disc. What stands out to you about it?<br></strong>The phasing of the drums isn't apparent on this one. It's a different mix all together, but the placement of it is really good, as far as the position on the mixing. There's a sort of 3-D perspective, like the old 3-D films where you could actually touch things when they were coming past you. It's more like that in a sonic picture. Everything, including the background, is in focus.</p>
+<p><strong>The most surprising track on the companion disc is "Everybody Makes It Through," which became "In the Light." How did that transformation take place?</strong><strong><br> </strong>That version is a combination of riff ideas, and the structure is made up of it. At that point in time, on "Everybody Makes It Through," Robert is singing a guide vocal as a point of reference. It also doesn't have the [intro] drone. It was always gonna have a drone to it, which is a bowed guitar, and you hear those sort of bowed switching on and switching in on the final version, but John Paul Jones comes in and lands this absolutely miraculous synthesizer part that opens up "In the Light." It's just phenomenal, and then Robert comes in and does those block vocals, which to me always sounded like some choral music that I had heard from the <em>Music of Bulgaria</em>. So you can hear the work that was individually put into those things.</p>
+<p>I must say that as far as all of these extra things, the studio album versions are better, but all these other versions are really of great, significant interest, I believe.</p>
+<aside class="related-article">
+    <h4>Sidebar</h4>
+    <a href="/music/features/led-zeppelins-physical-graffiti-at-40-soundgardens-kim-thayil-looks-back-20150224" data-track data-track-action="Interstitial" data-track-label="URL">
+        <div class="image-holder">    <img src="http://assets.rollingstone.com/assets/2015/article/led-zeppelins-physical-graffiti-at-40-soundgardens-kim-thayil-looks-back-20150224/186523/small_rect/1424303348/300x169-453389644.jpg" alt="Kim Thayil" class="" />
+</div>
+        Kim Thayil Looks Back on Led Zep&#039;s &#039;Physical Graffiti&#039; &raquo;
+    </a>
+    
+</aside>
+
+
+<p><strong>It seems like that one developed more than some of the other songs on the album.</strong><br> It just depends on whether you caught it with the first take, like "Custard Pie" or "Trampled Under Foot" even. "Trampled Under Foot" is "Brandy and Coke" on the companion disc and that's really interesting for its energy but you can also see all the extra sort of work that goes into it as far as the overdubs. Same deal with "In My Time of Dying." That one is, like, the full 11 minutes. There were no edits or drop-ins or overdubs to the version you hear. This is Led Zeppelin just going for it&nbsp;for an 11-minute song with all the changes in it and everything and the musical map that you have to remember when it goes 1-2-3-4, tapes rolling.<span class="pagebreak"><!-- pagebreak --></span></p>
+<p><strong>Why were you interested in drones at the time anyway?</strong><strong><br> </strong>Well, the drone we used at the opening of the concerts that actually came out as <a href="http://www.rollingstone.com/music/albumreviews/how-the-west-was-won-20030521"><em>How the West Was Won</em></a>, the ones in Long Beach and L.A. Forum, and it was just an acoustic guitar that was tracked. I used the bow going way back into the days of the Yardbirds, and a little bit before that. But it was something I took very seriously but that was on electric guitar; I wanted to get the density, if you like, of an acoustic guitar tuned into a chord and just sort of bowing and just building it up like you'd have over an orchestral thing almost or [modern classical composer] Krzysztof Penderecki. He would have liked that [<em>laughs</em>]. The idea of using the drone even preceded that album, but it really comes into effect there, that's for sure. It was the early days of ambient music, if you like<em>.</em></p>
+<blockquote class="pquote">"It's just total attitude, which is probably in my DNA."</blockquote>
+<p><strong>I've read that John Paul Jones said you never played "In the Light" live because it would be too hard to replicate.</strong><br> We could have done it. At that point in time, I think he's still in the position that the synthesizers were monophonic maybe. But further on down the road, maybe on the '77 tour, we could have done it. Maybe we should have played it at the O2, because I know that the keyboards of today are more complete. But the song didn't come into the equation; we never even took it on.</p>
+<p><strong>Going back to the final album, another song you had held onto from previous sessions was "The Rover." Did that take a lot to develop?<br> </strong>It was something that was started when we were at Stargroves [estate] for <em>Houses of the Holy,</em> but it got worked on when we actually got to Headley on the second visit where we did guitar overdubs and it was mixed at Olympic. The whole thing about "The Rover" is the whole swagger of it, the whole guitar attitude swagger. I'm afraid I've got to say it, but it's the sort of thing that is so apparent when you hear "Rumble" by Link Wray &mdash; it's just total attitude, isn't it? So that sort of thing, which is sort of probably in my DNA to be honest with you.</p>
+<p><strong>Why was <em>Physical Graffiti </em>ultimately a double-album?</strong><br> It gave us the chance to put in the material that was left over from the first visit to Headley. There were three tracks that were left off of the fourth album, and that was "Boogie With Stu," "Night Flight" and "Down by the Seaside." If you think about it, you couldn't have substituted anything off the fourth album with any of those tracks, quite rightly so. Each of them had their own individual charm and character.</p>
+<p>So with those, plus the fact that "Houses of the Holy" was a track that wasn't included on the album <em>Houses of the Holy</em>, that was four things straight away [to include]. And, you know, given the chance of having a good run at this writing and recording process, I didn't want it to be a double-album with any padding on it. It would be a double-album with all character pieces, the way that Led Zeppelin did their music with the sort of ethos of it, if you like, that everything sounded different to everything else.<span class="pagebreak"><!-- pagebreak --></span></p>
+<p><strong>You also had your label to think about at the time. <br> </strong>It was the first [Led Zeppelin] album that was going to be on the Swan Song record label that Peter Grant had helped put together for the band with Atlantic. Having a record label was a really cool idea, because it gave us a chance to showcase people that we really liked and respected, so, as an example, Paul Rodgers' band, Bad Company, which was one of the first releases and also, the Pretty Things, we all did highly of, and I thought what they did on Swan Song was good.</p>
+<p><rsinline id="256274865132.25653" data-inset-name="rsInlineRelated" class="mceNonEditable"><span class="related-article mceNonEditable" data-inset-name="rsInlineRelated">Related: The 40 Greatest Led Zeppelin Songs of All Time</span></rsinline></p>
+
+
+<p><strong>You were working on the soundtrack for Kenneth Anger's film <em>Lucifer Rising</em>, which </strong><a href="http://www.rollingstone.com/music/news/jimmy-page-to-premiere-deluxe-physical-graffiti-answer-questions-on-yahoo-20150217"><strong>you're reissuing soon</strong></a><strong>, around that time you made <em>Physical Graffiti</em>, too.</strong><strong><br> </strong>Yeah, having the facility to have this multitrack at home, I could try experiments with sort of all of the instruments, giving them different treatments so they didn't actually sound, necessarily, like the instrument itself. So the tabla drums, they don't sound like tabla drums and there's a big tambura that sounds pretty radically different. The version that's coming out has got the guitar guide to it. So there was an acoustic guitar to it that I took out in many other versions. But it's pretty interesting.</p>
+<p><strong>Was there any crossover between what you did with <em>Lucifer Rising</em> and <em>Physical Graffiti</em>?<br> </strong>I knew that that sort of stuff wasn't necessarily the way that Led Zeppelin was going to go, although it's still there in all. It was like my own sketchpad and I tried things out that are pretty radical. I was pushing myself, that's what it was, in every degree in every angle.</p>
+<p><strong>You came up with the title "<em>Physical Graffiti</em>." What was the concept behind it?<br> </strong>Graffiti had started to appear on buildings at the time, and usually it was quotes from William Blake, and it wasn't in the graffiti which we know think of, which was more from the hip-hop times. Nevertheless, graffiti was appearing, and I imagined something, which was like a physical reaction to it. Since we were in a recording studio, if you're doing a recording, and it's going on the tape, even though its magnetic tape, that's like a graffiti in itself. The music was a physical manifestation.</p>
+<p><strong>Lastly, you've said you're now working on a new "guitar project," and also that it began with playing acoustic guitar. What will it be?</strong><strong><br> </strong>I intend to be doing something which obviously will surface as a sort of album somewhere. It'll surface further on down the line; I'm looking forward to doing whatever the project is. But if you think about all the areas that I've attempted, guitar, whether it's acoustic or electric or whatever, all the different approaches that I've done, it's just gonna be an extension of all of that, and that's it. So it's not just acoustic, it's not just electric, it's everything I can muster up.</p>
+
+                
+
+                
+<div class="social-icons-container">
+    <ul class="social-bar horizontal" data-track-action="Social Bottom">
+        <li class="facebook">
+            <a class="rs-icon-facebook" href="http://rol.st/1MN1TZc" data-track data-track-label="Share - Facebook" data-href="http://rol.st/1MN1TZc">
+                <span>Share</span>
+            </a>
+        </li>
+        <li class="twitter">
+            <a class="rs-icon-twitter" href="http://rol.st/1MN1TZc" data-lang="en" data-url="http://rol.st/1MN1TZc" data-text="Jimmy&#x20;Page&#x20;on&#x20;the&#x20;&#x27;Swagger&#x27;&#x20;of&#x20;Led&#x20;Zeppelin&#x27;s&#x20;&#x27;Physical&#x20;Graffiti&#x27;" data-via="rollingstone" data-track data-track-label="Share - Twitter">
+                <span>Tweet</span>
+            </a>
+        </li>
+                <li class="googleplus">
+            <a  class="rs-icon-gplus" href="http://rol.st/1MN1TZc" data-href="http://rol.st/1MN1TZc" data-track data-track-label="Share â Google +">
+                <span>Share</span>
+            </a>
+        </li>
+                        <li class="comments">
+                            <a class="rs-icon-comment" href="#comments" data-track data-track-label="Comment">
+                            <span>Comment</span>
+            </a>
+        </li>
+                        <li class="email">
+            <a  class="rs-icon-mail-alt" href="mailto:&nbsp;?subject=Check this out on Rolling Stone!&body=Hey, I saw this on Rolling Stone and thought youâd be interested in it.%0D%0A%0D%0Ahttp://www.rollingstone.com/music/features/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223" data-track data-track-label="Share - Email">
+                <span>Email</span>
+            </a>
+        </li>
+            </ul>
+    <div class="clearfix"></div>
+</div>
+                
+                <div class="related-topics">
+		<span>Topics:</span>
+	<ul>
+		            <li>
+                                                            <a class="topic-link" href="/music/artists/jimmy-page">Jimmy Page</a></li>
+                                                </li>
+		            <li>
+                                                            <a class="topic-link" href="/music/artists/led-zeppelin">Led Zeppelin</a></li>
+                                                </li>
+			</ul>
+	</div>
+
+            </div>
+        </div>
+    </div> 
+		</div>
+		
+		<div class="tertiary">
+			
+        	<div class="ad-label tertiary-item">
+    
+    <div class="ad-container " data-ad-id="right_rail_1"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[[300,250],[300,600],[300,1050]]" data-ad-targeting="[]"></div>	
+</div>
+        
+    <div class="ad-container " data-ad-id="right_rail_sponsor"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[[300,252],[300,601],[300,1051]]" data-ad-targeting="[]"></div>	
+
+    
+
+<section class="related-content">
+	
+	<h2 class="heading"><span>Related</span></h2>
+	
+	<ul class="ui-list">
+				<li class="has-image">
+				<div class="img-container">
+                   	<a class="img-holder" href="/music/premieres/led-zeppelin-stairway-to-heaven-sunset-sound-mix-20141022" data-track data-track-action="Related" data-track-label="1" >    <img src="http://assets.rollingstone.com/assets/2014/article/led-zeppelin-stairway-to-heaven-sunset-sound-mix-20141022/171979/small_square/1413912286/100x100-85238758.jpg" alt="Led Zeppelin 1971" class="" />
+</a>				
+				</div>
+                <div class="content">
+                	<a class="related-link" href="/music/premieres/led-zeppelin-stairway-to-heaven-sunset-sound-mix-20141022" data-track data-track-action="Related" data-track-label="URL" >Hear Led Zeppelin&#039;s Moodier &#039;Stairway to Heaven&#039; Alt Mix</a>
+               	</div>
+		</li>
+				<li class="has-image">
+				<div class="img-container">
+                   	<a class="img-holder" href="/music/news/5-things-we-learned-from-jimmy-pages-siriusxm-interview-20141107" data-track data-track-action="Related" data-track-label="2" >    <img src="http://assets.rollingstone.com/assets/2014/article/5-things-we-learned-from-jimmy-pages-siriusxm-interview-20141107/174001/small_square/1415396276/100x100-522337205AS010_SiriusXM_s_T.JPG" alt="Jimmy Page at SiriuxXM" class="" />
+</a>				
+				</div>
+                <div class="content">
+                	<a class="related-link" href="/music/news/5-things-we-learned-from-jimmy-pages-siriusxm-interview-20141107" data-track data-track-action="Related" data-track-label="URL" >Jimmy Page Reveals Why There Was No &#039;Led Zeppelin V&#039;</a>
+               	</div>
+		</li>
+				<li class="has-image">
+				<div class="img-container">
+                   	<a class="img-holder" href="/music/news/chris-cornell-quizzes-jimmy-page-about-led-zeppelins-glory-days-20141113" data-track data-track-action="Related" data-track-label="3" >    <img src="http://assets.rollingstone.com/assets/2014/article/chris-cornell-quizzes-jimmy-page-about-led-zeppelins-glory-days-20141113/174500/small_square/1415893188/100x100-458900976.jpg" alt="Chris Cornell (L) and Jimmy Page speak onstage at &#039;An Evening With Jimmy Page And Chris Cornell In Conversation&#039; in Los Angeles, California on November 12th, 2014." class="" />
+</a>				
+				</div>
+                <div class="content">
+                	<a class="related-link" href="/music/news/chris-cornell-quizzes-jimmy-page-about-led-zeppelins-glory-days-20141113" data-track data-track-action="Related" data-track-label="URL" >Chris Cornell Quizzes Jimmy Page About Led Zep&#039;s Glory Days</a>
+               	</div>
+		</li>
+				<li class="has-image">
+				<div class="img-container">
+                   	<a class="img-holder" href="/music/news/jimmy-page-promises-quite-different-direction-with-new-music-20150203" data-track data-track-action="Related" data-track-label="4" >    <img src="http://assets.rollingstone.com/assets/2015/article/jimmy-page-promises-quite-different-direction-with-new-music-20150203/184562/small_square/1422992952/100x100-458901406.jpg" alt="Jimmy Page" class="" />
+</a>				
+				</div>
+                <div class="content">
+                	<a class="related-link" href="/music/news/jimmy-page-promises-quite-different-direction-with-new-music-20150203" data-track data-track-action="Related" data-track-label="URL" >Jimmy Page Taking &#039;Quite Different&#039; Direction With New Music</a>
+               	</div>
+		</li>
+			</ul>
+</section>
+
+
+        <section class="zergnet category" data-track-category="Zergnet" data-track-action="Click">
+
+	<h2 class="heading">Around the Web</h2>
+	
+    <div id="zergnet-widget-23121"></div>
+    <div class="zergcredit">Powered By <a href="http://www.zergnet.com" target="_blank" rel="nofollow">ZergNet</a></div>
+		
+</section>
+    <div class="second-ad-unit">
+        	<div class="ad-label tertiary-item">
+    
+    <div class="ad-container " data-ad-id="right_rail_2"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[300,251]" data-ad-targeting="[]"></div>	
+</div>
+    </div>
+    
+
+<section class="partner-links tertiary-item " data-track-category="Partner" data-track-action="Right">
+	<h3 class="heading">
+													<a href="http://www.mensjournal.com" target="_blank" data-track data-track-label="URL">
+			<div class="partner-label">
+				<img src="/assets/img/partner-logos/mensjournal.png" alt="mensjournal">
+			</div>
+			Featured News <div class="from-label">from</div>
+		</a>
+	</h3>
+	<ul class="ui-list">
+		            <li class="has-image">
+            	<div class="link-interior">
+					<div class="content">
+						<p><a href="http://www.mensjournal.com/travel/collection/the-complete-guide-to-james-bonds-favorite-slopes-20150224" target="_blank" data-track data-track-label="URL">The Complete Guide to James Bond's Favorite Slopes</a></p>
+					</div>
+	            	<div class="img-container partner">
+						<a class="img-holder" href="http://www.mensjournal.com/travel/collection/the-complete-guide-to-james-bonds-favorite-slopes-20150224" target="_blank" data-track data-track-label="URL"><img src="http://assets-s3.mensjournal.com/img/essential/the-007-alpine-ski-guide/75_75_the-007-alpine-ski-guide.jpg" alt="The Complete Guide to James Bond's Favorite Slopes"></a>
+					</div>
+				</div>
+			</li>
+                    <li class="has-image">
+            	<div class="link-interior">
+					<div class="content">
+						<p><a href="http://www.mensjournal.com/food-drink/recipes/hot-to-wash-and-cut-up-a-whole-chicken-20150224" target="_blank" data-track data-track-label="URL">How to Wash and Cut Up a Whole Chicken </a></p>
+					</div>
+	            	<div class="img-container partner">
+						<a class="img-holder" href="http://www.mensjournal.com/food-drink/recipes/hot-to-wash-and-cut-up-a-whole-chicken-20150224" target="_blank" data-track data-track-label="URL"><img src="http://assets-s3.mensjournal.com/img/essential/tk-cleaning-chicken/75_75_tk-cleaning-chicken.jpg" alt="How to Wash and Cut Up a Whole Chicken "></a>
+					</div>
+				</div>
+			</li>
+                    <li class="has-image">
+            	<div class="link-interior">
+					<div class="content">
+						<p><a href="http://www.mensjournal.com/adventure/outdoor/runner-breaks-speed-record-on-tallest-peak-in-western-hemisphere-20150224" target="_blank" data-track data-track-label="URL">Runner Breaks Speed Record on Tallest Peak in Western Hemisphere</a></p>
+					</div>
+	            	<div class="img-container partner">
+						<a class="img-holder" href="http://www.mensjournal.com/adventure/outdoor/runner-breaks-speed-record-on-tallest-peak-in-western-hemisphere-20150224" target="_blank" data-track data-track-label="URL"><img src="http://assets-s3.mensjournal.com/img/essential/runner-breaks-speed-record-on-tallest-peak-in-western-hemisphere/75_75_runner-breaks-speed-record-on-tallest-peak-in-western-hemisphere.jpg" alt="Runner Breaks Speed Record on Tallest Peak in Western Hemisphere"></a>
+					</div>
+				</div>
+			</li>
+                    <li class="has-image">
+            	<div class="link-interior">
+					<div class="content">
+						<p><a href="http://www.mensjournal.com/expert-advice/everything-you-need-to-pack-for-a-4-day-backpacking-trip-20150224" target="_blank" data-track data-track-label="URL">Everything You Need to Pack for a 4-Day Backpacking Trip</a></p>
+					</div>
+	            	<div class="img-container partner">
+						<a class="img-holder" href="http://www.mensjournal.com/expert-advice/everything-you-need-to-pack-for-a-4-day-backpacking-trip-20150224" target="_blank" data-track data-track-label="URL"><img src="http://assets-s3.mensjournal.com/img/collection/everything-you-need-to-pack-for-a-4-day-backpacking-trip/75_75_everything-you-need-to-pack-for-a-4-day-backpacking-trip.jpg" alt="Everything You Need to Pack for a 4-Day Backpacking Trip"></a>
+					</div>
+				</div>
+			</li>
+                    <li class="has-image">
+            	<div class="link-interior">
+					<div class="content">
+						<p><a href="http://www.mensjournal.com/adventure/outdoor/watch-a-base-jumper-blindly-dive-into-the-clouds-20150224" target="_blank" data-track data-track-label="URL">Watch a BASE Jumper Blindly Dive Into the Clouds</a></p>
+					</div>
+	            	<div class="img-container partner">
+						<a class="img-holder" href="http://www.mensjournal.com/adventure/outdoor/watch-a-base-jumper-blindly-dive-into-the-clouds-20150224" target="_blank" data-track data-track-label="URL"><img src="http://assets-s3.mensjournal.com/img/essential/watch-a-base-jumper-dive-into-fog/75_75_watch-a-base-jumper-dive-into-fog.jpg" alt="Watch a BASE Jumper Blindly Dive Into the Clouds"></a>
+					</div>
+				</div>
+			</li>
+        	</ul>
+</section>
+
+
+    <div class="advertisement-container">
+        <div class="sticky-ad-wrapper">
+            	<div class="ad-label tertiary-item">
+    
+    <div class="ad-container " data-ad-id="right_rail_3"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[301,250]" data-ad-targeting="[]"></div>	
+</div>
+        </div>
+    </div>  
+    
+		</div>
+	</div>
+	    <div class="columns two-col lower-row">
+        <div class="primary">
+            <div class="component-wrapper">
+                <section class="more-reads-3-up ">
+	<div class="hd-reg">
+            <h2 class="heading">Editor&#039;s Picks</h2>
+	</div>
+	<ul class="three-up-items">
+				<li>
+			<a href="/music/lists/helmets-page-hamilton-breaks-down-betty-track-by-track-20150217" data-track data-track-action="Editor&#039;s Picks" data-track-label="1">
+           		<div class="img-container">     <img src="/assets/img/blank.gif" alt="Page Hamilton" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/list/helmets-page-hamilton-breaks-down-betty-track-by-track-20150217/186051/small_rect/1423854635/300x169-142341943.jpg" />
+</div>
+				<h3>Helmet&#039;s Page Hamilton Breaks Down &#039;Betty&#039; Track by Track</h3>
+			</a>
+		</li>
+				<li>
+			<a href="/music/pictures/10-new-artists-you-need-to-know-february-2015-20150219" data-track data-track-action="Editor&#039;s Picks" data-track-label="2">
+           		<div class="img-container">     <img src="/assets/img/blank.gif" alt="Leo &quot;Bud&quot; Welch and Catfish and the Bottlemen" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/gallery/10-new-artists-you-need-to-know-february-2015-20150219/185844/small_rect/1423696143/300x169-CoverSplit.jpg" />
+</div>
+				<h3>10 Artists You Need to Know Now</h3>
+			</a>
+		</li>
+				<li>
+			<a href="/music/lists/booting-ass-and-taking-names-countrys-20-best-revenge-songs-20150213" data-track data-track-action="Editor&#039;s Picks" data-track-label="3">
+           		<div class="img-container">     <img src="/assets/img/blank.gif" alt="Carrie Underwood Before He Cheats" class="js-img-lazy " data-src="http://assets.rollingstone.com/assets/2015/list/booting-ass-and-taking-names-countrys-20-best-revenge-songs-20150213/185979/small_rect/1423842218/300x169-107486420.jpg" />
+</div>
+				<h3>Booting Ass &amp; Taking Names: 20 Best Country Revenge Songs</h3>
+			</a>
+		</li>
+			</ul>
+</section>
+
+
+                <section class="around-the-web">
+	<h2 class="heading">Around the Web</h2>
+	<ul class="atw-list">
+								<li class="atw-item" data-track-category="Partner" data-track-action="Bottom">
+					<a href="http://www.cinemablend.com/new/10-Greatest-Movie-Stars-Saturday-Night-Live-Ever-Produced-69811.html" target="_blank" data-track data-track-label="URL">
+						<div class="atw-container">
+							<div class="atw-img">    <img src="http://assets.rollingstone.com/assets/2015/media/187085/_original/1424789667/100x100-chrisfarley_rev.jpg" alt="" class="" />
+</div>
+							<div class="atw-text">
+							    <div class="atw-partner">Cinema Blend</div>
+							    The 10 Greatest Movie Stars SNL Ever Produced
+							</div>
+						</div>
+					</a>
+				</li>
+										<li class="atw-item" data-track-category="Partner" data-track-action="Bottom">
+					<a href="http://mic.com/articles/89679/why-so-many-rock-stars-die-at-27-explained-by-science?utm_source=RollStone&amp;utm_medium=content&amp;utm_campaign=February" target="_blank" data-track data-track-label="URL">
+						<div class="atw-container">
+							<div class="atw-img">    <img src="http://assets.rollingstone.com/assets/2015/media/187086/_original/1424789667/100x100-amy_rev.jpg" alt="" class="" />
+</div>
+							<div class="atw-text">
+							    <div class="atw-partner">Mic</div>
+							    Why So Many Rock Stars Die at 27
+							</div>
+						</div>
+					</a>
+				</li>
+										<li class="atw-item" data-track-category="Partner" data-track-action="Bottom">
+					<a href="http://www.salon.com/2015/02/20/sex_orgies_of_the_1_percent_what_really_happens_when_the_rich_and_powerful_gather_for_group_sex/" target="_blank" data-track data-track-label="URL">
+						<div class="atw-container">
+							<div class="atw-img">    <img src="http://assets.rollingstone.com/assets/2015/media/186844/_original/1424640928/100x100-wolf_rev.jpg" alt="" class="" />
+</div>
+							<div class="atw-text">
+							    <div class="atw-partner">Salon</div>
+							    What Really Happens When the Rich and Powerful Gather for Group Sex
+							</div>
+						</div>
+					</a>
+				</li>
+										<li class="atw-item" data-track-category="Partner" data-track-action="Bottom">
+					<a href="http://www.askmen.com/top_10/celebrity/ten-movie-miscasts-that-ruined-movies.html" target="_blank" data-track data-track-label="URL">
+						<div class="atw-container">
+							<div class="atw-img">    <img src="http://assets.rollingstone.com/assets/2015/media/186845/_original/1424640928/100x100-robinhood_rev.jpg" alt="" class="" />
+</div>
+							<div class="atw-text">
+							    <div class="atw-partner">AskMen</div>
+							    The 10 Biggest Casting Mistakes That Ruined Movies
+							</div>
+						</div>
+					</a>
+				</li>
+										<li class="atw-item" data-track-category="Partner" data-track-action="Bottom">
+					<a href="http://www.cracked.com/photoplasty_1216_the-12-most-unintentionally-hilarious-movie-sex-scenes-ever/" target="_blank" data-track data-track-label="URL">
+						<div class="atw-container">
+							<div class="atw-img">    <img src="http://assets.rollingstone.com/assets/2015/media/186846/_original/1424640928/100x100-sexscenes_rev.jpg" alt="" class="" />
+</div>
+							<div class="atw-text">
+							    <div class="atw-partner">Cracked</div>
+							    The 12 Most Unintentionally Hilarious Movie Sex Scenes Ever
+							</div>
+						</div>
+					</a>
+				</li>
+										<li class="atw-item" data-track-category="Partner" data-track-action="Bottom">
+					<a href="http://www.cinemablend.com/new/10-Worst-Movies-2014-According-RiffTrax-68782.html" target="_blank" data-track data-track-label="URL">
+						<div class="atw-container">
+							<div class="atw-img">    <img src="http://assets.rollingstone.com/assets/2015/media/187087/_original/1424789667/100x100-300_rev.jpg" alt="" class="" />
+</div>
+							<div class="atw-text">
+							    <div class="atw-partner">Cinema Blend</div>
+							    The 10 Worst Movies of the Past Year
+							</div>
+						</div>
+					</a>
+				</li>
+					</ul>
+</section>
+
+                
+<section class="comments" id="comments">
+
+	<h2 class="heading"><span>Add a Comment</span></h2>
+	
+	<div id="disqus_thread"></div>
+</section>
+
+
+
+                <ol class="breadcrumbs" itemprop="breadcrumb">
+		<li><a href="/">Home</a></li>
+		<li><a href="/music">Music</a></li>
+		<li><a href="/music/features">Q&amp;A</a></li>
+	</ol>
+            </div>
+        </div>
+        
+        <div class="tertiary">
+            <div class="most-viewed" data-track-category="Most Viewed" >
+    <h2 class="heading">Most Viewed</h2>
+    <div>
+        <ol>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            <li>8</li>
+                    </ol>
+        <ul>
+                            <li class="position-1"><a data-track data-track-action="Click" data-track-label="1 -  Watch Christina Aguilera Imitate Britney Spears, Shakira on âJimmy Fallonâ" href="/tv/videos/watch-christina-aguilera-imitate-britney-spears-shakira-on-jimmy-fallon-20150224">Watch Christina Aguilera Imitate Britney Spears, Shakira on âJimmy Fallonâ</a></li>
+                            <li class="position-2"><a data-track data-track-action="Click" data-track-label="2 -  Watch Former Steel Magnolia Singer Meghan Linsey&#039;s Audition for &#039;The Voice&#039;" href="/music/videos/watch-former-steel-magnolia-singer-meghan-linseys-audition-for-the-voice-20150224">Watch Former Steel Magnolia Singer Meghan Linsey&#039;s Audition for &#039;The Voice&#039;</a></li>
+                            <li class="position-3"><a data-track data-track-action="Click" data-track-label="3 -  Watch Kenny and Warren G &#039;Regulate&#039; on &#039;Kimmel&#039;" href="/tv/videos/watch-kenny-and-warren-g-regulate-on-kimmel-20150224">Watch Kenny and Warren G &#039;Regulate&#039; on &#039;Kimmel&#039;</a></li>
+                            <li class="position-4"><a data-track data-track-action="Click" data-track-label="4 -  Jimmy Page on the &#039;Swagger&#039; of Led Zeppelin&#039;s &#039;Physical Graffiti&#039;" href="/music/features/jimmy-page-on-the-swagger-of-led-zeppelins-physical-graffiti-20150223">Jimmy Page on the &#039;Swagger&#039; of Led Zeppelin&#039;s &#039;Physical Graffiti&#039;</a></li>
+                            <li class="position-5"><a data-track data-track-action="Click" data-track-label="5 -  Watch Kanye West&#039;s Poignant Speech About Racism at BET Honors" href="/music/news/watch-kanye-wests-poignant-speech-about-racism-at-bet-honors-20150224">Watch Kanye West&#039;s Poignant Speech About Racism at BET Honors</a></li>
+                            <li class="position-6"><a data-track data-track-action="Click" data-track-label="6 -  The White Devil Kingpin" href="/culture/features/the-white-devil-kingpin-20150218">The White Devil Kingpin</a></li>
+                            <li class="position-7"><a data-track data-track-action="Click" data-track-label="7 -  Kim Gordon: Kurt Cobain&#039;s Chaos Made for &#039;Amazing Theater&#039;" href="/music/live-reviews/kim-gordon-kurt-cobains-chaos-made-for-amazing-theater-20150224">Kim Gordon: Kurt Cobain&#039;s Chaos Made for &#039;Amazing Theater&#039;</a></li>
+                            <li class="position-8"><a data-track data-track-action="Click" data-track-label="8 -  Brandon Flowers Will Achieve &#039;The Desired Effect&#039; on New Solo Album" href="/music/news/brandon-flowers-will-achieve-the-desired-effect-on-new-solo-album-20150224">Brandon Flowers Will Achieve &#039;The Desired Effect&#039; on New Solo Album</a></li>
+                    </ul>
+    </div>
+</div>
+        </div>
+    </div>
+
+
+    </article>
+
+												<div class="leaderboard leaderboard-ft">
+						    
+    <div class="ad-container " data-ad-id="leaderboard_footer"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[728,91]" data-ad-targeting="[]"></div>	
+
+					</div>
+									</div>
+		
+        		    <footer class="site-footer" data-track-category="Footer">
+	<div class="site-footer-top">
+		<section class="limiter">
+			<div class="footer-content footer-left-content">
+				<div class="cell">
+					<h4 class="tagline">Follow RS On</h4>
+					<ul class="follow-rs">
+						<li><a class="ico-btn fb md" href="https://www.facebook.com/RollingStone" data-track data-track-category="Footer" data-track-action="Social" data-track-label="Facebook" target="_blank"></a></li>
+						<li><a class="ico-btn twitter md" href="https://twitter.com/rollingstone" data-track data-track-category="Footer" data-track-action="Social" data-track-label="Twitter" target="_blank"></a></li>
+						<li><a class="ico-btn pinterest md" href="http://www.pinterest.com/rollingstone/" data-track data-track-category="Footer" data-track-action="Social" data-track-label="Pinterest" target="_blank"></a></li>
+						<li><a class="ico-btn g-plus md" href="https://plus.google.com/+rollingstone/posts" data-track data-track-category="Footer" data-track-action="Social" data-track-label="G+" target="_blank"></a></li>
+						<li><a class="ico-btn stumbleupon md" href="https://www.stumbleupon.com/channel/RollingStone" data-track data-track-category="Footer" data-track-action="Social" data-track-label="StumbleUpon" target="_blank"></a></li>
+						<li><a class="ico-btn tumblr md" href="http://rollingstone.tumblr.com/" data-track data-track-category="Footer" data-track-action="Social" data-track-label="Tumblr" target="_blank"></a></li>
+						<li><a class="ico-btn instagram md" href="http://instagram.com/rollingstone" data-track data-track-category="Footer" data-track-action="Social" data-track-label="Instagram" target="_blank"></a></li>
+						<li><a class="ico-btn rss md" href="/services/rss" data-track data-track-category="Footer" data-track-action="Social" data-track-label="RSS"></a></li>
+					</ul>
+				</div>
+			</div> 
+
+			<div class="footer-content footer-center-content">
+				<div class="cell">
+					<h4 class="tagline">
+						Rolling Stone Newsletter
+					</h4>
+					<p class="signup-prompt">
+						Sign up for the latest news, lists &amp; videos!
+					</p>
+					<ul class="signup-error error">
+					</ul>
+					<div class="signup-form js-newsletter-signup">
+						<div class="input-holder">
+							<form id="footer-newsletter-subscribe" action="/ajax/newsletter/subscribe">
+								<input class="email" type="email" name="email" required placeholder="Enter email address">
+								<button class="submit" type="Submit" data-track data-track-category="Footer" data-track-action="Newsletter" data-track-label="Submit">Submit</button>
+								<div class="email-disclosure js-disclose">How we use your email address &raquo;</div>
+							</form>
+						</div>
+					</div>
+					<div class="signup-success">
+						<p>THANK YOU! You have successfully subscribed to the Rolling Stone Newsletter.</p>
+					</div>
+					<div class="newsletter-disclosure ft-disclose">
+						<div class="disclosure-content">
+							<div class="close"><span>x</span></div>
+							<p>We may use your e-mail address to send you the newsletter and offers that may interest you, on behalf of Rolling Stone and its partners. For more information please read our <a href="/services/privacypolicy">Privacy Policy</a>.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-content footer-right-content">
+				<div class="cell">
+					<a class="subscribe-cover" href="http://www.rollingstone.com/allaccess" target="_blank" data-track data-track-category="Footer" data-track-action="On Newstands Now" data-track-label="Archives">
+						<div class="img-container">    <img src="http://assets.rollingstone.com/assets/2015/issue/185788/issue/1423686016/195x265-CovSNL.jpg" alt="John Belushi" class="" />
+</div>
+					</a>
+					<div class="subscribe">
+						<h4 class="tagline">Latest Issue</h4>
+						<a class="footer-button" href="http://www.rollingstone.com/latestissue" data-track data-track-category="Footer" data-track-action="Circ" data-track-label="Digital Edition">Digital Edition</a>
+						<a class="footer-subscribe footer-button" href="/footer-subscribe" data-track data-track-category="Footer" data-track-action="Circ" data-track-label="Subscribe" rel="nofollow">Subscribe</a>
+						<a class="give-a-gift footer-button" href="/footer-gift" data-track data-track-category="Footer" data-track-action="Circ" data-track-label="Give a Gift" rel="nofollow">Give a Gift</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	 <ul class="footer-links">
+        <li>&copy; 2015 Rolling Stone</li>
+        <li><a href="/coverwall" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Coverwall">Coverwall</a></li>
+        <li><a href="/services/contactus" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Contact">Contact</a></li>
+        <li><a href="/services/privacypolicy" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Privacy Policy">Privacy Policy</a></li>
+        <li><a href="/services/privacypolicy#california" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Rights">Your Privacy Rights</a></li>
+        <li><a href="/services/adchoices" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Ad Choices">Your Ad Choices</a></li>
+        <li><a href="/services/datapolicy" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Data Policy">Data Policy</a></li>
+        <li><a href="/services/terms" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Terms">Terms of Use</a></li>
+        <li><a href="/footer-custsvc" target="_blank" data-track-category="Footer" data-track-action="Subnav" data-track-label="Service" rel="nofollow">Customer Service</a></li>
+        <li><a href="/services/pages/advertising-terms-and-conditions" target="_blank" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Advertise">Advertise</a></li>
+        <li><a href="/services/sitemap" target="_blank" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Sitemap">Sitemap</a></li>
+    </ul>
+
+    <ul class="partner-credits">
+        <li><span class="in-assoc">In association with </span><a class="in-assoc-logo" href="http://music.yahoo.com/" target="_blank" data-track data-track-category="Footer" data-track-action="Subnav" data-track-label="Yahoo" rel="nofollow"></a></li>
+    </ul>
+        
+</footer>
+
+<div id="tablet-share-modal" class="tablet-share-modal-container mfp-hide">
+    <div class="share-pop-up">
+	<div class="close"><span>x</span></div>
+		<div class="share-pop-up-container">
+		<span class="module-title">Share</span>
+		<h3 class="article-title">
+			
+		</h3>
+		<ul class="share-pop-up-btns">
+			<li>
+				<a href="#" class="share-item share-url fb">
+						<div class="ico-container">
+							<div class="ico-btn fb lg"></div>
+							<span class="share-service">Facebook</span>
+						</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="share-item share-url twitter">
+					<div class="ico-container">
+						<div class="ico-btn twitter lg"></div>
+						<span class="share-service">Twitter</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="share-item share-url g-plus">
+					<div class="ico-container">
+						<div class="ico-btn g-plus lg"></div>
+						<span class="share-service">Google+</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="share-item share-url pinterest">
+					<div class="ico-container">
+						<div class="ico-btn pinterest lg"></div>
+						<span class="share-service">Pinterest</span>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>        
+		        		
+						    
+    <div class="ad-container ad-takeover" data-ad-id="tracking_pixel"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[1,1]" data-ad-targeting="[]"></div>	
+
+		    
+    <div class="ad-container ad-takeover" data-ad-id="tracking_pixel_2"  
+        data-ad-unit="/4236/rstone.site/music/features/article" data-ad-sizes="[1,2]" data-ad-targeting="[]"></div>	
+
+		    
+    <div class="ad-container " data-ad-id="outofpage_takeover"  
+        data-ad-unit="/4236/rstone.site/music/features/article"data-ad-targeting="[]" data-out-of-page="true" ></div>	
+
+				
+				    		<script type="text/javascript">
+    			var rsConfig = {
+    				search: 'http://www.rollingstone.com/search/lookup',
+    				latestIssue: 'http://www.rollingstone.com/latestissue'
+    			};
+    		</script>
+    		<!-- begin krux interchange tag -->
+<script>
+    window.Krux||((Krux=function(){Krux.q.push(arguments);}).q=[]);
+    (function() {
+        function retrieve(n) {
+            var m, k='kx'+n;
+            if (window.localStorage) {
+                return window.localStorage[k] || '';
+            } 
+            else if (navigator.cookieEnabled) {
+                m = document.cookie.match(k+'=([^;]*)');
+                return (m && unescape(m[1])) || '';
+            } 
+            else {
+                return '';
+            }
+        }
+    
+        Krux.user = retrieve('user');
+        Krux.segments = retrieve('segs') ? retrieve('segs').split(',') : [];
+
+    })();
+</script>
+<!-- end krux interchange tag -->
+<script src="/assets/js/built/desktop.bundle.js"></script>
+<script>
+        require('pages/common').init();
+    
+        var _sf_async_config={
+		uid: 30231, 
+		domain: 'rollingstone.com'
+	};
+	
+	_sf_async_config.useCanonical = 1;
+	
+		_sf_async_config.sections = 'Music,Music-Q&amp;A';
+		
+		_sf_async_config.authors = 'Kory Grow';	
+	
+	(function(){
+	  function loadChartbeat() {
+	    window._sf_endpt=(new Date()).getTime();
+	    var e = document.createElement("script");
+	    e.setAttribute("language", "javascript");
+	    e.setAttribute("type", "text/javascript");
+	    e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+	    document.body.appendChild(e);
+	  }
+	  var oldonload = window.onload;
+	  window.onload = (typeof window.onload != "function") ?
+	     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+	})();
+</script>
+
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-6.newrelic.com","licenseKey":"5ee52db725","applicationID":"4957501","transactionName":"YAFVYhZSXBcDWk0KV1lLdlUQWl0KTV9cPEtDFkJVEEZAAQZmWgxWQwFZQjtXWxcSWE0AUA==","queueTime":0,"applicationTime":1319,"atts":"TEZWFF5ITxk=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script></body>
+</html>

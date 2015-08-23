@@ -1,0 +1,17 @@
+Server: nginx/1.4.4
+Content-Type: text/html;charset=utf-8
+Status: 200 OK
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-UA-Compatible: IE=edge,chrome=1
+X-Varnish: 1392927135 1392836508
+X-Akamai-Transformed: 9 - 0 pmb=mRUM,1
+Vary: Accept-Encoding
+Cache-Control: public, max-age=1277
+Date: Tue, 24 Feb 2015 20:51:01 GMT
+Transfer-Encoding: chunked
+Connection: close
+Connection: Transfer-Encoding
+X-Origin: Matterhorn
+
+

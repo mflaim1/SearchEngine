@@ -1,0 +1,13 @@
+Date: Tue, 24 Feb 2015 20:47:42 GMT
+Server: Apache
+Last-Modified: Tue, 24 Feb 2015 19:36:12 GMT
+ETag: "cc14d7-10fa2-50fdaa1a67cd1"
+Accept-Ranges: bytes
+Content-Length: 69538
+Cache-Control: max-age=1209600
+Expires: Tue, 10 Mar 2015 20:47:42 GMT
+Vary: Accept-Encoding,Cookie
+Connection: close
+Content-Type: text/html; charset=UTF-8
+
+

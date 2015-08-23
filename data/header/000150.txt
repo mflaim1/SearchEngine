@@ -1,0 +1,13 @@
+Date: Tue, 24 Feb 2015 20:50:05 GMT
+Server: Server
+X-Frame-Options: SAMEORIGIN
+Content-Type: text/html;charset=UTF-8
+Content-Language: de-DE
+Vary: Accept-Encoding,User-Agent
+Set-Cookie: uu=BCYh1etX_u-eA5XVfeR7liHFcGvtFvezZqpTuN3yYT4JZQEq1O46LfGFgo-NUhK1c7kM6YXK3PpY%0D%0AqBxspggdR1E5KMw8RQ8xgIfN3RHFPH89rRJPmpGaIKe0CHudAxVTcd_pXsSJXcxPQXKfAx1yW2kX%0D%0A1yGh_QUf7y831MxtS3VgGYLTe977T6fhvNm4GQlQ4hO2XyhcNVRIh7JyFooldH3zDfh9MJ3n-syb%0D%0AmEgZKsFlrOHkpWc7nbBcdjOsvvt0L6ZwdWpaC0XQgCZp4tVcgk5gIg%0D%0A; Domain=.imdb.com; Expires=Mon, 15-Mar-2083 00:04:13 GMT; Path=/
+Set-Cookie: session-id=463-2382527-0188438; Domain=.imdb.com; Expires=Mon, 15-Mar-2083 00:04:13 GMT; Path=/
+Set-Cookie: session-id-time=1582491006; Domain=.imdb.com; Expires=Mon, 15-Mar-2083 00:04:13 GMT; Path=/
+P3P: policyref="http://i.imdb.com/images/p3p.xml",CP="CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC "
+Transfer-Encoding: chunked
+
+

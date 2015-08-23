@@ -1,0 +1,12 @@
+Server: nginx/1.6.2
+Date: Tue, 24 Feb 2015 20:47:51 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 99844
+Connection: close
+Last-Modified: Thu, 23 Jan 2014 21:00:24 GMT
+Accept-Ranges: bytes
+Cache-Control: max-age=3, must-revalidate
+Expires: Tue, 24 Feb 2015 20:47:54 GMT
+Vary: Accept-Encoding,Cookie
+
+

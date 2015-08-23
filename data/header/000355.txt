@@ -1,0 +1,13 @@
+Date: Tue, 24 Feb 2015 20:55:44 GMT
+Server: Apache
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: PHPSESSID=uda2fvue8jlrjnkombo8d5gdg5; path=/
+Vary: Accept-Encoding
+Cache-Control: max-age=1, private, must-revalidate
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html
+
+

@@ -1,0 +1,13 @@
+Content-Type: text/html;charset=utf-8
+Content-Language: de-DE
+Server: 
+Backend: templates
+X-Frame-Options: SAMEORIGIN
+X-Cnection: close
+Vary: Accept-Encoding
+Date: Tue, 24 Feb 2015 20:50:02 GMT
+Transfer-Encoding: chunked
+Connection: close
+Connection: Transfer-Encoding
+
+

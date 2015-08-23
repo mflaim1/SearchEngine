@@ -1,0 +1,11 @@
+Set-Cookie: ARPT=YJUNYXS227.54-80CKKIY; path=/
+Server: Netscape-Enterprise/6.0
+Date: Tue, 24 Feb 2015 20:47:07 GMT
+Content-type: text/html
+Etag: "55ec0c81-fa-0-1301"
+Last-modified: Mon, 26 Aug 2013 17:05:22 GMT
+Content-length: 4865
+Accept-ranges: bytes
+Connection: close
+
+

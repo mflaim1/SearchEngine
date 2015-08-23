@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="ie ie8 lte11 lte10 lte9 lte8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte11 lte10 lte9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" 
+  xmlns:fb="http://www.facebook.com/2008/fbml"
+  xmlns:v="http://rdf.data-vocabulary.org/#"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><![endif]-->
+<!--[if !IE]><!--><html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" 
+  xmlns:fb="http://www.facebook.com/2008/fbml"
+  xmlns:v="http://rdf.data-vocabulary.org/#"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var o=e[t]={exports:{}};n[t][0].call(o.exports,function(e){var o=n[t][1][e];return r(o?o:e)},o,o.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(n,e){function t(n){function e(e,t,a){n&&n(e,t,a),a||(a={});for(var u=c(e),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(n,e){f[n]=c(n).concat(e)}function c(n){return f[n]||[]}function u(){return t(e)}var f={};return{on:a,emit:e,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=n("gos");e.exports=t()},{gos:"7eSDFh"}],ee:[function(n,e){e.exports=n("QJf3ax")},{}],3:[function(n,e){function t(n){return function(){r(n,[(new Date).getTime()].concat(i(arguments)))}}var r=n("handle"),o=n(1),i=n(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","trackUserAction","finished","traceEvent","inlineHit","noticeError"];o(a,function(n,e){window.NREUM[e]=t("api-"+e)}),e.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],gos:[function(n,e){e.exports=n("7eSDFh")},{}],"7eSDFh":[function(n,e){function t(n,e,t){if(r.call(n,e))return n[e];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return n[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],D5DuLP:[function(n,e){function t(n,e,t){return r.listeners(n).length?r.emit(n,e,t):(o[n]||(o[n]=[]),void o[n].push(e))}var r=n("ee").create(),o={};e.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(n,e){e.exports=n("D5DuLP")},{}],XL7HBI:[function(n,e){function t(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:i(n,o,function(){return r++})}var r=1,o="nr@id",i=n("gos");e.exports=t},{gos:"7eSDFh"}],id:[function(n,e){e.exports=n("XL7HBI")},{}],G9z0Bl:[function(n,e){function t(){var n=v.info=NREUM.info;if(n&&n.licenseKey&&n.applicationID&&f&&f.body){c(d,function(e,t){e in n||(n[e]=t)}),v.proto="https"===l.split(":")[0]||n.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=v.proto+n.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=n("handle"),c=n(1),u=(n(2),window),f=u.document,s="addEventListener",p="attachEvent",l=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-536.min.js"},v=e.exports={offset:i(),origin:l,features:{}};f[s]?(f[s]("DOMContentLoaded",o,!1),u[s]("load",t,!1)):(f[p]("onreadystatechange",r),u[p]("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(n,e){e.exports=n("G9z0Bl")},{}],12:[function(n,e){function t(n,e){var t=[],o="",i=0;for(o in n)r.call(n,o)&&(t[i]=e(o,n[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;e.exports=t},{}],13:[function(n,e){function t(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,o=t-e||0,i=Array(0>o?0:o);++r<o;)i[r]=n[e+r];return i}e.exports=t},{}]},{},["G9z0Bl"]);</script>
+<meta property="og:url" content="http://www.denofgeek.com/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3" />
+<meta property="og:site_name" content="Den of Geek" />
+<link rel="canonical" href="http://www.denofgeek.com/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3" />
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:url" content="http://www.denofgeek.com/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3" />
+<link rel="shortcut icon" href="http://cdn-static.denofgeek.com/sites/denofgeek/themes/denofgeek/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta property="twitter:site:id" content="19543893" />
+<meta property="twitter:site" content="@denofgeek" />
+<meta name="copyright" content="Dennis Publishing Limited, licensed by Felden" />
+<meta property="twitter:description" content="Right: Oscars and awards done with for another year. It&#039;s nearly blockbuster season now. And few areÂ bigger or enjoying more anticipation than Joss Whedon&#039;s Avengers: Age Of Ultron, the sequel to the third highest grossing film of all time.
+For his encore, Joss Whedon appears not to be resting on his laurels. Indeed, in his latest interview with Empire, The Avengers director certainly made it clear his ambitions were fairly high, even purely in terms of influence." />
+<meta name="description" content="Joss Whedon discusses his many influences on Avengers: Age of Ultron, grounding the villain&#039;s powers, and defends Spider-Man 3..." />
+<link rel="dns-prefetch" href="//" />
+<link rel="dns-prefetch" href="//cdn-static.denofgeek.com" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<meta property="og:title" content="Joss Whedon on Avengers influences, defends Spider-Man 3" />
+<meta property="og:description" content="Joss Whedon discusses his many influences on Avengers: Age of Ultron, grounding the villain&#039;s powers, and defends Spider-Man 3..." />
+<meta property="twitter:title" content="Joss Whedon on Avengers influences, defends Spider-Man 3" />
+<meta property="og:image" content="http://cdn-static.denofgeek.com/sites/denofgeek/files/joss_whedon_shield_1.jpg" />
+<meta property="og:type" content="article" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Joss Whedon on Avengers influences, defends Spider-Man 3 | Den of Geek</title>
+  <style type="text/css" media="all">@import url("http://cdn-static.denofgeek.com/modules/system/system.base.css?nimmd1");@import url("http://cdn-static.denofgeek.com/modules/system/system.messages.css?nimmd1");@import url("http://cdn-static.denofgeek.com/modules/system/system.theme.css?nimmd1");</style>
+<style type="text/css" media="all">@import url("http://cdn-static.denofgeek.com/sites/denofgeek/modules/features/denofgeek_seek_a_geek/promo_box_styles.css?nimmd1");@import url("http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/css/superfish.css?nimmd1");@import url("http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/css/superfish-vertical.css?nimmd1");@import url("http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/css/superfish-navbar.css?nimmd1");@import url("http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/picture/picture_wysiwyg.css?nimmd1");@import url("http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/flexslider/assets/css/flexslider_img.css?nimmd1");@import url("http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/flexslider/flexslider.css?nimmd1");</style>
+<style type="text/css" media="all">@import url("http://cdn-static.denofgeek.com/sites/denofgeek/files/less/NFvT8rSmdxYZSTDpwZMdDiumQOkbA1C7LQ56pqmbkMs/profiles/dennis_distro/themes/custom/dennis_base/assets/css/dennis_base-master.XcVzbo5GbrB4v7QVES377fts6uudS0o0YbaMpBamvPg.css?nimmd1");@import url("http://cdn-static.denofgeek.com/sites/denofgeek/themes/denofgeek/css/typography.css?nimmd1");@import url("http://cdn-static.denofgeek.com/sites/denofgeek/themes/denofgeek/css/style.css?nimmd1");@import url("http://cdn-static.denofgeek.com/sites/denofgeek/themes/denofgeek/css/color/color.css?nimmd1");@import url("http://cdn-static.denofgeek.com/profiles/dennis_distro/themes/custom/dennis_base/assets/css/grid24-980.css?nimmd1");</style>
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-1999894-1";
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+function adaptCallback(i, width) {
+      var html = document.documentElement;
+      html.className = html.className.replace(/(\s+)?width\-(mobile|tablet-portrait|desktop|widescreen)/g, '');
+      if (i > -1) {
+        var ranges = { 0: 'mobile', 1: 'tablet-portrait', 2: 'desktop', 3: 'widescreen' };
+        var classname = ' width-' + ranges[i];
+        html.className += classname;
+        viewportWidth = ranges[i];
+      }
+    }
+    var ADAPT_CONFIG = {
+    dynamic: true,
+    callback: adaptCallback,
+    range: [ '0 to 760', '760 to 980', '980 to 1200', '1200' ]
+    };
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/sites/denofgeek/themes/denofgeek/js/adapt.min.js"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.slots = googletag.slots || {};
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/features/dennis_dfp/dennis_dfp.js?nimmd1"></script>
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/misc/drupal.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/sites/denofgeek/themes/denofgeek/js/dynamic.ads.js"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["leaderboard_1"] = googletag.defineSlot("/359/denofgeek.com/movies//the-avengers", [728, 90], "dfp-ad-leaderboard_1")
+  .addService(googletag.pubads())
+  .setTargeting("position", "1");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["out_of_page"] = googletag.defineOutOfPageSlot("/359/denofgeek.com/movies//the-avengers", "dfp-ad-out_of_page")
+  .addService(googletag.pubads())
+  .setTargeting("position", "1");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["skin"] = googletag.defineSlot("/359/denofgeek.com/movies//the-avengers", [1000, 800], "dfp-ad-skin")
+  .addService(googletag.pubads())
+  .setTargeting("position", "1");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["billboard"] = googletag.defineSlot("/359/denofgeek.com/movies//the-avengers", [[994, 250], [970, 250]], "dfp-ad-billboard")
+  .addService(googletag.pubads())
+  .setTargeting("position", "1");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["mpu_1"] = googletag.defineSlot("/359/denofgeek.com/movies//the-avengers", [[300, 250], [300, 600]], "dfp-ad-mpu_1")
+  .addService(googletag.pubads())
+  .setTargeting("position", "1");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["mpu_2"] = googletag.defineSlot("/359/denofgeek.com/movies//the-avengers", [[300, 250], [300, 600]], "dfp-ad-mpu_2")
+  .addService(googletag.pubads())
+  .setTargeting("position", "2");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["skyscraper_right_1"] = googletag.defineSlot("/359/denofgeek.com/movies//the-avengers", [[120, 600], [160, 600]], "dfp-ad-skyscraper_right_1")
+  .addService(googletag.pubads())
+  .setTargeting("position", "1");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["leaderboard_2"] = googletag.defineSlot("/359/denofgeek.com/movies//the-avengers", [728, 90], "dfp-ad-leaderboard_2")
+  .addService(googletag.pubads())
+  .setTargeting("position", "2");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+  googletag.pubads().disableInitialLoad();
+  googletag.pubads().setTargeting("article-type", "news");
+  googletag.pubads().setTargeting("primary-category", "movies");
+  googletag.pubads().setTargeting("category", ["movies",""]);
+  googletag.pubads().setTargeting("tags", ["avengers:-age-of-ultron","joss-whedon","spider-man-3","sam-raimi"]);
+  googletag.pubads().setTargeting("author", "david-crow");
+  googletag.pubads().setTargeting("zone", "movies-the-avengers");
+  googletag.pubads().setTargeting("article", "34231");
+  googletag.pubads().setTargeting("live", "yes");
+  googletag.pubads().setTargeting("ord", "4643978026");
+});
+googletag.enableServices();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/pullquote/pullquote.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/jquery.hoverIntent.minified.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/jquery.bgiframe.min.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/superfish.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/supersubs.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/supposition.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/superfish/sftouchscreen.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/superfish/superfish.js?nimmd1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+if(document.location.protocol=='http:'){
+  var Tynt=Tynt||[];
+  Tynt.push('d-5B0KmLur4Rr6acwqm_6r');
+  Tynt.i={"ap":"Read more:"};
+  (function(){
+    var s=document.createElement('script');
+    s.async="async";
+    s.type="text/javascript";
+    s.src='http://tcr.tynt.com/ti.js';
+    var h=document.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(s,h);
+  })();
+}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/libraries/flexslider/jquery.flexslider-min.js?nimmd1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if (window.location.hash.indexOf('#switched') == -1 && !jQuery.cookie('dog_switched')) {
+	var _dirt_country = 'GB';
+	var _dirt_source = document.location.protocol + '//' + document.domain.toLowerCase() + document.location.href.toLowerCase().substring((document.location.href.toLowerCase().indexOf(document.domain.toLowerCase())) + (document.domain.toLowerCase().length));
+	var dirt = document.createElement('script');
+	dirt.type = 'text/javascript'; 
+	dirt.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dirt.dennis.co.uk:8080?c=' + _dirt_country + '&s=' + escape(_dirt_source);
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(dirt, s);
+}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/google_analytics/googleanalytics.js?nimmd1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1999894-1"]);_gaq.push(['_setCustomVar', 1, "article label", "News", 3]);_gaq.push(['_setCustomVar', 2, "category", "Movies", 3]);_gaq.push(['_setCustomVar', 3, "topic", "The Avengers", 3]);_gaq.push(['_setCustomVar', 4, "date published", "20150223", 3]);_gaq.push(["_trackPageview"]);_gaq.push(['_trackPageLoadTime']);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://" : "http://") + "stats.g.doubleclick.net/dc.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/google_analytics_et/js/google_analytics_et.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/sites/denofgeek/libraries/implied-consent/dist/implied-consent.min.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/field_group/field_group.js?nimmd1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/disqus/disqus.js?nimmd1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($) {
+  if ((/Trident\/7\./).test(navigator.userAgent))
+    $("html").addClass("ie11 lte11");
+  else if ($.browser.msie && $.browser.version == 10)
+    $("html").addClass("ie10 lte10 lte11");
+}(jQuery));
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window._taboola = window._taboola || [];
+_taboola.push({article:'auto'});
+!function (e, f, u) { e.async = 1; e.src = u; f.parentNode.insertBefore(e, f);}
+(document.createElement('script'), document.getElementsByTagName('script')[0], 'http://cdn.taboola.com/libtrc/dennispublishing-network/loader.js');
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"denofgeek","theme_token":"WGYBOJogzyCMrzIlJgx4C1WG8HRmzZK1w6949GDKHac","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/denofgeek\/modules\/features\/denofgeek_seek_a_geek\/promo_box_styles.css":1,"profiles\/dennis_distro\/libraries\/superfish\/css\/superfish.css":1,"profiles\/dennis_distro\/libraries\/superfish\/css\/superfish-vertical.css":1,"profiles\/dennis_distro\/libraries\/superfish\/css\/superfish-navbar.css":1,"profiles\/dennis_distro\/modules\/contrib\/picture\/picture_wysiwyg.css":1,"profiles\/dennis_distro\/modules\/contrib\/flexslider\/assets\/css\/flexslider_img.css":1,"profiles\/dennis_distro\/libraries\/flexslider\/flexslider.css":1,"profiles\/dennis_distro\/themes\/custom\/dennis_base\/assets\/css\/dennis_base-master.css.less":1,"sites\/denofgeek\/themes\/denofgeek\/css\/typography.css":1,"sites\/denofgeek\/themes\/denofgeek\/css\/style.css":1,"sites\/denofgeek\/themes\/denofgeek\/css\/color\/color.css":1,"profiles\/dennis_distro\/themes\/custom\/dennis_base\/assets\/css\/grid24-980.css":1},"js":{"profiles\/dennis_distro\/modules\/contrib\/picture\/picturefill\/picturefill.js":1,"profiles\/dennis_distro\/modules\/contrib\/picture\/picture.js":1,"http:\/\/tags.crwdcntrl.net\/c\/4891\/cc.js?ns=_cc4891":1,"profiles\/dennis_distro\/modules\/contrib\/flexslider\/assets\/js\/flexslider.load.js":1,"http:\/\/denofgeek.uk.intellitxt.com\/intellitxt\/front.asp?ipid=30503":1,"http:\/\/cdn-static.denofgeek.com\/sites\/denofgeek\/themes\/denofgeek\/js\/adapt.min.js":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"profiles\/dennis_distro\/modules\/features\/dennis_dfp\/dennis_dfp.js":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"http:\/\/cdn-static.denofgeek.com\/sites\/denofgeek\/themes\/denofgeek\/js\/dynamic.ads.js":1,"misc\/jquery.cookie.js":1,"profiles\/dennis_distro\/modules\/contrib\/pullquote\/pullquote.js":1,"profiles\/dennis_distro\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"profiles\/dennis_distro\/libraries\/superfish\/jquery.bgiframe.min.js":1,"profiles\/dennis_distro\/libraries\/superfish\/superfish.js":1,"profiles\/dennis_distro\/libraries\/superfish\/supersubs.js":1,"profiles\/dennis_distro\/libraries\/superfish\/supposition.js":1,"profiles\/dennis_distro\/libraries\/superfish\/sftouchscreen.js":1,"profiles\/dennis_distro\/modules\/contrib\/superfish\/superfish.js":1,"profiles\/dennis_distro\/libraries\/flexslider\/jquery.flexslider-min.js":1,"profiles\/dennis_distro\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"profiles\/dennis_distro\/modules\/contrib\/google_analytics_et\/js\/google_analytics_et.js":1,"sites\/denofgeek\/libraries\/implied-consent\/dist\/implied-consent.min.js":1,"profiles\/dennis_distro\/modules\/contrib\/field_group\/field_group.js":1,"profiles\/dennis_distro\/modules\/contrib\/disqus\/disqus.js":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"flexslider":{"optionsets":{"flexslider_no_controls":{"namespace":"flex-","selector":".slides \u003E li","easing":"swing","direction":"horizontal","reverse":false,"smoothHeight":false,"startAt":0,"animationSpeed":600,"initDelay":0,"useCSS":true,"touch":false,"video":false,"keyboard":false,"multipleKeyboard":false,"mousewheel":0,"controlsContainer":".flex-control-nav-container","sync":"","asNavFor":"","itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"animation":"fade","slideshow":true,"slideshowSpeed":"7000","directionNav":false,"controlNav":false,"prevText":"Previous","nextText":"Next","pausePlay":false,"pauseText":"Pause","playText":"Play","randomize":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"animationLoop":true,"pauseOnAction":true,"pauseOnHover":false,"manualControls":""}},"instances":{"flexslider-1":"flexslider_no_controls"}},"superfish":{"1":{"id":1,"sf":{"animation":{"opacity":"show"},"speed":"\u0027fast\u0027","autoArrows":false,"dropShadows":true,"disableHI":false},"plugins":{"supposition":false,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"googleAnalyticsETSettings":{"selectors":[{"event":"mousedown","selector":".field-name-field-see-related .field-item a","category":"Related Content Blocks","action":"Further Reading","label":"!text","value":0,"noninteraction":false},{"event":"mousedown","selector":".read-more-about-article-bottom a","category":"Related Content Blocks","action":"Read More About","label":"!text","value":0,"noninteraction":false}],"settings":[]},"impliedConsent":{"noticeText":"\u003C!--smart_paging_autop_filter--\u003E\u003C!--smart_paging_filter--\u003E We use cookies as set out in our \u003Ca href=\u0022http:\/\/www.dennis.co.uk\/cookie-policy\u0022 target=\u0022_blank\u0022 title=\u0022Read more about our cookie policy\u0022\u003Ecookie policy\u003C\/a\u003E. By using this website, you agree we may place these cookies on your device. ","confirmText":"Close"},"field_group":{"div":"full"},"disqus":{"domain":"dennis-denofgeek","url":"http:\/\/www.denofgeek.com\/movies\/the-avengers\/34231\/joss-whedon-on-avengers-influences-defends-spider-man-3","title":"Joss Whedon on Avengers influences, defends Spider-Man 3","identifier":"node\/34231"},"slot_ranges":{"all":"mpu_1 mpu_2 mpu_3 leaderboard_1 leaderboard_2 skyscraper_left_2 skyscraper_right_1 skyscraper_right_2 skin billboard out_of_page"}});
+//--><!]]>
+</script>
+</head>
+<body id="pid-movies-the-avengers-34231-joss-whedon-on-avengers-influences-defends-spider-man-3" class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-34231 node-type-article sidebars-both-last grid-type-980 grid-width-24" >
+  <div id="skip-link">
+    <a href="#main-content-area">Skip to main content area</a>
+  </div>
+        <!-- header-top region -->
+  <div id="header-top" class="region region-header-top header-top">
+    <div id="header-top-inner" class="header-top-inner inner clearfix">
+    <div id="block-denofgeek_site_switcher-dog_site_switcher" class="block block-denofgeek-site-switcher">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="item-list"><ul id="dog_site_selector"><li class="first last"><span id="dog_selector_current" class="">UK Site</span><div class="item-list"><ul><li class="first"><a href="/#switched">UK Site</a></li>
+<li class="last"><a href="http://www.denofgeek.us#switched">US Site</a></li>
+</ul></div></li>
+</ul></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /header-top-inner -->
+  </div><!-- /header-top -->
+
+    
+    <div class="social-menu-span" align="center">
+    	<div class="social-menu-inner" align="right">
+    		<div class="social-menu-inner-small">
+    		
+					<div class="social-menu-promo-box"><a href="http://www.seek-a-geek.co.uk" target="_blank">Seek-A-Geek Dating</a></div>
+    			<div class="social-menu-inner-find-us">Follow us on</div>
+    			<a href="http://www.facebook.com/denofgeek"><img src="/sites/denofgeek/themes/denofgeek/images/social/facebook.png" /></a>
+    			<a href="http://www.facebook.com/denofgeek">Facebook</a>
+    			<a href="http://twitter.com/#!/denofgeek"><img src="/sites/denofgeek/themes/denofgeek/images/social/twitter.png" /></a>
+    			<a href="http://twitter.com/#!/denofgeek">Twitter</a>
+    		</div>
+    	</div>
+    </div>
+    
+    
+  <div id="header-group" class="header-group region" align="center">
+    <div id="header-group-inner" class="header-group-inner inner clearfix" align="center">
+  
+      		        
+                <div id="logo" vocab="http://schema.org/" typeof="Organization">
+                    <a property="url" href="http://www.denofgeek.com/" title="Den of Geek">
+                        <img property="logo" src="http://cdn-static.denofgeek.com/sites/denofgeek/themes/denofgeek/logo.png" alt="Den of Geek" />
+                    </a>
+                </div>
+            		   
+        <!-- header region -->
+  <div id="header" class="region region-header header nested">
+    <div id="header-inner" class="header-inner inner clearfix">
+    <div id="leaderboard-top" class="dfp-leaderboard region">
+        <div id="dfp-ad-leaderboard_1-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-leaderboard_1" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-leaderboard_1");
+    });
+  </script>
+</div>
+</div></div><!-- /block -->
+    </div><!-- /header-inner -->
+  </div><!-- /header -->
+    </div><!-- /header-group-inner -->
+  </div><!-- /header-group -->
+  <div id="menu-group" class="menu-group region" align="center">
+    <div id="menu-group-inner" class="menu-group-inner inner clearfix" style="width:900px">
+        <!-- main-menu region -->
+  <div id="main-menu" class="region region-main-menu main-menu">
+    <div id="main-menu-inner" class="main-menu-inner inner clearfix">
+    <div id="block-search-form" class="block block-search">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <form action="/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+  <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="SEARCH THE SITE" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><button type="submit" id="edit-submit" name="op" value="Search" class="form-submit">Search</button></div><input type="hidden" name="form_build_id" value="form-8C4wefq5i_-sACSrsT_vNkEczOc1ngQPqymNBqMxt4k" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-superfish-1" class="block block-superfish">
+  <div class="gutter inner clearfix">
+            <h4 class="title block-title"><span>Main menu</span></h4>
+        
+    <div class="content clearfix">
+      <ul id="superfish-1" class="menu sf-menu sf-main-menu sf-horizontal sf-style-default sf-total-items-8 sf-parent-items-0 sf-single-items-8 main-menu"><li id="menu-524-1" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/" class="sf-depth-1 ">Home</a></li><li id="menu-862-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="/movies" title="" class="sf-depth-1 ">Movies</a></li><li id="menu-864-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="/tv" class="sf-depth-1 ">TV</a></li><li id="menu-866-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/games" title="" class="sf-depth-1 ">Games</a></li><li id="menu-1076-1" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="/dvd-bluray" class="sf-depth-1 ">DVD/Blu-ray</a></li><li id="menu-1075-1" class="middle even sf-item-6 sf-depth-1 sf-no-children"><a href="/books-comics" class="sf-depth-1 ">Comics/Books</a></li><li id="menu-868-1" class="middle odd sf-item-7 sf-depth-1 sf-no-children"><a href="/other" class="sf-depth-1 ">Other</a></li><li id="menu-3107-1" class="last even sf-item-8 sf-depth-1 sf-no-children"><a href="http://www.moretvicar.com/collections/den-of-geek-shop?cc=denofgeek-topnav" target="_blank" class="sf-depth-1 ">Buy our tat</a></li></ul>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /main-menu-inner -->
+  </div><!-- /main-menu -->
+        <!-- secondary-menu region -->
+  <div id="secondary-menu" class="region region-secondary-menu secondary-menu">
+    <div id="secondary-menu-inner" class="secondary-menu-inner inner clearfix">
+    <div id="block-menu-secondary-menu" class="block block-menu">
+  <div class="gutter inner clearfix">
+            <p class="title block-title"><span>Secondary menu</span></p>
+        
+    <div class="content clearfix">
+          </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /secondary-menu-inner -->
+  </div><!-- /secondary-menu -->
+      
+      
+    </div><!-- /menu-group-inner -->
+  </div><!-- /menu-group -->  
+  
+    <!-- pre-page region -->
+  <div id="pre-page" class="region region-pre-page pre-page">
+    <div id="pre-page-inner" class="pre-page-inner inner clearfix">
+    <div id="block-dfp-out_of_page" class="block block-dfp">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="dfp-ad-out_of_page-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-out_of_page" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-out_of_page");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-dfp-skin" class="block block-dfp">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="dfp-ad-skin-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-skin" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-skin");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /pre-page-inner -->
+  </div><!-- /pre-page -->
+  
+  <div id="page" class="page grid24-24">
+     <div id="breadcrumbs" class="breadcrumbs block">
+<div id="breadcrumbs-inner" class="breadcrumbs-inner gutter">
+<div class="breadcrumb"><a href="/">Home</a> <span class="delimiter">Â»</span> <a href="/movies">Movies</a> <span class="delimiter">Â»</span> <a href="/movies/news">News</a> <span class="delimiter">Â»</span> Joss Whedon on Avengers influences, defends Spider-Man 3</div></div><!-- /breadcrumbs-inner -->
+</div><!-- /breadcrumbs -->
+  
+    <!-- preface-top region -->
+  <div id="preface-top" class="region region-preface-top preface-top">
+    <div id="preface-top-inner" class="preface-top-inner inner clearfix">
+    <div id="block-dfp-billboard" class="block block-dfp">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="dfp-ad-billboard-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-billboard" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-billboard");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /preface-top-inner -->
+  </div><!-- /preface-top -->
+
+    <div id="main" class="main region">
+   <div id="main-inner" class="main-inner inner clearfix">
+   
+      
+            <div id="main-group" class="main-group region grid24-24">
+        <div id="main-group-inner" class="main-group-inner inner">
+          
+          <div id="main-content" class="main-content region nested">
+            <div id="main-content-inner" class="main-content-inner inner">
+			    	  <div id="content-group" class="content-group grid24-16">
+                <div id="content-group-inner" class="content-group-inner inner">
+                  <a id="main-content-area"></a>
+                  										                    <div id="title-group" class="title-group">
+                      <div class="inner clearfix">
+                        <h1 class="title"><span>Joss Whedon on Avengers influences, defends Spider-Man 3</span></h1>
+                                              </div><!-- /title-group-inner -->
+                    </div><!-- /title-group -->
+                                      
+                                                      
+                  
+                                        <!-- content region -->
+  <div id="content" class="region region-content content nested grid24-16">
+    <div id="content-inner" class="content-inner inner clearfix">
+    <div id="block-system-main" class="block block-system">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      
+<div class="node node-article node-promoted odd node-full clearfix" about="/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3" typeof="sioc:Item foaf:Document">
+
+  <div id="node-top" class="node-top region nested">
+      </div>
+
+  <div class="content">
+    <div class="meta">
+      <div class="meta-inner clearfix">
+        <div id="node-article-full-group-meta" class=" group-meta field-group-div"><span class="field field-name-field-article-type field-type-taxonomy-term-reference field-label-hidden">
+      <span class="field-item even">News</span>
+  </span><span class="field field-name-field-author field-type-node-reference field-label-hidden">
+      <span class="field-item even"><a href="/authors/david-crow">David Crow</a></span>
+  </span><span class="field field-name-field-published-date field-type-datetime field-label-hidden">
+  <span class="field-item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2015-02-23T06:08:00+00:00">23 Feb 2015 - 06:08</span></span>
+</span></div>        <span class="share-top">
+        <div class="share-top"><!-- AddThis Button BEGIN --><span  class="addthis_toolbox addthis_default_style clearfix"><a class="addthis_button_print"></a>
+<a class="addthis_button_email"></a>
+<a class="addthis_button_stumbleupon"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_button_facebook_like" fb:like:layout="button_count" fb:like:width="50"></a></span><script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e6be816cd2dd15"></script><!-- AddThis Button END --></div>        </span>
+      </div>
+    </div><!-- /.meta -->
+
+    
+		<div class="primary-image">
+      <img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/article_main_half/public/joss_whedon_shield_1.jpg?itok=zPEJ3SHW" />  </div>
+    <!-- Region for inline related content or skys -->
+    <div class="node-inline"></div>
+
+    <h2 class="short-teaser">
+Joss Whedon discusses his many influences on Avengers: Age of Ultron, grounding the villain&#039;s powers, and defends Spider-Man 3...</h2><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p> Right: Oscars and awards done with for another year. It's nearly blockbuster season now. And few areÂ bigger or enjoying more anticipation than Joss Whedon's <em>Avengers: Age Of Ultron</em>, the sequel to the third highest grossing film of all time.</p>
+<p>For his encore, Joss Whedon appears not to be resting on his laurels. Indeed, in his latest interview with Empire, <em>The Avengers</em> director certainly made it clear his ambitions were fairly high, even purely in terms of influence.</p>
+<p>"I know I reference <em>Godfather Part II</em> a lot" he said. "'Donât reference the greatest movie ever made because thatâs Icarus, you moron!â But at the same time, it is a huge touchstone for me, because you get everything you got from the first <em>Godfather</em> movie in a very different movie, in a movie that structurally couldnât be more different, and thematically and in intent and in mood, and yet nobody ever goes âit wasnât <em>Godfather</em>-y enough'. I need to give people an exciting ride about heroic people, and thatâs certainly part of why I signed on, but at the same time, a richer, deeper, darker movie is not a bad thing".</p>
+<p>In that vein, Whedon also revealed that he has a new kind of villain that he is grounding to be the megalomaniacal foil to his superheroes.</p>
+<p>"The powers in the comic books â theyâre always like 'and then I can reverse the polarity of your ionsâ â well, we have to ground things a lot more. With Ultron, we have to make him slightly less omnipotent, because heâd win. Bottom line. Also, having weaknesses and needs, and foibles, and alliances, and actually caring what people think of him, all these things, are what make him a character and not just a tidal wave. A movie about a tidal wave can be great, but itâs different than a conflict between one side and the other...[so] the powers he has are slightly different â he can control certain things, heâs not just firing repulsors".</p>
+<p>And then Whedon sprung to the defence of Sam Raimi's maligned (including by Raimi himself!)Â <em>Spider-Man 3.</em></p>
+<p>When discussing Quicksilver and Scarlet Witch, he revealed that "theyâre already good to go by the time weâre up and running. You donât want to fall into <em>Spider-Man 3</em> territory â and I say that as a guy who actually thinks pretty well of that movie; thereâs some great stuff in that movie â but there comes a point where youâre overloaded with front-story, back-story, origin story, and it becomes very hard to juggle".</p>
+<p>The full Empire interview is <a href="http://www.empireonline.com/interviews/interview.asp?IID=2017" target="_blank">here</a>.</p>
+<p><em>Avengers: Age Of Ultron</em> lands in UK cinemas at the end of April.</p>
+<p><em>Follow ourÂ <a href="http://twitter.com/denofgeek" target="_self" title="Twitter.com/denofgeek">Twitter feed for faster news and bad jokes right here</a>. And be ourÂ <a href="http://www.facebook.com/denofgeek" target="_self" title="Twitter.com/denofgeek">Facebook chum here</a>.</em> </p>
+</div></div></div><div class="field field-name-field-see-related field-type-node-reference field-label-above">
+      <div class="field-label"><span>See related</span></div>
+    <div class="field-items">
+          <div class="field-item even"><a href="/movies/spider-man/33481/spider-man-3-is-awful-says-its-director-sam-raimi">Spider-Man 3 is &quot;awful&quot; says its director, Sam Raimi</a></div>
+      </div>
+</div>
+    <div class="denofgeek-shirt-shop-article">
+      <a target="_blank" href="http://www.moretvicar.com/collections/den-of-geek-shop?cc=denofgeek-article">Check out Den of Geek T-Shirts HERE</a>
+    </div>
+        <div class="terms terms-inline clearfix">
+      <span class="tags-label">Read More About:</span>
+      <div id="node-article-full-group-tags" class=" group-tags field-group-div read-more-about-article-bottom"><div class="field field-name-field-category-primary field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div></div><div class="field field-name-field-topic field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/the-avengers" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">The Avengers</a></div></div></div><div class="field field-name-field-tags field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/avengers-age-of-ultron" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Avengers: Age Of Ultron</a></div><div class="field-item odd"><a href="/joss-whedon" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Joss Whedon</a></div><div class="field-item even"><a href="/tags/spider-man-3" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Spider-Man 3</a></div><div class="field-item odd"><a href="/tags/sam-raimi" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Sam Raimi</a></div></div></div></div>    </div><!-- /.terms -->
+    
+    <div class="share-bottom">
+      <div class="share-bottom"><!-- AddThis Button BEGIN --><span  class="addthis_toolbox addthis_pill_combo_style clearfix"><a class="addthis_button_stumbleupon_badge" su:badge:style="2"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+<a class="addthis_button_facebook_like" fb:like:layout="standard" fb:like:width="410"></a></span><script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51e6be816cd2dd15"></script><!-- AddThis Button END --></div>    </div>
+  </div><!-- /.content -->
+
+  
+  
+  <div id="node-bottom" class="node-bottom region nested">
+      <!-- node-bottom region -->
+  <div id="node-bottom" class="region region-node-bottom node-bottom nested grid24-16">
+    <div id="node-bottom-inner" class="node-bottom-inner inner clearfix">
+    <div id="block-taboola-taboola_block2" class="block block-taboola">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="taboola-below-article-thumbnails"></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-taboola-taboola_block3" class="block block-taboola">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="taboola-below-article-text-links"></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-dennis_adsense_afc-tag-content" class="block block-dennis-adsense-afc">
+  <div class="gutter inner clearfix">
+            <h4 class="title block-title"><span>Sponsored Links</span></h4>
+        
+    <div class="content clearfix">
+      <div class="google_afc_iframe">
+
+  <div>
+  <script type="text/javascript">
+  <!--
+  google_ad_client = 'pub-7587314254092248';
+  google_ad_format = '620x60';
+google_ad_width = '620';
+google_ad_height = '60';
+google_adtest = 'off';
+google_ad_type = 'text';
+google_language = 'en';
+  // -->
+  </script>
+  <script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+  </div>
+
+</div>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-disqus-disqus_comments" class="block block-disqus">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="disqus_thread"><noscript><p><a href="http://dennis-denofgeek.disqus.com/?url=http%3A%2F%2Fwww.denofgeek.com%2Fmovies%2Fthe-avengers%2F34231%2Fjoss-whedon-on-avengers-influences-defends-spider-man-3">View the discussion thread.</a></p></noscript></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /node-bottom-inner -->
+  </div><!-- /node-bottom -->
+  </div><!-- /#node-bottom -->
+
+</div><!-- /#node -->    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /content-inner -->
+  </div><!-- /content -->
+                  
+                                  </div><!-- /content-group-inner -->
+              </div><!-- /content-group -->
+
+                <!-- sidebar-second region -->
+  <div id="sidebar-second" class="region region-sidebar-second sidebar sidebar-second nested grid24-8">
+    <div id="sidebar-second-inner" class="sidebar-second-inner inner clearfix">
+    <div id="block-dfp-mpu_1" class="block block-dfp">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="dfp-ad-mpu_1-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-mpu_1" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mpu_1");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-taboola-taboola_block1" class="block block-taboola">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="taboola-right-rail-thumbnails"></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-boxes-list_of_lists_right_hand_buttons" class="block block-boxes block-boxes-simple">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id='boxes-box-list_of_lists_right_hand_buttons' class='boxes-box'><div class="boxes-box-content"><!--smart_paging_autop_filter--><!--smart_paging_filter--> <div class="lists-block">
+<div class="lists-block-top-10"><a href="/top-10">Top 10 Lists</a></div>
+<div class="lists-block-odd"><a href="/odd-list">The Odd Lists</a></div>
+</div> </div></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-boxes-denofgeek_seek_a_geek_promo" class="block block-boxes block-boxes-simple">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id='boxes-box-denofgeek_seek_a_geek_promo' class='boxes-box'><div class="boxes-box-content"><!--smart_paging_filter--><!--smart_paging_autop_filter--><p> <a id="seekageek-promo" href="http://www.seek-a-geek.co.uk/" target="_blank"><span class="element-invisible">Seek a Geek Dating</span></a> </p>
+</div></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-views-promo_block-tshirt_promo" class="block block-views">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="view view-promo-block view-id-promo_block view-display-id-tshirt_promo view-dom-id-fb9a59b4191b0dfaa7054b2807c4d48e">
+        
+  
+  
+      <div class="view-content">
+      <div  id="flexslider-1" class="flexslider">
+  <ul class="slides"><li>  
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="http://www.moretvicar.com/collections/den-of-geek-shop/?cc=denofgeek-outside-mpu" target="_blank"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/flex_slider_tshirt/public/5/13/dog-westeros-tshirt_0.jpg?itok=j4XCQnzR" /></a></div>  </div></li>
+<li>  
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="http://www.moretvicar.com/collections/den-of-geek-shop?cc=denofgeek-outside-mpu" target="_blank"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/flex_slider_tshirt/public/6/27//dog-goonies-tshirt.jpg?itok=dg44xlnI" /></a></div>  </div></li>
+<li>  
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="http://www.moretvicar.com/collections/den-of-geek-shop/?cc=denofgeek-outside-mpu" target="_blank"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/flex_slider_tshirt/public/2/00//alien_3.jpg?itok=NkLUttdN" /></a></div>  </div></li>
+<li>  
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="http://www.moretvicar.com/collections/den-of-geek-shop/?cc=denofgeek-outside-mpu" target="_blank"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/flex_slider_tshirt/public/2/01//dog_t_shirt_render0000.jpg?itok=cCiRjBiv" /></a></div>  </div></li>
+<li>  
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="http://www.moretvicar.com/collections/den-of-geek-shop/?cc=denofgeek-outside-mpu" target="_blank"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/flex_slider_tshirt/public/2/02//dumbledore.jpg?itok=GlafKVMN" /></a></div>  </div></li>
+</ul></div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-dfp-mpu_2" class="block block-dfp">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="dfp-ad-mpu_2-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-mpu_2" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mpu_2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-views-240b04cb651cf53c346701d2cda205f3" class="block block-views">
+  <div class="gutter inner clearfix">
+            <h4 class="title block-title"><span>Latest in Movies</span></h4>
+        
+    <div class="content clearfix">
+      <div class="view view-latest-articles-by-category view-id-latest_articles_by_category view-display-id-block_1 view-dom-id-b80f24b2b7465a664cd55eed40c453ba">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first clearfix">
+      
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="/movies/ballet/34250/top-12-really-creepy-ballet-moments-in-film-and-tv"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/5/83//black_swan.jpg?itok=qTq5aeHw" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/movies/ballet/34250/top-12-really-creepy-ballet-moments-in-film-and-tv">Top 12 really creepy ballet moments in film and TV</a></span>  </div>  
+  <div class="views-field views-field-field-short-teaser">        <div class="field-content"><a href="http://www.denofgeek.com/movies/ballet/34250/top-12-really-creepy-ballet-moments-in-film-and-tv">Ballet adds a surreal, creepy quality to many films and tv shows. Here are 12 of the most unsettling... </a></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even clearfix">
+      
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="/movies/it-follows/34247/david-robert-mitchell-interview-it-follows-and-horror"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/5/52//david-robert-mitchell-main.jpg?itok=Tqc5pivh" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/movies/it-follows/34247/david-robert-mitchell-interview-it-follows-and-horror">David Robert Mitchell interview: It Follows and horror</a></span>  </div>  
+  <div class="views-field views-field-field-short-teaser">        <div class="field-content"><a href="http://www.denofgeek.com/movies/it-follows/34247/david-robert-mitchell-interview-it-follows-and-horror"> The writer and director of the spine-chilling It Follows tells us about the origins of his story and how it plays with horror conventions.</a></div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd clearfix">
+      
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="/movies/the-avengers/34272/avengers-age-of-ultron-new-poster-confirms-casting"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/6/23//avengers_lead.jpg?itok=5Y3fYztU" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/movies/the-avengers/34272/avengers-age-of-ultron-new-poster-confirms-casting">Avengers: Age Of Ultron new poster confirms casting</a></span>  </div>  
+  <div class="views-field views-field-field-short-teaser">        <div class="field-content"><a href="http://www.denofgeek.com/movies/the-avengers/34272/avengers-age-of-ultron-new-poster-confirms-casting">Four rumoured names for Joss Whedon&#039;s Avengers sequel are definitely on board, according to the new poster...</a></div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even clearfix">
+      
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="/movies/snowden/34260/nicolas-cage-joins-oliver-stone-s-snowden-film"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/cage.jpeg?itok=_IzZz7Ld" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/movies/snowden/34260/nicolas-cage-joins-oliver-stone-s-snowden-film">Nicolas Cage joins Oliver Stoneâs Snowden film</a></span>  </div>  
+  <div class="views-field views-field-field-short-teaser">        <div class="field-content"><a href="http://www.denofgeek.com/movies/snowden/34260/nicolas-cage-joins-oliver-stone-s-snowden-film">Nicolas Cage is a US intelligence officer in the new Oliver Stone film on Edward Snowden. Joseph Gordon-Levitt also stars.</a></div>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last clearfix">
+      
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><a href="/movies/the-last-man-on-earth/34259/23-jump-street-miller-lord-give-brief-update"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/0/66//21_jump_street_0.jpg?itok=Uce93mgf" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/movies/the-last-man-on-earth/34259/23-jump-street-miller-lord-give-brief-update">23 Jump Street: Miller &amp; Lord give brief update</a></span>  </div>  
+  <div class="views-field views-field-field-short-teaser">        <div class="field-content"><a href="http://www.denofgeek.com/movies/the-last-man-on-earth/34259/23-jump-street-miller-lord-give-brief-update">It looks like the Men In Black and Jump Street crossover is still active, for a start...</a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-term_queue-0" class="block block-term-queue">
+  <div class="gutter inner clearfix">
+            <h4 class="title block-title"><span>Hot Topics</span></h4>
+        
+    <div class="content clearfix">
+      <ul class="term-queue-links"><li class="0 first"><a href="/tags/star-wars">Star Wars</a></li>
+<li class="1"><a href="/den-of-geek-book-club">Den Of Geek Book Club</a></li>
+<li class="2"><a href="/tags/doctor-who">Doctor Who</a></li>
+<li class="3"><a href="/justice-league">Justice League</a></li>
+<li class="4"><a href="/tags/sherlock-series-3">Sherlock series 3</a></li>
+<li class="5"><a href="/tags/doctor-who-series-9">Doctor Who series 9</a></li>
+<li class="6"><a href="/tags/game-of-thrones-season-5">Game Of Thrones season 5</a></li>
+<li class="7"><a href="/tags/dc-movie-universe">DC movie universe</a></li>
+<li class="8 last"><a href="/tags/ant-man">Ant-Man</a></li>
+</ul>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-dfp-skyscraper_right_1" class="block block-dfp">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="dfp-ad-skyscraper_right_1-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-skyscraper_right_1" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-skyscraper_right_1");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-views-featured-block" class="block block-views">
+  <div class="gutter inner clearfix">
+            <h4 class="title block-title"><span>Featured content</span></h4>
+        
+    <div class="content clearfix">
+      <div class="view view-featured view-id-featured view-display-id-block view-dom-id-b02dc6da21a234885593726e163a3f45">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last clearfix">
+      
+  <div class="views-field views-field-field-primary-image">        <div class="field-content"><div class="field-content"><a href="/movies/british-movie-calendar/25194/upcoming-british-film-cinema-release-calendar"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/2/56//duke-burgundy.jpg?itok=oJeR9bjL" /></a></div></div>  </div>  
+  <div class="views-field views-field-title">        <h3 class="field-content"><h3 class="field-content"><a href="/movies/british-movie-calendar/25194/upcoming-british-film-cinema-release-calendar">Upcoming British film cinema release calendar</a></h3></h3>  </div>  
+  <div class="views-field views-field-field-article-type">        <div class="field-content"><a href="/feature">Feature</a></div>  </div>  
+  <div class="views-field views-field-field-author">        <div class="field-content"><a href="/authors/den-of-geek">Den Of Geek</a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-dennis_adsense_afc-tag-mpu" class="block block-dennis-adsense-afc">
+  <div class="gutter inner clearfix">
+            <h4 class="title block-title"><span>Sponsored Links</span></h4>
+        
+    <div class="content clearfix">
+      <div class="google_afc_iframe">
+
+  <div>
+  <script type="text/javascript">
+  <!--
+  google_ad_client = 'pub-7587314254092248';
+  google_ad_format = '300x250';
+google_ad_width = '300';
+google_ad_height = '250';
+google_adtest = 'off';
+google_ad_type = 'text';
+google_language = 'en';
+  // -->
+  </script>
+  <script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+  </div>
+
+</div>
+    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-views-popular-block" class="block block-views">
+  <div class="gutter inner clearfix">
+            <h4 class="title block-title"><span>Popular</span></h4>
+        
+    <div class="content clearfix">
+      <div class="view view-popular view-id-popular view-display-id-block view-dom-id-3d68e25c1b2dff3c26ab40ea2b3202e3">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3" class="active"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/joss_whedon_shield_1.jpg?itok=AxVd2ToD" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3" class="active">Joss Whedon on Avengers influences, defends Spider-Man 3</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">1 day</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-2 views-row-even clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/tv/the-walking-dead/34236/the-walking-dead-season-5-episode-11-review-the-distance"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/5/18//twd_5-11.jpg?itok=-ZRiye-O" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/tv/the-walking-dead/34236/the-walking-dead-season-5-episode-11-review-the-distance">The Walking Dead season 5 episode 11 review: The Distance</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/tv" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">TV</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">1 day</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-3 views-row-odd clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/movies/oscars/34230/oscars-2015-winners-and-thoughts"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/oscars.jpg?itok=vzSWVYaG" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/movies/oscars/34230/oscars-2015-winners-and-thoughts">Oscars 2015: winners and thoughts</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">1 day</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-4 views-row-even clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/movies/wolverine/34235/hugh-jackman-wants-to-play-wolverine-until-i-die"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/wolverine-main.jpg?itok=dBbofkah" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/movies/wolverine/34235/hugh-jackman-wants-to-play-wolverine-until-i-die">Hugh Jackman wants to play Wolverine &quot;until I die&quot;</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">1 day</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-5 views-row-odd clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/tv/arrow/34239/arrow-season-3-episode-14-review-the-return"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/5/21//arrow_3-14.jpg?itok=rVZw5x-X" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/tv/arrow/34239/arrow-season-3-episode-14-review-the-return">Arrow season 3 episode 14 review: The Return</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/tv" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">TV</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">1 day</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-6 views-row-even clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/movies/indiana-jones/34233/indiana-jones-spielberg-may-direct-chris-pratt-sequel"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/spielberg.jpg?itok=oYAdhCCH" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/movies/indiana-jones/34233/indiana-jones-spielberg-may-direct-chris-pratt-sequel">Indiana Jones: Spielberg may direct Chris Pratt sequel</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">1 day</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-7 views-row-odd clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/movies/mission-impossible-5/34234/mission-impossible-5-christopher-mcquarrie-on-ending-reports"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/images/131516.jpg?itok=AUPxfGcx" alt="Mission Impossible " title="Mission Impossible " /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/movies/mission-impossible-5/34234/mission-impossible-5-christopher-mcquarrie-on-ending-reports">Mission: Impossible 5 - Christopher McQuarrie on ending reports</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">1 day</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-8 views-row-even clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/movies/goldfinger/34225/james-bond-007-revisiting-goldfinger"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/5/04//gf2.jpg?itok=fbagBK8H" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/movies/goldfinger/34225/james-bond-007-revisiting-goldfinger">James Bond 007: revisiting Goldfinger</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">1 day</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-9 views-row-odd clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/movies/indiana-jones/34257/indiana-jones-chris-pratt-on-rumours-hes-taking-on-role"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/7/91//jurassic_world_3.jpg?itok=FDtBy3QR" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/movies/indiana-jones/34257/indiana-jones-chris-pratt-on-rumours-hes-taking-on-role">Indiana Jones: Chris Pratt on rumours he&#039;s taking on role</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">13 hours</em> ago</span></div></div>  </div>
+  <div class="views-row views-row-10 views-row-even views-row-last clearfix">
+    <div class="views-field views-field-field-teaser-image"><div class="field-content"><a href="/movies/2014-movies/27982/top-25-must-see-movies-of-2014"><img typeof="foaf:Image" src="http://cdn-static.denofgeek.com/sites/denofgeek/files/styles/thumbnail_small/public/2014-main_0.jpg?itok=3WiIbgI_" /></a></div></div><div class="views-field views-field-title"><span class="field-content"><a href="/movies/2014-movies/27982/top-25-must-see-movies-of-2014">Top 25 must-see movies of 2014</a></span></div><div class="views-field views-field-field-category-primary"><div class="field-content"><a href="/movies" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Movies</a></div></div><div><div><span class="date-display-interval"><em class="placeholder">3 weeks</em> ago</span></div></div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /sidebar-second-inner -->
+  </div><!-- /sidebar-second -->
+            </div><!-- /main-content-inner -->
+          </div><!-- /main-content -->
+
+                  </div><!-- /main-group-inner -->
+      </div><!-- /main-group -->
+    </div><!-- /main-inner -->
+  </div><!-- /main -->
+
+  </div><!-- /page -->
+<div id="footer-group" class="footer-group region" align="center">
+<div style="width:980px;">
+  <!-- footer region -->
+  <div id="footer" class="region region-footer footer">
+    <div id="footer-inner" class="footer-inner inner clearfix">
+    <div id="leaderboard-bottom" class="dfp-leaderboard region">
+        <div id="dfp-ad-leaderboard_2-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-leaderboard_2" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-leaderboard_2");
+    });
+  </script>
+</div>
+</div></div><!-- /block -->
+<div id="block-boxes-footer_contact" class="block block-boxes block-boxes-simple">
+  <div class="gutter inner clearfix">
+  
+		    	<a href="/" id="footer-logo" class="logo-link"><img src="http://cdn-static.denofgeek.com/sites/denofgeek/themes/denofgeek/logo.png" alt="Home" /></a>      
+            <p class="title block-title"><span>Contact us</span></p>
+        
+    <div class="content clearfix">        
+      <div id='boxes-box-footer_contact' class='boxes-box'><div class="boxes-box-content"><!--smart_paging_autop_filter--><!--smart_paging_filter--> Dennis Publishing Editorial Offices
+30 Cleveland Street
+London, W1T 4JD
+T: +44 (0)20 7907 6000
+
+<p class="title block-title"><span>Connect with us</span></p> </div></div><ul class="links"><li class="menu-812 first"><a href="http://www.facebook.com/denofgeek" class="facebook" target="_blank">Facebook</a></li>
+<li class="menu-820 last"><a href="http://twitter.com/#!/denofgeek" class="twitter" target="_blank">Twitter</a></li>
+</ul>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-menu-menu-footer" class="block block-menu">
+  <div class="gutter inner clearfix">
+            <p class="title block-title"><span>Useful links</span></p>
+        
+    <div class="content clearfix">
+      <ul class="links"><li class="menu-524 first"><a href="/">Home</a></li>
+<li class="menu-862"><a href="/movies" title="">Movies</a></li>
+<li class="menu-864"><a href="/tv">TV</a></li>
+<li class="menu-866"><a href="/games" title="">Games</a></li>
+<li class="menu-1076"><a href="/dvd-bluray">DVD/Blu-ray</a></li>
+<li class="menu-1075"><a href="/books-comics">Comics/Books</a></li>
+<li class="menu-868"><a href="/other">Other</a></li>
+<li class="menu-3107"><a href="http://www.moretvicar.com/collections/den-of-geek-shop?cc=denofgeek-topnav" target="_blank">Buy our tat</a></li>
+<li class="menu-2472"><a href="/top-10">List Of Lists</a></li>
+<li class="menu-2277"><a href="/interview">Interviews</a></li>
+<li class="menu-2473"><a href="/poster">Posters</a></li>
+<li class="menu-2474"><a href="/preview">Previews</a></li>
+<li class="menu-2278"><a href="/reviews">Reviews</a></li>
+<li class="menu-2475"><a href="/trailer">Trailers</a></li>
+<li class="menu-254"><a href="http://www.dennis.co.uk/">Company Website</a></li>
+<li class="menu-255"><a href="http://www.dennis.co.uk/privacy">Privacy Notice</a></li>
+<li class="menu-526"><a href="/about-us">About us</a></li>
+<li class="menu-525"><a href="/contact-us">Contact us</a></li>
+<li class="menu-1513"><a href="/authors">Authors</a></li>
+<li class="menu-527"><a href="/feeds">Feeds</a></li>
+<li class="menu-2275 last"><a href="/sitemap">Sitemap</a></li>
+</ul>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-menu-menu-our-websites" class="block block-menu">
+  <div class="gutter inner clearfix">
+            <p class="title block-title"><span>Our Websites</span></p>
+        
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="http://www.theweek.co.uk">The Week</a></li>
+<li class="leaf"><a href="http://www.autoexpress.co.uk/">Auto Express</a></li>
+<li class="leaf"><a href="http://www.bizarremag.com/">Bizarre</a></li>
+<li class="leaf"><a href="http://www.evo.co.uk/">Evo</a></li>
+<li class="leaf"><a href="http://www.forteantimes.com/">Fortean Times</a></li>
+<li class="leaf"><a href="http://www.itpro.co.uk/">IT Pro</a></li>
+<li class="leaf"><a href="http://www.mensfitness.co.uk/">Men&#039;s Fitness</a></li>
+<li class="leaf"><a href="http://www.micromart.co.uk/">Micro Mart</a></li>
+<li class="leaf"><a href="http://www.pcpro.co.uk/">PC Pro</a></li>
+<li class="leaf"><a href="http://www.knowyourmobile.com/">Know Your Mobile</a></li>
+<li class="leaf"><a href="http://www.classicandperformancecar.com/">Octane</a></li>
+<li class="leaf"><a href="http://www.expertreviews.co.uk/">Expert Reviews</a></li>
+<li class="leaf"><a href="http://www.channelpro.co.uk/">Channel Pro</a></li>
+<li class="leaf"><a href="http://www.knowyourcell.com">Know Your Cell</a></li>
+<li class="leaf"><a href="http://www.digitalslrphoto.com">Digital SLR Photography</a></li>
+<li class="leaf"><a href="http://www.womensfitness.co.uk/">Women&#039;s Fitness</a></li>
+<li class="leaf"><a href="http://www.magazinesubscriptions.co.uk/">Magazines</a></li>
+<li class="leaf"><a href="http://www.carbuyer.co.uk">CarBuyer</a></li>
+<li class="leaf"><a href="http://www.cloudpro.co.uk">Cloud Pro</a></li>
+<li class="leaf"><a href="http://www.magbooks.com">MagBooks</a></li>
+<li class="leaf"><a href="http://www.3d-printing.net/">3D Printing</a></li>
+<li class="leaf"><a href="http://www.cyclistmag.co.uk">Cyclist</a></li>
+<li class="last leaf"><a href="http://www.tablepouncer.com">Restaurant deals</a></li>
+</ul>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-dennis_core-dennis_core_footer" class="block block-dennis-core">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="copyright">
+  <p style="text-align:left;">Â© Copyright <a title="Hyperlink to The Dennis Publishing web site" href="http://www.dennis.co.uk/"><span>Dennis Publishing</span></a> Limited.<br/>Under licence from Felix Dennis.<br/>Den Of Geek is a trademark of Felix Dennis.</p>
+</div>
+<ul class="links"><li class="menu-2750 first"><a href="http://www.felixdennis.com/">Felix Dennis</a></li>
+<li class="menu-2755"><a href="http://www.dennis.co.uk/apps">Apps</a></li>
+<li class="menu-2754"><a href="http://www.dennis.co.uk/books">Books</a></li>
+<li class="menu-2751"><a href="http://www.dennis.co.uk/working-at-dennis">Jobs</a></li>
+<li class="menu-2752"><a href="http://www.dennis.co.uk/brands/den-of-geek">Media Information</a></li>
+<li class="menu-2753 last"><a href="http://www.youronlinechoices.eu">Your Online Choices</a></li>
+</ul>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /footer-inner -->
+  </div><!-- /footer -->
+</div>
+</div>
+    <!-- page-bottom region -->
+  <div id="page-bottom" class="region region-page-bottom page-bottom">
+    <div id="page-bottom-inner" class="page-bottom-inner inner clearfix">
+    <!-- Begin comScore Tag -->
+          <script>
+            var _comscore = _comscore || [];
+            _comscore.push({ c1: "2", c2: "6036152", c3: "", c4: "http://www.denofgeek.com/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3", c5: "", c6: "", c15: "" });
+            (function() {
+              var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+              s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+              el.parentNode.insertBefore(s, el);
+            })();
+          </script>
+          <noscript>
+            <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036152&c3=&c4=http://www.denofgeek.com/movies/the-avengers/34231/joss-whedon-on-avengers-influences-defends-spider-man-3&c5=&c6=&c15=&cv=2.0&cj=1" />
+          </noscript>
+      <!-- End comScore Tag -->    </div><!-- /page-bottom-inner -->
+  </div><!-- /page-bottom -->
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/picture/picturefill/picturefill.js?v=0.1"></script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/picture/picture.js?v=7.34"></script>
+<script type="text/javascript" src="http://tags.crwdcntrl.net/c/4891/cc.js?ns=_cc4891" id="LOTCC_4891"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if (typeof(_cc4891) === "object") _cc4891.bcp();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://cdn-static.denofgeek.com/profiles/dennis_distro/modules/contrib/flexslider/assets/js/flexslider.load.js?nimmd1"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+      setTimeout(function(){var a=document.createElement("script");
+      var b=document.getElementsByTagName('script')[0];
+      a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/8751.js";
+      a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+      
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQQ.isolate(function($) {
+  'use strict';
+  $('body').prepend('<div id="__ic-notice"></div>');
+  $('#__ic-notice').impliedConsent(Drupal.settings.impliedConsent);
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window._taboola = window._taboola || [];
+_taboola.push({mode:'thumbnails-a', container:'taboola-below-article-thumbnails', placement:'Below Article Thumbnails', target_type:'mix'});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window._taboola = window._taboola || [];
+_taboola.push({mode:'text-links-a', container:'taboola-below-article-text-links', placement:'Below Article Text Links', target_type:'mix'});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function ($) {
+	Drupal.behaviors.dog_site_switcher = {
+		attach: function (context, settings) {
+			$("#dog_site_selector .item-list").hide();
+			$("#dog_site_selector #dog_selector_current").removeClass("dogflag_selected");
+			$("#dog_site_selector #dog_selector_current", context).bind("click", function(event) {
+				if (typeof _gaq === "object") {_gaq.push(["_trackEvent", "Site Switcher", "Site switcher expanded"])};
+				$("#dog_site_selector .item-list").toggle();
+				$("#dog_site_selector #dog_selector_current").toggleClass( "dogflag_selected" )
+			});
+			$("#dog_site_selector ul", context).bind("mouseleave", function(event) {
+				$("#dog_site_selector .item-list").toggle();
+				$("#dog_site_selector #dog_selector_current").toggleClass( "dogflag_selected" )
+			});
+			$("#dog_site_selector .item-list li", context).bind("click", function(event) {
+				if (typeof _gaq === "object") {_gaq.push(["_trackEvent", "Site Switcher", "Link in site switcher clicked"])};
+			});
+		}
+	}
+})(jQuery)
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window._taboola = window._taboola || [];
+_taboola.push({mode:'thumbnails-b', container:'taboola-right-rail-thumbnails', placement:'Right Rail Thumbnails', target_type:'mix'});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window._taboola = window._taboola || [];
+_taboola.push({flush: true});
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://denofgeek.uk.intellitxt.com/intellitxt/front.asp?ipid=30503"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","licenseKey":"c50bb2a122","applicationID":"969947,1688962","transactionName":"ZAFSYkdTXxECBRcMDl1LcVVBW14MTAgMAQRsFFFRUG1HCwYR","queueTime":0,"applicationTime":710,"atts":"SEZRFA9JTB8=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-536.min.js"}</script></body>
+</html>

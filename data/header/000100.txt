@@ -1,0 +1,10 @@
+Date: Tue, 24 Feb 2015 20:49:01 GMT
+Server: Apache/2.2.29
+Vary: Cookie
+X-Pingback: http://venusfebriculosa.com/xmlrpc.php
+WP-Super-Cache: Served legacy cache file
+Connection: close
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+

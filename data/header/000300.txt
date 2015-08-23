@@ -1,0 +1,23 @@
+Last-Modified: Tue, 24 Feb 2015 20:54:13 GMT
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=31536000
+x-apple-translated-wo-url: /WebObjects/MZStore.woa/wa/viewArtist?id=32940&cc=us&urlDesc=/michael-jackson
+x-apple-orig-url: https://itunes.apple.com/us/artist/michael-jackson/id32940
+x-apple-application-site: NWK
+apple-timing-app: 779 ms
+x-apple-aka-ttl: Generated Tue Feb 24 12:54:13 PST 2015, Expires Tue Feb 24 12:55:13 PST 2015, TTL 60s
+x-apple-application-instance: 1006701
+Content-Type: text/html; charset=UTF-8
+x-webobjects-loadaverage: 0
+x-apple-jingle-correlation-key: D4GQD4RE6RDPIVSRKUMAH77D7U
+Server: ATS/4.1.0
+X-Apple-ATS-Cache-Key: /17.154.42.213/80/us/artist/michael-jackson/id32940/iDevice/https
+Vary: Accept-Encoding
+Cache-Control: no-transform, max-age=49
+Date: Tue, 24 Feb 2015 20:54:13 GMT
+Transfer-Encoding: chunked
+Connection: close
+Connection: Transfer-Encoding
+X-Apple-Partner: origin.0
+
+

@@ -1,0 +1,17 @@
+Date: Tue, 24 Feb 2015 20:53:33 GMT
+Server: Apache
+X-UA-Compatible: IE=Edge,chrome=1
+ETag: "3e38c5cda4fa81a73cfe2af98dcdc36a"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 1f2330f50af9a1e702e449cc2338b21e
+X-Runtime: 0.138952
+X-Rack-Cache: miss
+X-Powered-By: Phusion Passenger 4.0.23
+Set-Cookie: _jango_s=BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJWI0NmZlZmQ1NTU5NjcxMWU3Mjg2OWNiNzAzYjcwM2NiBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMSs3b2syQVl1TktLRVdwZ3htUHFPcUdoaEZPWmZuWXBPT2FhV1dac1RZeUk9BjsARg%3D%3D--f0a4432c38fa81730d06fcb8ba336385c2df7333; domain=.jango.com; path=/; expires=Mon, 24-Feb-2020 20:53:33 GMT; HttpOnly
+Content-Length: 65628
+Status: 200 OK
+Vary: Accept-Encoding
+Connection: close
+Content-Type: text/html; charset=utf-8
+
+

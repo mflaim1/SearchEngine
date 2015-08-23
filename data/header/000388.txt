@@ -1,0 +1,23 @@
+Last-Modified: Tue, 24 Feb 2015 20:56:31 GMT
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=31536000
+x-apple-translated-wo-url: /WebObjects/MZStore.woa/wa/viewArtist?id=31937250&cc=us&urlDesc=/bee-gees
+x-apple-orig-url: https://itunes.apple.com/us/artist/bee-gees/id31937250
+x-apple-application-site: NWK
+apple-timing-app: 626 ms
+x-apple-aka-ttl: Generated Tue Feb 24 12:56:31 PST 2015, Expires Tue Feb 24 12:57:31 PST 2015, TTL 60s
+x-apple-application-instance: 1008404
+Content-Type: text/html; charset=UTF-8
+x-webobjects-loadaverage: 0
+x-apple-jingle-correlation-key: LCSJ33OFBSEJYF2JAA6CMECLYE
+Server: ATS/4.1.0
+X-Apple-ATS-Cache-Key: /17.154.42.213/80/us/artist/bee-gees/id31937250/iDevice/https
+Vary: Accept-Encoding
+Cache-Control: no-transform, max-age=57
+Date: Tue, 24 Feb 2015 20:56:31 GMT
+Transfer-Encoding: chunked
+Connection: close
+Connection: Transfer-Encoding
+X-Apple-Partner: origin.0
+
+

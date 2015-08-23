@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie6" lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 ie7" lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 ie8" lang="en" xmlns:fb="http://ogp.me/ns/fb#"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie9" lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="eng" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:0,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"f3c44372d09f09d959e2422e9c38c257",petok:"9a95d9c66714919a0d23e4d2c9e51fa8dfa3a117-1424810852-1800",zone:"thegospelcoalition.org",rocket:"0",apps:{"ga_key":{"ua":"UA-10750690-1","ga_bs":"2"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=919620257c/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEAV1JXGwAIXVVXBgc="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(5),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,window.onerror=e,NREUM.noticeError=n;try{throw new Error}catch(f){"stack"in f&&(t(1),t(4),"addEventListener"in window&&t(2),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&t(3),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:8,2:5,3:9,4:7,5:21,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],4:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(2);t("loader").features.stn=!0,t(1),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:6,2:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:21,2:22,ee:"QJf3ax",gos:"7eSDFh"}],6:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:22,2:21,ee:"QJf3ax"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:22,2:21,ee:"QJf3ax"}],8:[function(t,e){function n(t,e,n){var r=t[0];"string"==typeof r&&(r=new Function(r)),t[0]=o(r,"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:22,2:21,ee:"QJf3ax"}],9:[function(t,e){function n(){c.inPlace(this,d,"fn-")}function r(t,e){c.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}var i=t("ee").create(),a=t(1),s=t(2),c=s(i),f=s(a),u=window.XMLHttpRequest,d=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=i,window.XMLHttpRequest=function(t){var e=new u(t);try{i.emit("new-xhr",[],e),f.inPlace(e,["addEventListener","removeEventListener"],"-",function(t,e){return e}),e.addEventListener("readystatechange",n,!1)}catch(r){try{i.emit("internal-error",[r])}catch(o){}}return e},window.XMLHttpRequest.prototype=u.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),i.on("send-xhr-start",r),i.on("open-xhr-start",r)},{1:5,2:22,ee:"QJf3ax"}],10:[function(t){function e(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function n(t){var n=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!n.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){n.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=e(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(n.cat=d.split(", ").pop())}}else n.status=0;r.cbTime=this.cbTime,o("xhr",[n,r,this.startTime])}}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=n,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,n){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=e(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof n.onload))&&i.end(n)}catch(e){try{a.emit("internal-error",[e])}catch(r){}}};for(var u=0;c>u;u++)n.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:11,3:9,4:5,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],11:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.licenseKey&&t.applicationID&&f&&f.body){s(h,function(e,n){e in t||(t[e]=n)}),l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=f.createElement("script");e.src=l.proto+t.agent,f.body.appendChild(e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document,u="addEventListener",d="attachEvent",p=(""+location).split("?")[0],h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-515.min.js"},l=e.exports={offset:i(),origin:p,features:{}};f[u]?(f[u]("DOMContentLoaded",o,!1),c[u]("load",n,!1)):(f[d]("onreadystatechange",r),c[d]("onload",n)),a("mark",["firstbyte",i()])},{1:20,handle:"D5DuLP"}],20:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],21:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],22:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s,t))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:21,ee:"QJf3ax"}]},{},["G9z0Bl",3,10,4]);</script>
+<title>Reading for Worldviews: Lord of the Rings | TGC | The Gospel Coalition</title>
+<meta name='description' content='The Gospel Coalition is a fellowship of evangelical churches deeply committed to renewing our faith in the gospel of Christ'/>
+<link rel='canonical' href='http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings'/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="jz8T8G3cWfNQZEO437E0lAflknYxfUL_dPXi9hE8z5Q"/>
+<meta name="blitz" content="mu-1707e590-f67e56c8-230dd369-02af1781">
+<meta property="og:title" content="Reading for Worldviews: Lord of the Rings"/><meta property="og:url" content="http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings"/><meta property="og:image" content="http://www.thegospelcoalition.org/images/uploads/articles/reading_for_worldviews.jpg"/><meta property="og:description" content="Just because you can do something doesn"/>
+<link rel="icon" href="http://www.thegospelcoalition.org/images/site/favicon.ico"/>
+<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/build/css/style.min.css">
+ 
+<script src="//use.typekit.net/lbd4xzs.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<script src="http://www.thegospelcoalition.org/js/vendor/modernizr.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-10750690-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+<body><script type="text/javascript">
+//<![CDATA[
+try{(function(a){var b="http://",c="www.thegospelcoalition.org",d="/cdn-cgi/cl/",e="img.gif",f=new a;f.src=[b,c,d,e].join("")})(Image)}catch(e){}
+//]]>
+</script>
+<script>
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//cdn.beaconads.com/ac/beaconads.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=135819263162132&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header id="header" class="nav-global">
+ 
+<div class="row">
+<div class="large-12 columns">
+<nav>
+<ul class="inline-list right">
+<li><a href="http://www.thegospelcoalition.org/">English</a></li>
+<li><a href="http://www.thegospelcoalition.org/evangile21/">Francais</a></li>
+<li><a class="espanol" href="http://www.thegospelcoalition.org/coalicion/">EspaÃ±ol</a></li>
+<li><a class="donate-button" href="http://www.thegospelcoalition.org/donate/">donate</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div class="row page-wrap sub-page style_blog-post">
+<div class="large-12 columns">
+<div id="header-group" class="header-sub-page">
+ 
+<div class="row">
+<div class="columns">
+<div class="nav-primary-fixed-wrap contain-to-grid sticky">
+<div class="extraneous-row">
+<div class="extraneous-columns">
+<nav class="top-bar nav-primary">
+<ul class="title-area">
+<li class="name">
+<a href="http://www.thegospelcoalition.org/" class="logo_nav-primary">TGC | The Gospel Coalition</a>
+</li>
+<li class="toggle-topbar menu-icon">
+<a href="javascript:void(0);">
+<span></span>
+</a>
+</li>
+</ul>
+<section class="top-bar-section">
+<ul class="left nav-lvl-1">
+<li class="has-dropdown">
+<a href="javascript:void(0);">Channels</a>
+<ul class="dropdown nav-lvl-2">
+<li>
+<a href="http://www.thegospelcoalition.org/channel/current-events">Current Events</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/channel/ministry">Ministry</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/channel/arts-and-culture">Arts & Culture</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/channel/reviews">Reviews</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/channel/christian-living">Christian Living</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/channel/bible-and-theology">Bible & Theology</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/channel/faith-and-work">Faith & Work</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown">
+<a href="http://www.thegospelcoalition.org/editorial">Editorial</a>
+<ul class="dropdown nav-lvl-2">
+<li>
+<a href="http://www.thegospelcoalition.org/editorial/team">Team</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/editorial/contributors">Contributors</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/publications">Publications</a>
+</li>
+<li>
+<a href="http://themelios.thegospelcoalition.org">Themelios</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown">
+<a href="javascript:void(0);">Chapters</a>
+<ul class="dropdown nav-lvl-2">
+<li>
+<a href="http://www.tgcalbuquerque.com/">Albuquerque</a>
+</li>
+<li>
+<a href="http://arizona.thegospelcoalition.org/">Arizona</a>
+</li>
+<li>
+<a href="http://www.tgcatlanticcanada.com/">Atlantic Canada</a>
+</li>
+<li>
+<a href="http://bayarea.thegospelcoalition.org/">Bay Area</a>
+</li>
+<li>
+<a href="http://columbus.thegospelcoalition.org/">Columbus</a>
+</li>
+<li>
+<a href="http://iowa.thegospelcoalition.org/">Eastern Iowa</a>
+</li>
+<li>
+<a href="http://www.tgchawaii.org/">Hawaii</a>
+</li>
+<li>
+<a href="http://la.thegospelcoalition.org/">Los Angeles</a>
+</li>
+<li>
+<a href="http://tgc-memphis.cpmpreview1.com/what-is-tgc-memphis">Memphis</a>
+</li>
+<li>
+<a href="http://www.tgcmichigan.org/">Michigan</a>
+</li>
+<li>
+<a href="https://tgcne.centerforgospelculture.org/">New England</a>
+</li>
+<li>
+<a href="http://www.gospeloklahoma.org/">Oklahoma</a>
+</li>
+<li>
+<a href="http://ontario.thegospelcoalition.org/">Ontario</a>
+</li>
+<li>
+<a href="http://www.thegospelforoc.com">Orange County</a>
+</li>
+<li>
+<a href="http://twincities.thegospelcoalition.org/">Twin Cities</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown">
+<a href="javascript:void(0);">Blogs</a>
+<ul class="dropdown nav-lvl-2">
+<li>
+<a href="/blogs/justintaylor/">Justin Taylor</a>
+</li>
+<li>
+<a href="/blogs/kevindeyoung/">Kevin DeYoung</a>
+</li>
+<li>
+<a href="/blogs/trevinwax/">Trevin Wax</a>
+</li>
+<li>
+<a href="/blogs/thabitianyabwile/">Thabiti Anyabwile</a>
+</li>
+<li>
+<a href="/blogs/rayortlund/">Ray Ortlund</a>
+</li>
+<li><a href="/blogs/scottysmith/">Scotty Smith</a></li>
+<li><a href="/blogs/loveofgod/">D.A. Carson</a></li>
+<li><a href="/blogs/gospeldrivenchurch/">Jared C. Wilson</a></li>
+</ul>
+</li>
+<li>
+<a href="http://resources.thegospelcoalition.org/">Resources</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/events">Events</a>
+</li>
+<li class="has-dropdown">
+<a href="http://www.thegospelcoalition.org/international">International</a>
+<ul class="dropdown nav-lvl-2">
+<li><a href="http://www.thegospelcoalition.org/international">Home</a></li>
+<li>
+<a href="http://www.thegospelcoalition.org/international/about">About</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/international/relief-projects">Relief Projects</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/international/free-resources">Free Resources</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/international/stories">Stories</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/international/give">Give</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/about/contact">Contact</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown">
+<a href="http://www.thegospelcoalition.org/projects">Projects</a>
+<ul class="dropdown nav-lvl-2">
+<li>
+<a href="/church-directory">Church Directory</a>
+</li>
+<li>
+<a href="http://jobs.thegospelcoalition.org/">Job Board</a>
+</li>
+<li>
+<a href="http://legacy.thegospelcoalition.org/ncc">New City Catechism</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/projects">Other</a>
+</li>
+</ul>
+</li>
+<li class="has-dropdown">
+<a href="javascript:void(0);">About</a>
+<ul class="dropdown nav-lvl-2">
+<li>
+<a href="http://www.thegospelcoalition.org/about">Overview</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/about/staff">Staff</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/about/council">Council</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/about/foundation-documents">Foundation Documents</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/about/donate">Donate</a>
+</li>
+<li>
+<a href="http://www.thegospelcoalition.org/about/contact">Contact</a>
+</li>
+</ul>
+</li>
+<li class="has-icon">
+<a href="#" class="nav-icon icon-search">Search</a>
+<form class="search-form" method="post" action="http://www.thegospelcoalition.org/">
+<div class='hiddenFields'>
+<input type="hidden" name="ACT" value="87"/>
+<input type="hidden" name="RP" value="search/results"/>
+<input type="hidden" name="site_id" value="1"/>
+</div>
+<input type="search" name="keywords" id="keywords" placeholder="Search">
+<input type="submit" class="visually-hidden" value="Submit"/>
+</form>
+</li>
+</ul>
+</section>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="large-12 columns">
+<div class="banner-wrapper blur-image darken bordered">
+<ul>
+<li><a href="/channel/reviews">Reviews</a></li>
+<li><a href="http://www.thegospelcoalition.org/author/Douglas-Wilson">Douglas Wilson</a></li>
+</ul>
+<h1>Reading for Worldviews: Lord of the Rings</h1>
+<h2></h2>
+<span>Sep 06, 2012</span>
+<img src="/images/uploads/articles/reading_for_worldviews.jpg" alt="" width="558" height="215"/>
+</div>
+</div>
+</div>
+</div>
+ 
+<section class="full-width media-group">
+<div class="row">
+<div class="small-8 columns">
+<div class="mod uplift-top-border">
+<header>
+<ul class="social-ticks inline-list article-sharrre">
+<li class="cm"><a href="http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings#disqus_thread" data-disqus-identifier="2311">0 Comments</a></li>
+<li class="fb" data-url="http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings" data-text="Reading for Worldviews: Lord of the Rings" data-title="Like"></li>
+<li class="tw" data-url="http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings" data-text="Reading for Worldviews: Lord of the Rings" data-title="Tweet"></li>
+</ul>
+</header>
+<article class="general-post">
+<p><img alt="" class="aligncenter size-full wp-image-24935" src="http://thegospelcoalition.org/blogs/tgc/files/2012/09/inpostgraphic.jpg" style="width: 558px; height: 215px;" title="inpostgraphic"/></p>
+<p><strong>Editors&#39; Note</strong>: &#8220;When you sell a man a book you don&#39;t sell him just 12 ounces of paper and ink and glue,&#8221; novelist Christopher Morley said, &#8220;you sell him a whole new life.&#8221; During the past 50 years more books have been sold than in any other time in history. So what type of life&mdash;or, as Abraham Kuyper would say, world-and-life view&mdash;are we buying?</p>
+<p>As a partial answer to that question, we&#39;ve asked several Christian thinkers to examine the worldviews presented in the <a href="http://www.visualnews.com/data-design/april/top10books_jaredfanning/">top 10 most-read books</a>. Over the next several weeks we&#39;ll present articles on each of the titles. <a href="http://thegospelcoalition.org/blogs/tgc/?p=24512">Read the introduction to the series by Louis Markos</a>.</p>
+<hr/>
+<p><img alt="" class="wp-image-24537" height="300" src="http://thegospelcoalition.org/blogs/tgc/files/2012/08/The-Lord-Of-The-Rings-9780007149247.jpeg" style="font-size: 13.3333339691162px; line-height: 23.1111106872559px; float: right;" title="The-Lord-Of-The-Rings-9780007149247" width="199"/></p>
+<p>One of the disadvantages we have with books written in our lifetime&mdash;as compared with classic books from other eras&mdash;is kind of obvious if you stop to think about it. We don&#39;t know which ones will be classics. We don&#39;t know who to put into the line-up. Other centuries are picking on us unfairly. Those other generations had their dreck too, but almost none of <em>that</em> survived the test of time. Our dreck is still alive and well, and selling briskly. So when we make a comparison, we tend to imagine that the 14th century had a Chaucer on every other corner, while ours has an E. L. James in every Starbucks.</p>
+<p>The game is lopsided because all they have to do is put in their first string. We are required to put in anybody from the student body who thinks he might be able to play a little.</p>
+<p>But imagine what the test of real time will do to our literature that is not worth preserving. Imagine what it will look like when our century and the last one have that huge neighborhood garage sale, the one where we sell off all our old Book of the Month Club selections at a nickel a box. What will we keep? What will be left over?</p>
+<p>I want to argue that <em><a href="http://www.amazon.com/Lord-Rings-50th-Anniversary-Vol/dp/0618640150/?tag=thegospcoal-20">The Lord of the Rings</a></em> will be among the keepers. And schoolchildren several centuries hence will then be able to imagine that the 20th century was a time of literary giants, all of them with a Christian worldview&mdash;when there was a Tolkien on every corner.</p>
+<h3><strong>Not Just Harry Potter for Grown-Ups</strong></h3>
+<p>I have taught courses in Tolkien (and in Lewis), and whenever you do this the teacher has quite a daunting challenge. If I were to teach a course in George Herbert, or T. S. Eliot, or Shakespeare, I would get students enrolled in the class who were interested and engaged, of course. But with a class on Tolkien, you will invariably get one or more students who have the entire middle section of <em>The Silmarillion</em> memorized. &#8220;No, no. Beren and L&uacute;thien went through the Gate <em>after</em> they had put that spell on Carcharoth.&#8221; The same disadvantage attends any who would write about Tolkien as well. And so I begin this modest discussion, suitably abashed.</p>
+<p>Those who dismiss <em>The Lord of the Rings</em> as simply Harry Potter for grown-ups, or as a source of bumper sticker material for aging hippies to put on their Volvos (&#8220;Not all those who wander are lost&#8221;) have really missed the central prophetic vision of the books&mdash;a prophetic stance taken against modernity . . . or perhaps what we might want to call mordornity. This is the prophetic element that makes Tolkien&#39;s vision a fundamentally Christian one. There are places where I prefer Lewis&#39;s Protestant take to Tolkien&#39;s Catholicism, obviously, but on this issue Tolkien reflects the ethical perspective of the entire Christian tradition. Just because you can do something doesn&#39;t mean you should.</p>
+<h3><strong>The Gospel as Power Under</strong></h3>
+<p>This is the wisdom that acknowledges the small are great, the last are first, the humble are exalted, and the servants are lords. For those who think in carnal categories, power is always <em>power over</em>, and this means that for them the difference between white magic and black magic has to be <em>power over</em> for good ends, and <em>power over</em> for evil ends. But the gospel is <em>power under</em>. Jesus humbled himself in obedience, even to the point of death on a cross, and God has therefore highly exalted him and given him the name that is above every name.</p>
+<p>Think of it this way. The council of Elrond determined that they would not be seduced by the concept of total war. They are unalterably opposed to Sauron and his works, and so they decide that they will under no circumstances become Sauron themselves. A ring comes into their possession, and it is a ring that would enable them to overthrow Sauron completely . . . but with a price. They could defeat Sauron by becoming Sauron.</p>
+<p>The characters who refuse to use the ring in this way are many&mdash;Elrond, Gandalf, Faramir, Galadriel, Sam, and for a very long time, Frodo. Boromir falls prey to the temptation posed by the ring, but it seen by all the rest of them as just that, a temptation that his particular kind of strength was too weak to resist.</p>
+<p>At the end of his journey, when Frodo finally succumbed to the power of the ring and put it on, standing on the lip of the crevice going down into Mt. Doom, Sauron was &#8220;suddenly aware of him, and . . . the magnitude of his own folly was revealed to him in a blinding flash&#8221; (<em><a href="http://www.amazon.com/Return-King-Being-theThird-Rings/dp/054792819X/?tag=thegospcoal-20">The Return of the King</a></em>). Sauron has no category for a strategy against him conceived in humility. The idea that someone could come into possession of a ring that would grant universal power to the one who possessed it, and who would then not try to use it as <em>he</em> would use it, had never entered his mind. Indeed, given what kind of mind it was, it <em>could</em> not enter his mind.</p>
+<h3><strong>A Cruciform Story</strong></h3>
+<p>C. S. Lewis once pointed out that Tolkien&#39;s &#8220;ring of power&#8221; was not a coded message against the atom bomb, and that the chronology of the writing made such a reconstruction impossible. At the same time, the ring of power is a clarion statement against thoughtless use of every form of right-fisted power&mdash;from the crossbow to the bomb.</p>
+<p>This is another way of saying that the plot lines in <em>The Lord of the Rings</em> are cruciform. And when this kind of structure is combined with Tolkien&#39;s vast learning, painstaking attention to detail, and imagination stocked with tales from everywhere, you have a story for the ages.</p>
+<p>We cannot know what the technology will be like two centuries from now. How smart will the phones be? The computers? The weapons? The genetic engineering? We have no idea what sort of device might be used in order to read <em>The Lord of the Rings</em>. We therefore cannot pass down to our great-great-grandchildren any specific instructions concerning such details. But we can pass down wisdom. We can teach them&mdash;by handing down stories like this one&mdash;that being able to do something doesn&#39;t mean that you should.</p>
+<div class="article-bottom-bio"><p><b>Douglas Wilson</b> is the minister of Christ Church in Moscow, Idaho. His latest book is <a href="http://www.amazon.com/Father-Hunger-Calls-Their-Families/dp/1595554769?tag=thegospcoal-20"><i>Father Hunger</i></a> (Thomas Nelson) and his debates with Christopher Hitchens are documented in the film <a href="http://www.amazon.com/COLLISION-Christopher-Hitchens-Douglas-Wilson/dp/B002M3SHTO/?tag=thegospcoal-20"><i>Collision</i></a>.</p></div>
+</article>
+<ul class="blacklight_details-social row cozy">
+<li class="columns screen-2 cozy fb">
+<a target="_blank" href="http://www.facebook.com/share.php?u=http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings&title=Reading+for+Worldviews%3A+Lord+of+the+Rings">Facebook</a>
+</li>
+<li class="columns screen-2 cozy tw">
+<a target="_blank" href="http://twitter.com/home?status=Reading+for+Worldviews%3A+Lord+of+the+Rings+http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings - via @TGC">Twitter</a>
+</li>
+<li class="columns screen-2 cozy gp">
+<a target="_blank" href="https://plus.google.com/share?url=http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings">Google+</a>
+</li>
+<li class="columns screen-2 cozy tu">
+<a target="_blank" href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fthegospelcoalition.org%2F%7Bif+%27en%27+%21%3D+%27en%27%7Den%2F%7B%2Fif%7Darticle%2Freading-for-worldviews-lord-of-the-rings&name=The+Gospel+Coalition+%7C+Reading+for+Worldviews%3A+Lord+of+the+Rings&description=Reading+for+Worldviews%3A+Lord+of+the+Rings">Tumblr</a>
+</li>
+<li class="columns screen-2 cozy pi">
+<a target="_blank" href="http://pinterest.com/pin/create/bookmarklet/?media=http://www.thegospelcoalition.org/images/uploads/articles/reading_for_worldviews.jpg&url=http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings&is_video=false&description=The+Gospel+Coalition+%7C+Reading+for+Worldviews%3A+Lord+of+the+Rings">Pinterest</a>
+</li>
+<li class="columns screen-2 cozy em">
+<a href="/cdn-cgi/l/email-protection#b48bc7c1d6ded1d7c089e0dcd194f3dbc7c4d1d894f7dbd5d8ddc0dddbda949994e6d1d5d0dddad394d2dbc694e3dbc6d8d0c2ddd1c3c78e94f8dbc6d094dbd294c0Xhe Rings&body=Reading for Worldviews: Lord of the Rings - Douglas Wilson%0D%0AJust because you can do something doesn't mean you should.%0D%0A %0D%0ARead More: http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings">Email</a>
+</li>
+</ul>
+<ul class="printfriendy-button row cozy">
+<li class="columns screen-2 cozy print">
+<script>var pfHeaderImgUrl = '';var pfHeaderTagline = '';var pfdisableClickToDel = 0;var pfHideImages = 0;var pfImageDisplayStyle = 'right';var pfDisablePDF = 0;var pfDisableEmail = 0;var pfDisablePrint = 0;var pfCustomCSS = '';var pfBtVersion='1';(function(){var js, pf;pf = document.createElement('script');pf.type = 'text/javascript';if('https:' == document.location.protocol){js='https://pf-cdn.printfriendly.com/ssl/main.js'}else{js='http://cdn.printfriendly.com/printfriendly.js'}pf.src=js;document.getElementsByTagName('head')[0].appendChild(pf)})();</script><a href="http://www.printfriendly.com" style="color:#6D9F00;text-decoration:none;" class="printfriendly" onclick="window.print();return false;" title="Printer Friendly and PDF"><img style="border:none;-webkit-box-shadow:none;box-shadow:none;" src="http://www.thegospelcoalition.org/images/site/print.png" alt="Print Friendly and PDF"/></a>
+</li>
+</ul>
+<ul class="blacklight_details-social">
+<li><div class="fb-like" data-href="" data-width="25px" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div></li>
+</ul>
+<h2>tags:</h2>
+<hr class="hr-big">
+<div class="article-tags">
+<div class="row cozy">
+<a class="button" href="/tag/arts+and+culture">arts and culture</a>
+<a class="button" href="/tag/j.+r.+r.+tolkien">j. r. r. tolkien</a>
+<a class="button" href="/tag/douglas+wilson">douglas wilson</a>
+<a class="button" href="/tag/reading+for+worldviews+series">reading for worldviews series</a>
+<a class="button" href="/tag/worldview">worldview</a>
+</div>
+</div>
+<h2>If you liked this, then you may like:</h2>
+<hr class="hr-big">
+<div class="featured">
+<div class="row">
+<div class="large-3 small-6 micro-12 columns featured-text end">
+<a href="http://www.thegospelcoalition.org/article/snowpiercer-and-the-advent-longing-of-dystopia" class="hover-filter-wrap">
+<div class="hover-filter"></div>
+<p class="featured-text-title">
+'Snowpiercer' and the Advent Longing of Dystopia
+<span>
+</span>
+</p>
+<div class="featured-bg transfer-image">
+<img src="http://www.thegospelcoalition.org/images/uploads/articles/snowpiercer.jpg" alt="image for &#8216;Snowpiercer&#8217; and the Advent Longing of Dystopia">
+</div>
+</a>
+</div>
+<div class="large-3 small-6 micro-12 columns featured-text end">
+<a href="http://www.thegospelcoalition.org/article/my-journey-in-rhythm-rhyme-and-redemption" class="hover-filter-wrap">
+<div class="hover-filter"></div>
+<p class="featured-text-title">
+My Journey in Rhythm, Rhyme, and Redemption
+<span>
+</span>
+</p>
+<div class="featured-bg transfer-image">
+<img src="http://www.thegospelcoalition.org/images/uploads/articles/rhythm.jpg" alt="image for My Journey in Rhythm, Rhyme, and Redemption">
+</div>
+</a>
+</div>
+<div class="large-3 small-6 micro-12 columns featured-text end">
+<a href="http://www.thegospelcoalition.org/article/anomaly-and-lecraes-relationship-with-christ-calling-and-culture" class="hover-filter-wrap">
+<div class="hover-filter"></div>
+<p class="featured-text-title">
+Heâs an âAnomalyâ: Lecraeâs Unique Platform on Top of the Music World
+<span>
+</span>
+</p>
+<div class="featured-bg transfer-image">
+<img src="http://www.thegospelcoalition.org/images/uploads/articles/91-GT2U7RJL._SL1500_.jpg" alt="image for Heâs an âAnomalyâ: Lecraeâs Unique Platform on Top of the Music World">
+</div>
+</a>
+</div>
+<div class="large-3 small-6 micro-12 columns featured-text end">
+<a href="http://www.thegospelcoalition.org/article/making-sense-of-the-stories-we-tell" class="hover-filter-wrap">
+<div class="hover-filter"></div>
+<p class="featured-text-title">
+Making Sense of the Stories We Tell
+<span>
+</span>
+</p>
+<div class="featured-bg transfer-image">
+<img src="http://www.thegospelcoalition.org/images/uploads/articles/tim-keller.jpg" alt="image for Making Sense of the Stories We Tell">
+</div>
+</a>
+</div>
+</div>
+</div>
+<a class="comments-btn read-more button expand green">view comments</a>
+<div class="comments-section">
+<h2>Comments:</h2>
+<hr class="hr-big">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+								/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+								var disqus_shortname = 'tgc-articles'; // required: replace example with your forum shortname
+								var disqus_identifier = '2311';
+								var disqus_url = 'http://www.thegospelcoalition.org/article/reading-for-worldviews-lord-of-the-rings';
+								/* * * DON'T EDIT BELOW THIS LINE * * */
+								(function() {
+									var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+									dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+									(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+								})();
+							</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</div>
+</div>
+<div class="small-4 columns">
+<div class="mod general-post-aside">
+<section class="masthead">
+<h3><a href="http://www.thegospelcoalition.org/author/Douglas-Wilson">Douglas Wilson</a></h3>
+<hr/>
+<p><p><b>Douglas Wilson</b> is the minister of Christ Church in Moscow, Idaho. His latest book is <a href="http://www.amazon.com/Father-Hunger-Calls-Their-Families/dp/1595554769?tag=thegospcoal-20"><i>Father Hunger</i></a> (Thomas Nelson) and his debates with Christopher Hitchens are documented in the film <a href="http://www.amazon.com/COLLISION-Christopher-Hitchens-Douglas-Wilson/dp/B002M3SHTO/?tag=thegospcoal-20"><i>Collision</i></a>.</p></p>
+</section>
+<section class="follow">
+<ul>
+</ul>
+</section>
+</div>
+<h2>sponsors</h2>
+<div class="mod">
+<div class="large-block-grid-1 small-block-grid-2 widget widget-sponsors">
+ 
+<div id="bsap_1296483" class="bsarocks bsap_e4532ca833a2a2bde98aba25cc81e5ff"></div>
+ 
+ 
+<div id="bsap_1253679" class="bsarocks bsap_e4532ca833a2a2bde98aba25cc81e5ff"></div>
+ 
+ 
+<div id="bsap_1297967" class="bsarocks bsap_e4532ca833a2a2bde98aba25cc81e5ff"></div>  
+ 
+<div id="bsap_1295506" class="bsarocks bsap_e4532ca833a2a2bde98aba25cc81e5ff"></div>
+ 
+ 
+<div id="bsap_1256200" class="bsarocks bsap_e4532ca833a2a2bde98aba25cc81e5ff"></div>
+ 
+ 
+<div id="bsap_1296481" class="bsarocks bsap_e4532ca833a2a2bde98aba25cc81e5ff"></div>
+ 
+ 
+<div id="bsap_1299466" class="bsarocks bsap_e4532ca833a2a2bde98aba25cc81e5ff"></div>
+ 
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="row">
+<div class="large-12 columns">
+<div class="media-bottom">
+<br/>
+<footer id="footer" class="global-footer">
+<div class="footer-ctas">
+<div class="row bottom">
+<div class="columns screen-12 small-4">
+<h2>Info</h2>
+<hr/>
+<p>The Gospel Coalition is a fellowship of evangelical churches deeply&nbsp;committed to renewing our faith in the gospel of Christ and to&nbsp;reforming our ministry practices to conform fully to the Scriptures. &nbsp;We yearn to work with all who, in addition to embracing our confession and theological vision for ministry, seek the lordship of Christ over the whole of life with unabashed hope in the power of the Holy Spirit to transform individuals, communities, and cultures.</p>
+<ul>
+<li><a href="http://www.thegospelcoalition.org/about/foundation-documents">Foundation Documents</a></li>
+<li><a href="http://thegospelcoalition.org/about/council">Council</a></li>
+</ul>
+</div>
+<div class="columns screen-12 mini-6 small-4">
+<h2>Updates</h2>
+<hr/>
+<a class="twitter-timeline" href="https://twitter.com/tgc" data-tweet-limit="2" data-widget-id="467678052177031168">Tweets by @TGC</a>
+</div>
+<div class="columns screen-12 mini-6 small-4">
+<h2>Stay Current</h2>
+<hr/>
+<p>News and Monthly Updates</p>
+<form action="http://thegospelcoalition.us2.list-manage.com/subscribe/post?u=8751f3019bd5a6ff5c3a66c55&amp;id=a7bb656cd8" id="mailing-list" method="POST" name="MC-embedded-subscribe-form">
+<div style="position: absolute; left: -5000px;"><input type="text" name="b_8751f3019bd5a6ff5c3a66c55_a7bb656cd8" tabindex="-1" value=""></div>
+<label for="mce-EMAIL">Your Email Address</label>
+<div class="positioner">
+<input type="email" required maxlength="100" name="EMAIL" id="mce-EMAIL" placeholder="Your email address"/>
+</div>
+<input class="button" type="submit" value="send"/>
+</form>
+<ul class="social">
+<li class="fb">
+<a target="_blank" href="https://www.facebook.com/thegospelcoalition">Facebook</a>
+</li>
+<li class="tw">
+<a target="_blank" href="https://twitter.com/tgc">Twitter</a>
+</li>
+<li class="vm">
+<a target="_blank" href="https://vimeo.com/gospelcoalition">Vimeo</a>
+</li>
+<li class="ig">
+<a target="_blank" href="http://instagram.com/thegospelcoalition">Instagram</a>
+</li>
+<li class="yt">
+<a target="_blank" href="https://www.youtube.com/user/TheGospelCoalition">YouTube</a>
+</li>
+<li class="gp">
+<a target="_blank" href="https://plus.google.com/u/1/b/114297015546592990267/+gospelcoalition">Google Plus</a>
+</li>
+<li class="rss">
+<a href="http://feeds.feedburner.com/tgcblog">RSS</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<section class="copy-logo">
+<p class="copyright">
+Copyright &copy; 2015 The Gospel Coalition, Inc. All rights reserved.
+</p>
+</section>
+<aside class="ad">
+ 
+<div id="bsap_1296122" class="bsarocks bsap_e4532ca833a2a2bde98aba25cc81e5ff"></div>
+ 
+</aside>
+</footer>
+</div>
+ 
+</div>
+</div>
+</div>  
+</div> 
+<!--[if lt IE 9]>
+  <script src="http://www.thegospelcoalition.org//js/vendor/css3-media-queries.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="/js/mediaelement-and-player.js"></script>
+<script src="/js/aggregate-ck.js"></script>
+<script src="/js/ee-main.js"></script>
+<script src="/js/iframeResizer.min.js"></script>
+<script src="/js/reftagger-en.js"></script>
+<script src="/js/jquery.sharrre.min.js"></script>
+<script src="/js/vendor/jquery.mixitup.js"></script>
+<script src="/js/vendor/jquery.superbox.js"></script>
+<script src="/js/steven.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script>/* CloudFlare analytics upgrade */
+</script>
+<script>
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'tgc-articles'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function () {
+var s = document.createElement('script'); s.async = true;
+s.type = 'text/javascript';
+s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+
+setTimeout(reactTotal, 1000);
+</script>
+<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script>
+$(function() {
+    $( "#tabs" ).tabs();
+});
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-3.newrelic.com","licenseKey":"999fb10a01","applicationID":"3894516","transactionName":"Z1JUNxYCDRJZB0xRXl4YdRYXFwwMFwVKTFhTW1NMFgYCBVEKXxVXX0UbFAsRDwVODV1PQh1bWREATgwHFRBQXRxCXlgEFw==","queueTime":0,"applicationTime":1380,"atts":"SxVXQV4YHhw=","errorBeacon":"bam.nr-data.net","agent":"js-agent.newrelic.com\/nr-515.min.js"}</script><script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>

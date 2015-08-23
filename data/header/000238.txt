@@ -1,0 +1,15 @@
+Server: nginx
+Date: Tue, 24 Feb 2015 20:52:48 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 58832
+Connection: close
+Vary: Accept-Encoding
+Accept-Ranges: bytes
+X-Mod-Pagespeed: 1.8.31.5-4307
+Cache-Control: max-age=604800
+Vary: Accept-Encoding,Cookie
+X-Powered-By: W3 Total Cache/0.9.4.1
+Expires: Tue, 03 Mar 2015 20:52:48 GMT
+ngpass_ngstatic: 1
+
+
